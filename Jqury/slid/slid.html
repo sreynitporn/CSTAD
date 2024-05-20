@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="slid.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box_slide">
+        <div class="slide">
+            <img src="/slid/img1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/slid/image2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/slid/image3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/slid/image4.jpg" alt="">
+        </div> 
+        <div class="btn1" id="button"><</div>
+        <div class="btn2" id="button">></div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        var slide = $('.slide');
+        var numslide = slide.length;
+        slide.hide();
+        var i=0;
+        slide.eq(i).show();
+         setInterval(function(){
+             slide.eq(i).fadeOut();
+            i++;
+            if(i>= numslide){
+                i=0;
+            }
+             slide.eq(i).fadeIn();
+        },5000);
+        $('.btn2').click(function(){
+            slide.eq(i).hide();
+            i++;
+            if(i>=numslide){
+                i=0;
+            }
+            slide.eq(i).show();
+        })
+        $('.btn1').click(function(){
+            slide.eq(i).hide();
+            if(i==0){
+                i=numslide;
+            }
+            i--;
+            slide.eq(i).show();
+        })
+       
+    })
+</script>
+</html>

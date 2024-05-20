@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="validation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Register Form</h1>
+        </div>
+        <form action="" class="form">
+            <div class="form-group ">
+                <label for="">Username</label>
+                <input type="text" name="User" id="Username" placeholder="Username">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Username cannot blank</small>
+            </div>
+            <div class="form-group ">
+                <label for="">Email</label>
+                <input type="text" name="Email" id="Email" placeholder="Email">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Email cannot blank</small>
+            </div>
+            <div class="form-group ">
+                <label for="">password</label>
+                <input type="text" name="password" id="password" placeholder="password">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>password can not blank</small>
+            </div>
+            <div class="form-group ">
+                <label for="">Comfirm_password</label>
+                <input type="text" name="Comfirm_password" id="Comfirm_password" placeholder="Comfirm_password">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Comfirm_password can not blank</small>
+            </div>
+        <button type="submit" id="btn">Login</button>
+        </form>
+    </div>
+</body>
+<script src="validation.js"></script>
+</html>

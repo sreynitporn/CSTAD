@@ -1,0 +1,2859 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- <meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache"> -->
+
+<meta content="bb, bb, bb" name="keywords" />
+<meta content="Tinglok.com is the Online Ads website in Cambodia that connect the Seller and Buyer together. Enjoy your Tinglok with us!" name="description" />
+
+<meta property="og:url" content="https://tinglok.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Tinglok.com" />
+<meta property="og:description" content="Tinglok.com is the Online Classified Ads website in Cambodia that connect the Sellers and Buyers together. Enjoy your Tinglok with us!" />
+<meta property="og:image" content="https://tinglok.com/rean-web-admin/public/img/product/5f3c8ced59c7f_1.jpg" />
+
+
+<title>	Tinglok.com</title>
+<link rel="icon" href="https://tinglok.com/rean-web-admin/public/img/product/5f2c02714afc2_fb_icon.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://tinglok.com/home/style/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="https://tinglok.com/home/style/swiper.min.css">
+<link rel="stylesheet" href="https://tinglok.com/home/style/bootstrap.min.css">
+<link rel="stylesheet" href="https://tinglok.com/home/style/style.css">
+<link rel="stylesheet" href="https://tinglok.com/home/style/spk_upd_mfiles.css">
+<script src="https://tinglok.com/home/style/swiper.min.js"></script>
+<script src="https://tinglok.com/home/js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=1609776879104409&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>	
+
+
+<!--facebook-->
+<script>	
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '841934192998135',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v7.0'
+    });      
+    FB.AppEvents.logPageView();      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+	
+	function fbLogin(){
+		FB.login(function(response){
+			if(response.authResponse){
+				fbAfterLogin();
+			}
+		});
+	}
+	
+	
+	function fbAfterLogin(){
+		FB.getLoginStatus(function(response) { 
+			if (response.status === 'connected') {
+				FB.api('/me?fields=email,name,id', function(response) {
+					//link,email,address
+					jQuery.ajax({			
+						url:'home/action/fb-login.php',
+						type:"POST",
+						data:{fb_name:response.name,fb_uid:response.id,fb_email:response.email},
+					//	cache:false,
+					//	dataType:"json",
+						success:function(data){
+							if(data.login==false){
+								alert("Can't longin. try again.")
+							}else{
+								window.location='https://tinglok.com/';
+							}
+							
+						}			
+					});
+					//console.log(response);
+
+				});
+			}			
+		});
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176164272-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176164272-1');
+</script>
+
+
+<div class="phone-menu">
+	<ul>
+		<li>
+			<a href="https://tinglok.com/">
+				CATEGORIES
+			</a>
+		</li>
+								<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1458cec7411_photo_2020-07-19_21-21-20_[2].jpg">
+								<span>House & Land</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="1" data-sub_cate_link="House-for-Sale">
+														<a data-title="House for Sale">
+															House for Sale
+															<span>138</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="2" data-sub_cate_link="House-for-Rent">
+														<a data-title="House for Rent">
+															House for Rent
+															<span>7</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="3" data-sub_cate_link="Condo-for-Sale">
+														<a data-title="Condo for Sale">
+															Condo for Sale
+															<span>19</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="4" data-sub_cate_link="Condo-for-Rent">
+														<a data-title="Condo for Rent">
+															Condo for Rent
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="5" data-sub_cate_link="Apartment-for-Sale">
+														<a data-title="Apartment for Sale">
+															Apartment for Sale
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="6" data-sub_cate_link="Apartment-for-Rent">
+														<a data-title="Apartment for Rent">
+															Apartment for Rent
+															<span>6</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="20" data-sub_cate_link="Commercial-Property-for-Rent">
+														<a data-title="Commercial Property for Rent">
+															Commercial Property for Rent
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="21" data-sub_cate_link="Commercial-Property-for-Sale">
+														<a data-title="Commercial Property for Sale">
+															Commercial Property for Sale
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="22" data-sub_cate_link="Room-for-Rent">
+														<a data-title="Room for Rent">
+															Room for Rent
+															<span>3</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="212" data-sub_cate_link="Land-for-Sale-">
+														<a data-title="Land for Sale">
+															Land for Sale
+															<span>54</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="1" data-cate_link="House-Land" data-sub_cate_id="213" data-sub_cate_link="Land-for-Rent-">
+														<a data-title="Land for Rent">
+															Land for Rent
+															<span>0</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1458c0d8265_photo_2020-07-19_21-21-22_[2].jpg">
+								<span>Car & Vehicle</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="7" data-sub_cate_link="Car-for-Sale">
+														<a data-title="Car for Sale">
+															Car for Sale
+															<span>171</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="8" data-sub_cate_link="Car-for-Rent">
+														<a data-title="Car for Rent">
+															Car for Rent
+															<span>2</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="9" data-sub_cate_link="Bicycle-for-Sale">
+														<a data-title="Bicycle for Sale">
+															Bicycle for Sale
+															<span>4</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="10" data-sub_cate_link="Motorcycle-for-Sale">
+														<a data-title="Motorcycle for Sale">
+															Motorcycle for Sale
+															<span>14</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="11" data-sub_cate_link="Vehicle-for-Rent">
+														<a data-title="Vehicle for Rent">
+															Vehicle for Rent
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="12" data-sub_cate_link="Tok-Tok-Rermok-for-Sale">
+														<a data-title="Tok Tok & Rermok for Sale">
+															Tok Tok & Rermok for Sale
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="23" data-sub_cate_link="Maintenance-Repair">
+														<a data-title="Maintenance & Repair">
+															Maintenance & Repair
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="24" data-sub_cate_link="Parts-Accessories">
+														<a data-title="Parts & Accessories">
+															Parts & Accessories
+															<span>22</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="25" data-sub_cate_link="Others">
+														<a data-title="Others">
+															Others
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="26" data-sub_cate_link="Bicycle-for-Rent">
+														<a data-title="Bicycle for Rent">
+															Bicycle for Rent
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="27" data-sub_cate_link="Tok-Tok-Rermok-for-Rent">
+														<a data-title="Tok Tok & Rermok for Rent">
+															Tok Tok & Rermok for Rent
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="2" data-cate_link="Car-Vehicle" data-sub_cate_id="28" data-sub_cate_link="Motorcycle-for-Rent">
+														<a data-title="Motorcycle for Rent">
+															Motorcycle for Rent
+															<span>0</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1458b01536b_photo_2020-07-19_21-21-22_[3].jpg">
+								<span>Phone & Tablet</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="4" data-cate_link="Phone-Tablet" data-sub_cate_id="13" data-sub_cate_link="Phone">
+														<a data-title="Phone">
+															Phone
+															<span>5</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="4" data-cate_link="Phone-Tablet" data-sub_cate_id="14" data-sub_cate_link="Tablet">
+														<a data-title="Tablet">
+															Tablet
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="4" data-cate_link="Phone-Tablet" data-sub_cate_id="15" data-sub_cate_link="Smart-Watch">
+														<a data-title="Smart Watch">
+															Smart Watch
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="4" data-cate_link="Phone-Tablet" data-sub_cate_id="29" data-sub_cate_link="Accessories">
+														<a data-title="Accessories">
+															Accessories
+															<span>5</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="4" data-cate_link="Phone-Tablet" data-sub_cate_id="30" data-sub_cate_link="Phone-Numbers">
+														<a data-title="Phone Numbers">
+															Phone Numbers
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="4" data-cate_link="Phone-Tablet" data-sub_cate_id="31" data-sub_cate_link="Others">
+														<a data-title="Others">
+															Others
+															<span>5</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1458734c506_photo_2020-07-19_21-21-20_[3].jpg">
+								<span>Computer & Accessories</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="5" data-cate_link="Computer-Accessories" data-sub_cate_id="16" data-sub_cate_link="Laptop">
+														<a data-title="Laptop">
+															Laptop
+															<span>22</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="5" data-cate_link="Computer-Accessories" data-sub_cate_id="17" data-sub_cate_link="Desktop">
+														<a data-title="Desktop">
+															Desktop
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="5" data-cate_link="Computer-Accessories" data-sub_cate_id="18" data-sub_cate_link="All-in-One">
+														<a data-title="All in One">
+															All in One
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="5" data-cate_link="Computer-Accessories" data-sub_cate_id="19" data-sub_cate_link="Monitor">
+														<a data-title="Monitor">
+															Monitor
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="5" data-cate_link="Computer-Accessories" data-sub_cate_id="32" data-sub_cate_link="Printers-Scanners">
+														<a data-title="Printers & Scanners">
+															Printers & Scanners
+															<span>4</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="5" data-cate_link="Computer-Accessories" data-sub_cate_id="33" data-sub_cate_link="Parts-Accessories">
+														<a data-title="Parts & Accessories">
+															Parts & Accessories
+															<span>5</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="5" data-cate_link="Computer-Accessories" data-sub_cate_id="34" data-sub_cate_link="Software">
+														<a data-title="Software">
+															Software
+															<span>2</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="5" data-cate_link="Computer-Accessories" data-sub_cate_id="35" data-sub_cate_link="Others">
+														<a data-title="Others">
+															Others
+															<span>2</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f14583e5f17a_photo_2020-07-19_21-21-20.jpg">
+								<span>Fashion & Beauty</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="6" data-cate_link="Fashion-Beauty" data-sub_cate_id="36" data-sub_cate_link="Women-s-Fashion">
+														<a data-title="Women's Fashion">
+															Women's Fashion
+															<span>27</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="6" data-cate_link="Fashion-Beauty" data-sub_cate_id="37" data-sub_cate_link="Men-s-Fashion">
+														<a data-title="Men's Fashion">
+															Men's Fashion
+															<span>49</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="6" data-cate_link="Fashion-Beauty" data-sub_cate_id="38" data-sub_cate_link="Baby-Kids">
+														<a data-title="Baby & Kids">
+															Baby & Kids
+															<span>18</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="6" data-cate_link="Fashion-Beauty" data-sub_cate_id="39" data-sub_cate_link="Bag-and-Luggage">
+														<a data-title="Bag and Luggage">
+															Bag and Luggage
+															<span>40</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="6" data-cate_link="Fashion-Beauty" data-sub_cate_id="40" data-sub_cate_link="Fashion-Accessories">
+														<a data-title="Fashion Accessories">
+															Fashion Accessories
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="6" data-cate_link="Fashion-Beauty" data-sub_cate_id="41" data-sub_cate_link="Beauty-Healthcare">
+														<a data-title="Beauty & Healthcare">
+															Beauty & Healthcare
+															<span>7</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="6" data-cate_link="Fashion-Beauty" data-sub_cate_id="42" data-sub_cate_link="Others">
+														<a data-title="Others">
+															Others
+															<span>12</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f14582a35713_photo_2020-07-19_21-21-21.jpg">
+								<span>Book & Stationery</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="7" data-cate_link="Book-Stationery" data-sub_cate_id="43" data-sub_cate_link="Books">
+														<a data-title="Books">
+															Books
+															<span>4</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="7" data-cate_link="Book-Stationery" data-sub_cate_id="44" data-sub_cate_link="Stationery">
+														<a data-title="Stationery">
+															Stationery
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="7" data-cate_link="Book-Stationery" data-sub_cate_id="45" data-sub_cate_link="Others">
+														<a data-title="Others">
+															Others
+															<span>0</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f145814c9d0d_photo_2020-07-19_21-21-21_[2].jpg">
+								<span>Food & Beverage</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="8" data-cate_link="Food-Beverage" data-sub_cate_id="46" data-sub_cate_link="Meat">
+														<a data-title="Meat">
+															Meat
+															<span>7</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="8" data-cate_link="Food-Beverage" data-sub_cate_id="47" data-sub_cate_link="Seafood">
+														<a data-title="Seafood">
+															Seafood
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="8" data-cate_link="Food-Beverage" data-sub_cate_id="48" data-sub_cate_link="Fruits">
+														<a data-title="Fruits">
+															Fruits
+															<span>4</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="8" data-cate_link="Food-Beverage" data-sub_cate_id="49" data-sub_cate_link="Vegetables">
+														<a data-title="Vegetables">
+															Vegetables
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="8" data-cate_link="Food-Beverage" data-sub_cate_id="50" data-sub_cate_link="Beverages">
+														<a data-title="Beverages">
+															Beverages
+															<span>2</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="8" data-cate_link="Food-Beverage" data-sub_cate_id="51" data-sub_cate_link="Grocery">
+														<a data-title="Grocery">
+															Grocery
+															<span>3</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="8" data-cate_link="Food-Beverage" data-sub_cate_id="52" data-sub_cate_link="Bread-Bakery">
+														<a data-title="Bread & Bakery">
+															Bread & Bakery
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="8" data-cate_link="Food-Beverage" data-sub_cate_id="53" data-sub_cate_link="Beer-Wine">
+														<a data-title="Beer & Wine">
+															Beer & Wine
+															<span>4</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="8" data-cate_link="Food-Beverage" data-sub_cate_id="54" data-sub_cate_link="Rice-Cereal">
+														<a data-title="Rice & Cereal">
+															Rice & Cereal
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="8" data-cate_link="Food-Beverage" data-sub_cate_id="55" data-sub_cate_link="Others">
+														<a data-title="Others">
+															Others
+															<span>36</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1458057fbc3_photo_2020-07-19_21-21-45_[3].jpg">
+								<span>Hotel & Transport</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="9" data-cate_link="Hotel-Transport" data-sub_cate_id="56" data-sub_cate_link="Boutique-Hotels-Resorts">
+														<a data-title="Boutique Hotels & Resorts">
+															Boutique Hotels & Resorts
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="9" data-cate_link="Hotel-Transport" data-sub_cate_id="57" data-sub_cate_link="Guesthouses">
+														<a data-title="Guesthouses">
+															Guesthouses
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="9" data-cate_link="Hotel-Transport" data-sub_cate_id="58" data-sub_cate_link="Hotels">
+														<a data-title="Hotels">
+															Hotels
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="9" data-cate_link="Hotel-Transport" data-sub_cate_id="59" data-sub_cate_link="Limousine-Services">
+														<a data-title="Limousine Services">
+															Limousine Services
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="9" data-cate_link="Hotel-Transport" data-sub_cate_id="60" data-sub_cate_link="Resorts">
+														<a data-title="Resorts">
+															Resorts
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="9" data-cate_link="Hotel-Transport" data-sub_cate_id="61" data-sub_cate_link="Ticket-Agencies">
+														<a data-title="Ticket Agencies">
+															Ticket Agencies
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="9" data-cate_link="Hotel-Transport" data-sub_cate_id="63" data-sub_cate_link="Transportation">
+														<a data-title="Transportation">
+															Transportation
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="9" data-cate_link="Hotel-Transport" data-sub_cate_id="203" data-sub_cate_link="Boat-Transportation">
+														<a data-title="Boat Transportation">
+															Boat Transportation
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="9" data-cate_link="Hotel-Transport" data-sub_cate_id="206" data-sub_cate_link="Courier-Services">
+														<a data-title="Courier Services">
+															Courier Services
+															<span>0</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1457f5e7651_photo_2020-07-19_21-21-44_[2].jpg">
+								<span>Education & Sport</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="64" data-sub_cate_link="Art-Schools">
+														<a data-title="Art Schools">
+															Art Schools
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="65" data-sub_cate_link="Beauty-Schools">
+														<a data-title="Beauty Schools">
+															Beauty Schools
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="66" data-sub_cate_link="Child-Care-Centres">
+														<a data-title="Child Care Centres">
+															Child Care Centres
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="67" data-sub_cate_link="Computer-Schools-Training">
+														<a data-title="Computer Schools & Training">
+															Computer Schools & Training
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="68" data-sub_cate_link="Cooking-School">
+														<a data-title="Cooking School">
+															Cooking School
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="69" data-sub_cate_link="Kindergartens">
+														<a data-title="Kindergartens">
+															Kindergartens
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="70" data-sub_cate_link="Libraries">
+														<a data-title="Libraries">
+															Libraries
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="71" data-sub_cate_link="Management-Training">
+														<a data-title="Management Training">
+															Management Training
+															<span>2</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="72" data-sub_cate_link="Overseas-Education-Consultants">
+														<a data-title="Overseas Education Consultants">
+															Overseas Education Consultants
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="73" data-sub_cate_link="Primary-Secondary-High-Schools">
+														<a data-title="Primary, Secondary & High Schools">
+															Primary, Secondary & High Schools
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="75" data-sub_cate_link="Schools-Languages">
+														<a data-title="Schools - Languages">
+															Schools - Languages
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="76" data-sub_cate_link="Tailoring-Schools">
+														<a data-title="Tailoring Schools">
+															Tailoring Schools
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="77" data-sub_cate_link="Technical-Schools">
+														<a data-title="Technical Schools">
+															Technical Schools
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="78" data-sub_cate_link="Tutoring-Services">
+														<a data-title="Tutoring Services">
+															Tutoring Services
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="10" data-cate_link="Education-Sport" data-sub_cate_id="79" data-sub_cate_link="Universities-Colleges-Academic-">
+														<a data-title="Universities & Colleges (Academic)">
+															Universities & Colleges (Academic)
+															<span>0</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1457e419723_photo_2020-07-19_21-21-22.jpg">
+								<span>Furniture & Decor</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="11" data-cate_link="Furniture-Decor" data-sub_cate_id="80" data-sub_cate_link="Tables-Desks">
+														<a data-title="Tables & Desks">
+															Tables & Desks
+															<span>5</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="11" data-cate_link="Furniture-Decor" data-sub_cate_id="81" data-sub_cate_link="Chairs-Sofas">
+														<a data-title="Chairs & Sofas">
+															Chairs & Sofas
+															<span>5</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="11" data-cate_link="Furniture-Decor" data-sub_cate_id="82" data-sub_cate_link="Wardrobes-Cabinets">
+														<a data-title="Wardrobes & Cabinets">
+															Wardrobes & Cabinets
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="11" data-cate_link="Furniture-Decor" data-sub_cate_id="83" data-sub_cate_link="Shelves-Drawers">
+														<a data-title="Shelves & Drawers">
+															Shelves & Drawers
+															<span>7</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="11" data-cate_link="Furniture-Decor" data-sub_cate_id="84" data-sub_cate_link="Beds-Mattresses">
+														<a data-title="Beds & Mattresses">
+															Beds & Mattresses
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="11" data-cate_link="Furniture-Decor" data-sub_cate_id="85" data-sub_cate_link="Curtain-Carpet">
+														<a data-title="Curtain & Carpet">
+															Curtain & Carpet
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="11" data-cate_link="Furniture-Decor" data-sub_cate_id="86" data-sub_cate_link="Household-Items">
+														<a data-title="Household Items">
+															Household Items
+															<span>3</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="11" data-cate_link="Furniture-Decor" data-sub_cate_id="87" data-sub_cate_link="Handicrafts-Paintings">
+														<a data-title="Handicrafts Paintings">
+															Handicrafts Paintings
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="11" data-cate_link="Furniture-Decor" data-sub_cate_id="88" data-sub_cate_link="Other-Furniture-">
+														<a data-title="Other Furniture">
+															Other Furniture
+															<span>5</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1457cf6bdaf_photo_2020-07-19_21-21-45_[2].jpg">
+								<span>Professional Services</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="175" data-sub_cate_link="Accounting">
+														<a data-title="Accounting">
+															Accounting
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="176" data-sub_cate_link="Financial-Services">
+														<a data-title="Financial Services">
+															Financial Services
+															<span>5</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="179" data-sub_cate_link="Advertising-Media">
+														<a data-title="Advertising & Media">
+															Advertising & Media
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="180" data-sub_cate_link="Bridal-Services">
+														<a data-title="Bridal Services">
+															Bridal Services
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="181" data-sub_cate_link="Cleaning-Maid-Services">
+														<a data-title="Cleaning & Maid Services">
+															Cleaning & Maid Services
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="184" data-sub_cate_link="Engineering">
+														<a data-title="Engineering">
+															Engineering
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="185" data-sub_cate_link="Insurance">
+														<a data-title="Insurance">
+															Insurance
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="186" data-sub_cate_link="Massage-Spa">
+														<a data-title="Massage & Spa">
+															Massage & Spa
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="187" data-sub_cate_link="Hospitality-Travel-Tourism">
+														<a data-title="Hospitality, Travel & Tourism">
+															Hospitality, Travel & Tourism
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="189" data-sub_cate_link="IT-Telecom">
+														<a data-title="IT & Telecom">
+															IT & Telecom
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="190" data-sub_cate_link="Interior-Design-Renovation">
+														<a data-title="Interior Design & Renovation">
+															Interior Design & Renovation
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="191" data-sub_cate_link="Legal">
+														<a data-title="Legal">
+															Legal
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="192" data-sub_cate_link="Movers-Logistics">
+														<a data-title="Movers & Logistics">
+															Movers & Logistics
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="193" data-sub_cate_link="Plumbing-Electrical">
+														<a data-title="Plumbing & Electrical">
+															Plumbing & Electrical
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="194" data-sub_cate_link="Property-Real-Estate">
+														<a data-title="Property & Real Estate">
+															Property & Real Estate
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="196" data-sub_cate_link="Supply-Chain-Logistics">
+														<a data-title="Supply Chain & Logistics">
+															Supply Chain & Logistics
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="197" data-sub_cate_link="Printing-Publishing">
+														<a data-title="Printing & Publishing">
+															Printing & Publishing
+															<span>2</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="198" data-sub_cate_link="Other-Services">
+														<a data-title="Other Services">
+															Other Services
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="207" data-sub_cate_link="Customs-Clearance">
+														<a data-title="Customs Clearance">
+															Customs Clearance
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="209" data-sub_cate_link="Postal-Services">
+														<a data-title="Postal Services">
+															Postal Services
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="210" data-sub_cate_link="Shipping-Line-Services-Agencies">
+														<a data-title="Shipping Line Services & Agencies">
+															Shipping Line Services & Agencies
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="12" data-cate_link="Professional-Services" data-sub_cate_id="211" data-sub_cate_link="Research-Consulting">
+														<a data-title="Research & Consulting">
+															Research & Consulting
+															<span>1</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1457a2d4ff4_photo_2020-07-19_21-21-44.jpg">
+								<span>Health & Medicine</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="89" data-sub_cate_link="Acupuncture-Practitioners">
+														<a data-title="Acupuncture Practitioners">
+															Acupuncture Practitioners
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="90" data-sub_cate_link="Ambulance-Services">
+														<a data-title="Ambulance Services">
+															Ambulance Services
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="92" data-sub_cate_link="Blood-Banks-Centres">
+														<a data-title="Blood Banks & Centres">
+															Blood Banks & Centres
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="93" data-sub_cate_link="General-Clinics">
+														<a data-title="General Clinics">
+															General Clinics
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="95" data-sub_cate_link="Condoms">
+														<a data-title="Condoms">
+															Condoms
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="96" data-sub_cate_link="Counselling-Services">
+														<a data-title="Counselling Services">
+															Counselling Services
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="97" data-sub_cate_link="Dental-Clinics">
+														<a data-title="Dental Clinics">
+															Dental Clinics
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="98" data-sub_cate_link="Dermatologists">
+														<a data-title="Dermatologists">
+															Dermatologists
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="99" data-sub_cate_link="-Emergency-Medical">
+														<a data-title="Emergency - Medical">
+															Emergency - Medical
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="100" data-sub_cate_link="Evacuation-Repatriation-Medical">
+														<a data-title="Evacuation & Repatriation - Medical">
+															Evacuation & Repatriation - Medical
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="101" data-sub_cate_link="Gynaecologists">
+														<a data-title="Gynaecologists">
+															Gynaecologists
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="102" data-sub_cate_link="Health-Care-Products-Services">
+														<a data-title="Health Care Products & Services">
+															Health Care Products & Services
+															<span>3</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="103" data-sub_cate_link="Hospitals">
+														<a data-title="Hospitals">
+															Hospitals
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="105" data-sub_cate_link="Laboratories-Medical">
+														<a data-title="Laboratories - Medical">
+															Laboratories - Medical
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="106" data-sub_cate_link="Medical-Equipment-Supplies">
+														<a data-title="Medical Equipment & Supplies">
+															Medical Equipment & Supplies
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="107" data-sub_cate_link="Ophthalmologists">
+														<a data-title="Ophthalmologists">
+															Ophthalmologists
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="108" data-sub_cate_link="Oxygen">
+														<a data-title="Oxygen">
+															Oxygen
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="109" data-sub_cate_link="-Pediatricians">
+														<a data-title="Pediatricians">
+															Pediatricians
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="111" data-sub_cate_link="Pharmacies">
+														<a data-title="Pharmacies">
+															Pharmacies
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="112" data-sub_cate_link="Physicians-Surgeons">
+														<a data-title="Physicians & Surgeons">
+															Physicians & Surgeons
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="113" data-sub_cate_link="Physiotherapists">
+														<a data-title="Physiotherapists">
+															Physiotherapists
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="114" data-sub_cate_link="Rehabilitation-Services">
+														<a data-title="Rehabilitation Services">
+															Rehabilitation Services
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="115" data-sub_cate_link="Traditional-Medicine">
+														<a data-title="Traditional Medicine">
+															Traditional Medicine
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="116" data-sub_cate_link="Veterinarians">
+														<a data-title="Veterinarians">
+															Veterinarians
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="117" data-sub_cate_link="X-Ray-Laboratories">
+														<a data-title="X - Ray Laboratories">
+															X - Ray Laboratories
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="13" data-cate_link="Health-Medicine" data-sub_cate_id="214" data-sub_cate_link="Other">
+														<a data-title="Other">
+															Other
+															<span>61</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f145778772a4_photo_2020-07-19_21-21-45.jpg">
+								<span>Construction Materials</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="122" data-sub_cate_link="Machinery">
+														<a data-title="Machinery">
+															Machinery
+															<span>7</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="133" data-sub_cate_link="Bricks-Clay">
+														<a data-title="Bricks & Clay">
+															Bricks & Clay
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="135" data-sub_cate_link="Ceilings">
+														<a data-title="Ceilings">
+															Ceilings
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="136" data-sub_cate_link="Cement">
+														<a data-title="Cement">
+															Cement
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="137" data-sub_cate_link="Concrete">
+														<a data-title="Concrete">
+															Concrete
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="141" data-sub_cate_link="Contractors">
+														<a data-title="Contractors">
+															Contractors
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="148" data-sub_cate_link="Fence-Materials">
+														<a data-title="Fence Materials">
+															Fence Materials
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="149" data-sub_cate_link="Fiberglass-Materials">
+														<a data-title="Fiberglass Materials">
+															Fiberglass Materials
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="150" data-sub_cate_link="Floor-Materials">
+														<a data-title="Floor Materials">
+															Floor Materials
+															<span>2</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="151" data-sub_cate_link="Glass">
+														<a data-title="Glass">
+															Glass
+															<span>2</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="152" data-sub_cate_link="Glassware-Decorators">
+														<a data-title="Glassware Decorators">
+															Glassware Decorators
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="153" data-sub_cate_link="Gypsum-Products">
+														<a data-title="Gypsum Products">
+															Gypsum Products
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="156" data-sub_cate_link="Ladder">
+														<a data-title="Ladder">
+															Ladder
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="160" data-sub_cate_link="Marbles-Granites">
+														<a data-title="Marbles & Granites">
+															Marbles & Granites
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="162" data-sub_cate_link="Paint">
+														<a data-title="Paint">
+															Paint
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="164" data-sub_cate_link="Pumps">
+														<a data-title="Pumps">
+															Pumps
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="167" data-sub_cate_link="Roofing">
+														<a data-title="Roofing">
+															Roofing
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="168" data-sub_cate_link="Sand-Gravel">
+														<a data-title="Sand & Gravel">
+															Sand & Gravel
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="171" data-sub_cate_link="Stonework">
+														<a data-title="Stonework">
+															Stonework
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="172" data-sub_cate_link="Swimming-Pool">
+														<a data-title="Swimming Pool">
+															Swimming Pool
+															<span>2</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="173" data-sub_cate_link="Wallpapers-Supplies">
+														<a data-title="Wallpapers Supplies">
+															Wallpapers Supplies
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="14" data-cate_link="Construction-Materials" data-sub_cate_id="174" data-sub_cate_link="Waterproofing-Materials">
+														<a data-title="Waterproofing Materials">
+															Waterproofing Materials
+															<span>2</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+											<li class="cateA">
+							<a class="menu1">
+								<img src="https://tinglok.com/rean-web-admin/public/img/product/5f3a0060e1e4f_photo_2020-07-19_21-21-20_[2].jpg">
+								<span>Electronics & Appliances</span>
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="sub-category-menu-2">
+								<ul>
+																						<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="118" data-sub_cate_link="Washing-Machines-Dryers">
+														<a data-title="Washing Machines & Dryers">
+															Washing Machines & Dryers
+															<span>4</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="119" data-sub_cate_link="Fridges-Freezers">
+														<a data-title="Fridges & Freezers">
+															Fridges & Freezers
+															<span>3</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="120" data-sub_cate_link="Air-Conditioning-Heating">
+														<a data-title="Air Conditioning & Heating">
+															Air Conditioning & Heating
+															<span>8</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="121" data-sub_cate_link="Electronic-Tools">
+														<a data-title="Electronic Tools">
+															Electronic Tools
+															<span>2</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="123" data-sub_cate_link="Consumer-Electronics">
+														<a data-title="Consumer Electronics">
+															Consumer Electronics
+															<span>4</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="124" data-sub_cate_link="Security-Camera">
+														<a data-title="Security Camera">
+															Security Camera
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="125" data-sub_cate_link="Lighting">
+														<a data-title="Lighting">
+															Lighting
+															<span>2</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="126" data-sub_cate_link="Cameras-Camcorders">
+														<a data-title="Cameras, Camcorders">
+															Cameras, Camcorders
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="127" data-sub_cate_link="TVs-Videos-and-Audios">
+														<a data-title="TVs, Videos and Audios">
+															TVs, Videos and Audios
+															<span>0</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="128" data-sub_cate_link="Home-Appliances">
+														<a data-title="Home Appliances">
+															Home Appliances
+															<span>1</span>				
+														</a>
+													</li>	
+																									<li data-cate_id="15" data-cate_link="Electronics-Appliances" data-sub_cate_id="129" data-sub_cate_link="Video-Games">
+														<a data-title="Video Games">
+															Video Games
+															<span>0</span>				
+														</a>
+													</li>	
+																				
+								</ul>
+							</div>
+						</li>	
+						</ul>
+</div>
+	<div class="container-fluid bar1">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 logo">
+				<a href="https://tinglok.com/">
+					<img src="https://tinglok.com/rean-web-admin/public/img/product/5f2c009ebd8ba_tinglok_logo.jpg">
+				</a>				
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 .box-search-container">
+				<div class="box-search">						
+					<div class="box1">						
+						<select>
+							<option value="0"> --- All Categories --- </option>
+																		<option class="opt-color" value="House-Land">House & Land</option>
+																					<option class="opt-color" value="Car-Vehicle">Car & Vehicle</option>
+																					<option class="opt-color" value="Phone-Tablet">Phone & Tablet</option>
+																					<option class="opt-color" value="Computer-Accessories">Computer & Accessories</option>
+																					<option class="opt-color" value="Fashion-Beauty">Fashion & Beauty</option>
+																					<option class="opt-color" value="Book-Stationery">Book & Stationery</option>
+																					<option class="opt-color" value="Food-Beverage">Food & Beverage</option>
+																					<option class="opt-color" value="Hotel-Transport">Hotel & Transport</option>
+																					<option class="opt-color" value="Education-Sport">Education & Sport</option>
+																					<option class="opt-color" value="Furniture-Decor">Furniture & Decor</option>
+																					<option class="opt-color" value="Professional-Services">Professional Services</option>
+																					<option class="opt-color" value="Health-Medicine">Health & Medicine</option>
+																					<option class="opt-color" value="Construction-Materials">Construction Materials</option>
+																					<option class="opt-color" value="Electronics-Appliances">Electronics & Appliances</option>
+																</select>
+					</div>
+					<div class="box2">
+						<input type="text" placeholder="What are you looking for?">
+					</div>
+					<div class="box3" id="btn-search">
+						<i class="fas fa-search"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 login">
+											<div class="btn-login2 btn-register" id="btn-register1">
+								Register
+							</div>	
+							<div class="btn-login2" id="btn-login2">
+								Login
+							</div>							
+							
+										
+			</div>
+			<div class="btn-menu-phone">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+	</div>
+</div>		<div class="size-box">
+				<div class="container bar2">
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 category-menu">							
+				<ul>						
+					<li>
+						<a href="#">
+							CATEGORIES
+						</a>
+						<a class="all-cate" href="https://tinglok.com/ads/all/all">
+							See All
+						</a>		
+					</li>
+														<li>
+										<a href="https://tinglok.com/ads/all/House-Land" class="menu2">
+											<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1458cec7411_photo_2020-07-19_21-21-20_[2].jpg">
+											<span>House & Land</span>
+											<i class="fas fa-angle-right"></i>
+										</a>
+										<div class="sub-category-menu">
+											<ul>
+																												<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/House-for-Sale">
+																		House for Sale																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/House-for-Rent">
+																		House for Rent																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/Condo-for-Sale">
+																		Condo for Sale																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/Condo-for-Rent">
+																		Condo for Rent																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/Apartment-for-Sale">
+																		Apartment for Sale																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/Apartment-for-Rent">
+																		Apartment for Rent																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/Commercial-Property-for-Rent">
+																		Commercial Property for Rent																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/Commercial-Property-for-Sale">
+																		Commercial Property for Sale																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/Room-for-Rent">
+																		Room for Rent																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/Land-for-Sale-">
+																		Land for Sale																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/House-Land/Land-for-Rent-">
+																		Land for Rent																	</a>
+																</li>	
+															
+											</ul>
+										</div>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/all/Car-Vehicle" class="menu2">
+											<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1458c0d8265_photo_2020-07-19_21-21-22_[2].jpg">
+											<span>Car & Vehicle</span>
+											<i class="fas fa-angle-right"></i>
+										</a>
+										<div class="sub-category-menu">
+											<ul>
+																												<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Car-for-Sale">
+																		Car for Sale																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Car-for-Rent">
+																		Car for Rent																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Bicycle-for-Sale">
+																		Bicycle for Sale																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Motorcycle-for-Sale">
+																		Motorcycle for Sale																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Vehicle-for-Rent">
+																		Vehicle for Rent																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Tok-Tok-Rermok-for-Sale">
+																		Tok Tok & Rermok for Sale																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Maintenance-Repair">
+																		Maintenance & Repair																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Parts-Accessories">
+																		Parts & Accessories																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Others">
+																		Others																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Bicycle-for-Rent">
+																		Bicycle for Rent																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Tok-Tok-Rermok-for-Rent">
+																		Tok Tok & Rermok for Rent																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Car-Vehicle/Motorcycle-for-Rent">
+																		Motorcycle for Rent																	</a>
+																</li>	
+															
+											</ul>
+										</div>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/all/Phone-Tablet" class="menu2">
+											<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1458b01536b_photo_2020-07-19_21-21-22_[3].jpg">
+											<span>Phone & Tablet</span>
+											<i class="fas fa-angle-right"></i>
+										</a>
+										<div class="sub-category-menu">
+											<ul>
+																												<li>
+																	<a href="https://tinglok.com/ads/all/Phone-Tablet/Phone">
+																		Phone																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Phone-Tablet/Tablet">
+																		Tablet																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Phone-Tablet/Smart-Watch">
+																		Smart Watch																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Phone-Tablet/Accessories">
+																		Accessories																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Phone-Tablet/Phone-Numbers">
+																		Phone Numbers																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Phone-Tablet/Others">
+																		Others																	</a>
+																</li>	
+															
+											</ul>
+										</div>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/all/Computer-Accessories" class="menu2">
+											<img src="https://tinglok.com/rean-web-admin/public/img/product/5f1458734c506_photo_2020-07-19_21-21-20_[3].jpg">
+											<span>Computer & Accessories</span>
+											<i class="fas fa-angle-right"></i>
+										</a>
+										<div class="sub-category-menu">
+											<ul>
+																												<li>
+																	<a href="https://tinglok.com/ads/all/Computer-Accessories/Laptop">
+																		Laptop																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Computer-Accessories/Desktop">
+																		Desktop																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Computer-Accessories/All-in-One">
+																		All in One																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Computer-Accessories/Monitor">
+																		Monitor																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Computer-Accessories/Printers-Scanners">
+																		Printers & Scanners																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Computer-Accessories/Parts-Accessories">
+																		Parts & Accessories																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Computer-Accessories/Software">
+																		Software																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Computer-Accessories/Others">
+																		Others																	</a>
+																</li>	
+															
+											</ul>
+										</div>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/all/Fashion-Beauty" class="menu2">
+											<img src="https://tinglok.com/rean-web-admin/public/img/product/5f14583e5f17a_photo_2020-07-19_21-21-20.jpg">
+											<span>Fashion & Beauty</span>
+											<i class="fas fa-angle-right"></i>
+										</a>
+										<div class="sub-category-menu">
+											<ul>
+																												<li>
+																	<a href="https://tinglok.com/ads/all/Fashion-Beauty/Women-s-Fashion">
+																		Women's Fashion																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Fashion-Beauty/Men-s-Fashion">
+																		Men's Fashion																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Fashion-Beauty/Baby-Kids">
+																		Baby & Kids																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Fashion-Beauty/Bag-and-Luggage">
+																		Bag and Luggage																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Fashion-Beauty/Fashion-Accessories">
+																		Fashion Accessories																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Fashion-Beauty/Beauty-Healthcare">
+																		Beauty & Healthcare																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Fashion-Beauty/Others">
+																		Others																	</a>
+																</li>	
+															
+											</ul>
+										</div>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/all/Book-Stationery" class="menu2">
+											<img src="https://tinglok.com/rean-web-admin/public/img/product/5f14582a35713_photo_2020-07-19_21-21-21.jpg">
+											<span>Book & Stationery</span>
+											<i class="fas fa-angle-right"></i>
+										</a>
+										<div class="sub-category-menu">
+											<ul>
+																												<li>
+																	<a href="https://tinglok.com/ads/all/Book-Stationery/Books">
+																		Books																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Book-Stationery/Stationery">
+																		Stationery																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Book-Stationery/Others">
+																		Others																	</a>
+																</li>	
+															
+											</ul>
+										</div>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/all/Food-Beverage" class="menu2">
+											<img src="https://tinglok.com/rean-web-admin/public/img/product/5f145814c9d0d_photo_2020-07-19_21-21-21_[2].jpg">
+											<span>Food & Beverage</span>
+											<i class="fas fa-angle-right"></i>
+										</a>
+										<div class="sub-category-menu">
+											<ul>
+																												<li>
+																	<a href="https://tinglok.com/ads/all/Food-Beverage/Meat">
+																		Meat																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Food-Beverage/Seafood">
+																		Seafood																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Food-Beverage/Fruits">
+																		Fruits																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Food-Beverage/Vegetables">
+																		Vegetables																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Food-Beverage/Beverages">
+																		Beverages																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Food-Beverage/Grocery">
+																		Grocery																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Food-Beverage/Bread-Bakery">
+																		Bread & Bakery																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Food-Beverage/Beer-Wine">
+																		Beer & Wine																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Food-Beverage/Rice-Cereal">
+																		Rice & Cereal																	</a>
+																</li>	
+																															<li>
+																	<a href="https://tinglok.com/ads/all/Food-Beverage/Others">
+																		Others																	</a>
+																</li>	
+															
+											</ul>
+										</div>
+									</li>	
+																<li>
+									<a href="https://tinglok.com/ads/all/all">
+										<span>ALL CATEGORIES</span> <i class="fas fa-angle-down"></i>
+									</a>	
+								</li>
+											</ul>
+			</div>
+			<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12 slide-container">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+					 											 <a data-adsid="Array" href="" target="" class="swiper-slide btn-view-ad" style="background-image:url('https://tinglok.com/rean-web-admin/public/img/product/5f3632db90ff8_photo_2020-08-13_22-06-0212.jpg')"></a>	
+														</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>			
+			</div>
+		</div>
+	</div><div class="container item-container">
+	<div class="row" id="new-data"></div>
+</div>
+<!--Sponser product-->
+<div class="container item-container">
+	<div class="row">
+																	
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 title-box">
+				<h1>SPONSORED ADS</h1>				
+			</div>
+													<div data-price=0 data-city="Phnom-Penh" data-id="279" data-name_link="សាក់កាដូរថ្មី" data-cate_link="Fashion-Beauty" data-sub_cate_link="Bag-and-Luggage" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fa2bc98ac598_photo_2020-11-04_17-21-36.jpg')"></div>
+										<div class="title">
+											សាក់កាដូរថ្មី...					
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="278" data-name_link="កាបូបម៉ូតថ្មីទើបចូលថ្មី" data-cate_link="Fashion-Beauty" data-sub_cate_link="Bag-and-Luggage" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fa144c15a480_photo_2020-10-25_16-13-25.jpg')"></div>
+										<div class="title">
+											កាបូបម៉ូតថ្មីទើបចូលថ្មី...					
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="275" data-name_link="លក់បោះដំុកាបូប" data-cate_link="Fashion-Beauty" data-sub_cate_link="Bag-and-Luggage" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fa138e95fb08_122316696_1672706472914087_7305817374425896840_n.jpg')"></div>
+										<div class="title">
+											លក់បោះដំុកាបូប...					
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=11 data-city="Phnom-Penh" data-id="274" data-name_link="កាបូបចូលស្តុកថ្មី" data-cate_link="Fashion-Beauty" data-sub_cate_link="Bag-and-Luggage" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f9abd1b27214_122316696_1672706472914087_7305817374425896840_n.jpg')"></div>
+										<div class="title">
+											កាបូបចូលស្តុកថ្មី...					
+										</div>
+										<p class="price">
+											$
+											11.00										</p>
+									</div>
+								</div>		
+															<div data-price=13 data-city="Phnom-Penh" data-id="198" data-name_link="បន្ទះក្រាលបាតឡាន" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f468275a6e54_photo_2020-08-26_02-13-27_[2].jpg')"></div>
+										<div class="title">
+											បន្ទះក្រាលបាតឡាន...					
+										</div>
+										<p class="price">
+											$
+											13.00										</p>
+									</div>
+								</div>		
+															<div data-price=2 data-city="Phnom-Penh" data-id="197" data-name_link="ស្ទីកកឺបិតកញ្ចក់ឡានកាត់អាប់ពេលភ្លៀង" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f46818c36c6f_photo_2020-08-26_02-10-10.jpg')"></div>
+										<div class="title">
+											ស្ទីកកឺបិតកញ្ចក់ឡានកាត់អាប់ពេលភ្លៀង...					
+										</div>
+										<p class="price">
+											$
+											2.00										</p>
+									</div>
+								</div>		
+															<div data-price=3 data-city="Phnom-Penh" data-id="196" data-name_link="បន្ទះគ្របកញ្ចក់ឡានការពារកំដៅ" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f467ffbb721d_photo_2020-08-26_02-10-09_[5].jpg')"></div>
+										<div class="title">
+											បន្ទះគ្របកញ្ចក់ឡានការពារកំដៅ...					
+										</div>
+										<p class="price">
+											$
+											3.00										</p>
+									</div>
+								</div>		
+															<div data-price=6 data-city="Phnom-Penh" data-id="195" data-name_link="ឌុយសាកថ្មទូរសព្ទក្នុងឡាន" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f467f41e4928_photo_2020-08-26_02-10-09_[2].jpg')"></div>
+										<div class="title">
+											ឌុយសាកថ្មទូរសព្ទក្នុងឡាន...					
+										</div>
+										<p class="price">
+											$
+											6.00										</p>
+									</div>
+								</div>		
+															<div data-price=8 data-city="Phnom-Penh" data-id="194" data-name_link="ខ្នើយដាក់ក្នងឡានកំអោយចុករោយ-ក" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f467e4160023_photo_2020-06-24_22-23-46.jpg')"></div>
+										<div class="title">
+											ខ្នើយដាក់ក្នងឡានកំអោយចុករោយ ក...					
+										</div>
+										<p class="price">
+											$
+											8.00										</p>
+									</div>
+								</div>		
+															<div data-price=13 data-city="Phnom-Penh" data-id="193" data-name_link="កំរាល់លើកៅអីពូកឡាន" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f467d468cc18_photo_2020-06-26_11-32-02.jpg')"></div>
+										<div class="title">
+											កំរាល់លើកៅអីពូកឡាន...					
+										</div>
+										<p class="price">
+											$
+											13.00										</p>
+									</div>
+								</div>		
+															<div data-price=13 data-city="Phnom-Penh" data-id="192" data-name_link="កំរាលក្រាលបាតឡាន" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f467c8cc91fc_photo_2020-06-24_22-31-33.jpg')"></div>
+										<div class="title">
+											កំរាលក្រាលបាតឡាន...					
+										</div>
+										<p class="price">
+											$
+											13.00										</p>
+									</div>
+								</div>		
+															<div data-price=6 data-city="Phnom-Penh" data-id="191" data-name_link="ហ្វូមលាងសំអាតខ្លាញ់រឺប្រឡាក់" data-cate_link="Electronics-Appliances" data-sub_cate_link="Home-Appliances" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f467b9a6a2ee_photo_2020-08-26_02-16-10.jpg')"></div>
+										<div class="title">
+											ហ្វូមលាងសំអាតខ្លាញ់រឺប្រឡាក់...					
+										</div>
+										<p class="price">
+											$
+											6.00										</p>
+									</div>
+								</div>		
+															<div data-price=6 data-city="Phnom-Penh" data-id="190" data-name_link="ហ្វូមសំរាប់បាញ់កង់ឡានអោយខ្មៅរលោង" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f4602299a5d2_photo_2020-06-17_20-21-54.jpg')"></div>
+										<div class="title">
+											ហ្វូមសំរាប់បាញ់កង់ឡានអោយខ្មៅរលោង...					
+										</div>
+										<p class="price">
+											$
+											6.00										</p>
+									</div>
+								</div>		
+															<div data-price=3 data-city="Phnom-Penh" data-id="189" data-name_link="ជើងទូរស័ព្ទដាក់ក្នុងឡាន" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f46016979df9_photo_2020-08-26_02-26-04_[2].jpg')"></div>
+										<div class="title">
+											ជើងទូរស័ព្ទដាក់ក្នុងឡាន...					
+										</div>
+										<p class="price">
+											$
+											3.00										</p>
+									</div>
+								</div>		
+															<div data-price=3 data-city="Phnom-Penh" data-id="188" data-name_link="សំបកដៃចង្កូតរថយន្ត" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f4507732b39f_107493235_151324503281359_453098903448973960_n.jpg')"></div>
+										<div class="title">
+											សំបកដៃចង្កូតរថយន្ត...					
+										</div>
+										<p class="price">
+											$
+											3.00										</p>
+									</div>
+								</div>		
+															<div data-price=10 data-city="Phnom-Penh" data-id="132" data-name_link="សោរចាក់ចង្កូតឡាន" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f3618076aaf6_img_20200706_073403.jpg')"></div>
+										<div class="title">
+											សោរចាក់ចង្កូតឡាន...					
+										</div>
+										<p class="price">
+											$
+											10.00										</p>
+									</div>
+								</div>		
+									</div>
+</div>
+		
+
+<!--random product-->
+<div class="container item-container">
+	<div class="row">
+								<div data-adsid="3" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ads1 btn-view-ad">
+						<a href="https://play.google.com/store/apps/details?id=com.mrts" target="">
+						 	<img src="https://tinglok.com/rean-web-admin/public/img/product/5f5af68bcac22_web_banner_ad_2.jpg">	
+						 </a>	
+					</div>				
+																				
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 title-box">
+			<h1>RECOMMENDED ADS</h1>				
+		</div>
+												<div data-price=5 data-city="Kampong-Speu" data-id="858" data-name_link="ថ្នាំដុសធ្មេញ" data-cate_link="Fashion-Beauty" data-sub_cate_link="Beauty-Healthcare" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/618d064b17c60_inbound6058678618163865325.jpg')"></div>
+										<div class="title">
+											ថ្នាំដុសធ្មេញ...		
+										</div>
+										<p class="price">
+											$
+											5.00										</p>
+									</div>
+								</div>		
+															<div data-price=68800 data-city="Phnom-Penh" data-id="262" data-name_link="House-For-Sale" data-cate_link="House-Land" data-sub_cate_link="House-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f8522142c172_photo_2020-10-13_10-38-50.jpg')"></div>
+										<div class="title">
+											House For Sale...		
+										</div>
+										<p class="price">
+											$
+											68,800.00										</p>
+									</div>
+								</div>		
+															<div data-price=2500 data-city="Phnom-Penh" data-id="241" data-name_link="Ducati-Scrambler-Café-Racer-2017" data-cate_link="Car-Vehicle" data-sub_cate_link="Motorcycle-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f7e9186d4b8a_0_4870.jpg')"></div>
+										<div class="title">
+											Ducati Scrambler Café Racer 2017...		
+										</div>
+										<p class="price">
+											$
+											2,500.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="515" data-name_link="ឡានលក់-Lexus-RX300-year-2001" data-cate_link="Car-Vehicle" data-sub_cate_link="Car-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/604723089cb3b_photo_2021-03-06_13-47-07_[2].jpg')"></div>
+										<div class="title">
+											ឡានលក់ Lexus RX300, year 2001...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=20 data-city="Phnom-Penh" data-id="286" data-name_link="កាបូបម៉ូតស្អាតៗសុភាពបុរស-" data-cate_link="Fashion-Beauty" data-sub_cate_link="Bag-and-Luggage" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fa4cd16974a9_photo_2020-11-05_13-28-23_[3].jpg')"></div>
+										<div class="title">
+											កាបូបម៉ូតស្អាតៗសុភាពបុរស!...		
+										</div>
+										<p class="price">
+											$
+											20.00										</p>
+									</div>
+								</div>		
+															<div data-price=38000 data-city="Phnom-Penh" data-id="592" data-name_link="ដីលក់បន្ទាន់មាន១០ប្លង់" data-cate_link="House-Land" data-sub_cate_link="Land-for-Sale-" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6060992372bfa_photo_2021-02-21_13-04-29.jpg')"></div>
+										<div class="title">
+											ដីលក់បន្ទាន់មាន១០ប្លង់...		
+										</div>
+										<p class="price">
+											$
+											38,000.00										</p>
+									</div>
+								</div>		
+															<div data-price=27000 data-city="Kandal" data-id="231" data-name_link="Toyota-Highlander-2008-for-Sale" data-cate_link="Car-Vehicle" data-sub_cate_link="Car-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f7c1e3c7f85c_highlander1.jpg')"></div>
+										<div class="title">
+											Toyota Highlander 2008 for Sale...		
+										</div>
+										<p class="price">
+											$
+											27,000.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="748" data-name_link="House-For-Sale" data-cate_link="House-Land" data-sub_cate_link="House-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6088e822e4e3e_photo_2021-04-24_13-07-56.jpg')"></div>
+										<div class="title">
+											House For Sale...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=193000 data-city="Phnom-Penh" data-id="788" data-name_link="វីឡាកូនកាត់សម្រាប់លក់-បុរីវិមានភ្នំពេញ-" data-cate_link="House-Land" data-sub_cate_link="House-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6093a0794949f_photo_2021-04-20_09-46-15.jpg')"></div>
+										<div class="title">
+											វីឡាកូនកាត់សម្រាប់លក់ (បុរីវិមានភ្នំពេញ)...		
+										</div>
+										<p class="price">
+											$
+											193,000.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="488" data-name_link="Car-For-Sale" data-cate_link="Car-Vehicle" data-sub_cate_link="Car-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/603ca15307d40_photo_2021-02-27_09-48-52.jpg')"></div>
+										<div class="title">
+											Car For Sale...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=6 data-city="Phnom-Penh" data-id="292" data-name_link="សាកាដូដាក់ខោអាវបុរសនិងនារី" data-cate_link="Fashion-Beauty" data-sub_cate_link="Bag-and-Luggage" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fa7a6ee33760_124113212_3443569859065983_1715877792627018621_o.jpg')"></div>
+										<div class="title">
+											សាកាដូដាក់ខោអាវបុរសនិងនារី...		
+										</div>
+										<p class="price">
+											$
+											6.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="692" data-name_link="ម៉ូឌែល-Model-Toyota-Prius-2012-Option-3" data-cate_link="Car-Vehicle" data-sub_cate_link="Car-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6073dfb5328f2_photo_2021-04-09_08-03-08_[2].jpg')"></div>
+										<div class="title">
+											ម៉ូឌែល (Model) : Toyota Prius 2012 Option 3...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=16 data-city="Phnom-Penh" data-id="211" data-name_link="Type-C-HUB-3-Ports-USB-3-0-with-Gigabit-Ethernet-LAN" data-cate_link="Computer-Accessories" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f5742b5e1cd0_5f5067d10c688_usb-31-type-c-3-port-hub.jpg')"></div>
+										<div class="title">
+											Type-C HUB 3 Ports USB 3.0 with Gigabit Ethernet LAN...		
+										</div>
+										<p class="price">
+											$
+											16.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="478" data-name_link="ចាប់បើកលក់បន្ថែម-វីឡាកូនកាត់-និងផ្ទះអាជីវកម្ម" data-cate_link="House-Land" data-sub_cate_link="House-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/60374ce219e8b_photo_2021-02-04_10-38-52.jpg')"></div>
+										<div class="title">
+											ចាប់បើកលក់បន្ថែម! វីឡាកូនកាត់ និងផ្ទះអាជីវកម្ម...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="577" data-name_link="កំរាលពូកឡានស្បែក" data-cate_link="Health-Medicine" data-sub_cate_link="Other" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/605def3e6a0e7_photo_2020-11-06_19-55-47.jpg')"></div>
+										<div class="title">
+											កំរាលពូកឡានស្បែក...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=12 data-city="Phnom-Penh" data-id="427" data-name_link="ខ្សែបំបែក-𝗗𝘂𝗮𝗹-𝗟𝗶𝗴𝗵𝘁𝗻𝗶𝗻𝗴-ផលិតផល-𝗢𝗿𝗶𝗴𝗶𝗻𝗮𝗹-មកពី-ហុងកុង" data-cate_link="Phone-Tablet" data-sub_cate_link="Others" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6024d9387c030_photo_2021-01-22_12-13-32_[2].jpg')"></div>
+										<div class="title">
+											ខ្សែបំបែក 𝗗𝘂𝗮𝗹 𝗟𝗶𝗴𝗵𝘁𝗻𝗶𝗻𝗴.ផលិតផល 𝗢𝗿𝗶𝗴𝗶𝗻𝗮𝗹 មកពី ហុងកុង...		
+										</div>
+										<p class="price">
+											$
+											12.00										</p>
+									</div>
+								</div>		
+															<div data-price=45.6 data-city="Phnom-Penh" data-id="129" data-name_link="Stainless-Steel-Dish-Shelf-S-Shape-Daul-Layer-3-Classes" data-cate_link="Furniture-Decor" data-sub_cate_link="Shelves-Drawers" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f36134f552ca_d4aac39573946a19860746adf50fe253.jpg')"></div>
+										<div class="title">
+											Stainless Steel Dish Shelf S Shape Daul Layer 3 Classes...		
+										</div>
+										<p class="price">
+											$
+											45.60										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Kampot" data-id="784" data-name_link="ដីកែងជាប់ផ្លូវជាតិនិងជាប់ព្រែកសមុទ្រ" data-cate_link="House-Land" data-sub_cate_link="Land-for-Sale-" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/60939e2d7310a_photo_2021-05-02_22-17-35.jpg')"></div>
+										<div class="title">
+											ដីកែងជាប់ផ្លូវជាតិនិងជាប់ព្រែកសមុទ្រ...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="521" data-name_link="ម៉ូតទាន់សម័យ-ស៊ីវិល័យសម្រាប់បងៗបុរស" data-cate_link="Fashion-Beauty" data-sub_cate_link="Men-s-Fashion" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6049a03bcd292_photo_2021-03-08_16-23-12.jpg')"></div>
+										<div class="title">
+											ម៉ូតទាន់សម័យ ស៊ីវិល័យសម្រាប់បងៗបុរស...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=549 data-city="Phnom-Penh" data-id="222" data-name_link="Acer-P246-M-5-4210U-4GB-500GB-14" data-cate_link="Computer-Accessories" data-sub_cate_link="Laptop" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f7be0ce8dbe7_11111.jpg')"></div>
+										<div class="title">
+											Acer P246-M 5-4210U 4GB 500GB 14...		
+										</div>
+										<p class="price">
+											$
+											549.00										</p>
+									</div>
+								</div>		
+															<div data-price=25 data-city="Phnom-Penh" data-id="64" data-name_link="Mercedes-Benz-Sunglasses-" data-cate_link="Fashion-Beauty" data-sub_cate_link="Beauty-Healthcare" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f34f85aad6c6_c536c9ea1aed610c283eb3567abb4298.jpg')"></div>
+										<div class="title">
+											Mercedes-Benz ( Sunglasses )...		
+										</div>
+										<p class="price">
+											$
+											25.00										</p>
+									</div>
+								</div>		
+															<div data-price=21 data-city="Phnom-Penh" data-id="335" data-name_link="ទឹកសំបុកត្រចៀកកាំ" data-cate_link="Food-Beverage" data-sub_cate_link="Others" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fbf58b40a7fd_photo_2020-08-19_16-36-27.jpg')"></div>
+										<div class="title">
+											ទឹកសំបុកត្រចៀកកាំ...		
+										</div>
+										<p class="price">
+											$
+											21.00										</p>
+									</div>
+								</div>		
+															<div data-price=162000 data-city="Phnom-Penh" data-id="833" data-name_link="វីឡាកូនកាត់មានរបងសម្រាប់លក់-បុរីភ្នំពេញថ្មី" data-cate_link="House-Land" data-sub_cate_link="House-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/60a0b98f475a7_photo_2021-05-13_11-38-45.jpg')"></div>
+										<div class="title">
+											វីឡាកូនកាត់មានរបងសម្រាប់លក់ បុរីភ្នំពេញថ្មី...		
+										</div>
+										<p class="price">
+											$
+											162,000.00										</p>
+									</div>
+								</div>		
+															<div data-price=58800 data-city="Phnom-Penh" data-id="623" data-name_link="House-for-Sale" data-cate_link="House-Land" data-sub_cate_link="House-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/60692694b22f5_photo_2021-04-01_13-51-04.jpg')"></div>
+										<div class="title">
+											House for Sale...		
+										</div>
+										<p class="price">
+											$
+											58,800.00										</p>
+									</div>
+								</div>		
+									</div>
+	</div>
+
+<!--popular product-->
+<div class="container item-container">
+	<div class="row">
+								<div data-adsid="3" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ads1 btn-view-ad">
+						<a href="https://play.google.com/store/apps/details?id=com.mrts" target="">
+						 	<img src="https://tinglok.com/rean-web-admin/public/img/product/5f5af68bcac22_web_banner_ad_2.jpg">	
+						 </a>	
+					</div>				
+																				
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 title-box">
+			<h1>POPULAR ADS</h1>				
+		</div>
+												<div data-price=17 data-city="Phnom-Penh" data-id="356" data-name_link="ធុង-ជូត-ផ្ទះ-ទំនើប" data-cate_link="Furniture-Decor" data-sub_cate_link="Other-Furniture-" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fe01940555e9_photo_2020-12-17_17-11-00.jpg')"></div>
+										<div class="title">
+											ធុង ជូត ផ្ទះ ទំនើប...		
+										</div>
+										<p class="price">
+											$
+											17.00										</p>
+									</div>
+								</div>		
+															<div data-price=3.99 data-city="Phnom-Penh" data-id="185" data-name_link="Konfulon-CM-06-Car-Mount-Phone-Holder-for-Cell-Phone" data-cate_link="Phone-Tablet" data-sub_cate_link="Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f3661f067ec9_010.jpg')"></div>
+										<div class="title">
+											Konfulon CM-06 Car Mount Phone Holder for Cell Phone...		
+										</div>
+										<p class="price">
+											$
+											3.99										</p>
+									</div>
+								</div>		
+															<div data-price=18 data-city="Phnom-Penh" data-id="480" data-name_link="ស្បែកជើងក្បាលដែកប្រភេទស្បែកសុទ្ធគុណភាពល្" data-cate_link="Fashion-Beauty" data-sub_cate_link="Men-s-Fashion" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/603c5b5fd101d_photo_2021-02-25_13-28-44_[2].jpg')"></div>
+										<div class="title">
+											ស្បែកជើងក្បាលដែកប្រភេទស្បែកសុទ្ធគុណភាពល្...		
+										</div>
+										<p class="price">
+											$
+											18.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="522" data-name_link="ត្រីងៀត-ត្រីក្តរចិន" data-cate_link="Food-Beverage" data-sub_cate_link="Others" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6049ac904a2e5_photo_2021-03-09_15-18-37_[4].jpg')"></div>
+										<div class="title">
+											ត្រីងៀត ត្រីក្តរចិន...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=14.4 data-city="Phnom-Penh" data-id="95" data-name_link="T-SHIRT-A3" data-cate_link="Fashion-Beauty" data-sub_cate_link="Men-s-Fashion" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f35f68b7b2b9_17.jpg')"></div>
+										<div class="title">
+											T-SHIRT A3...		
+										</div>
+										<p class="price">
+											$
+											14.40										</p>
+									</div>
+								</div>		
+															<div data-price=412.5 data-city="Phnom-Penh" data-id="160" data-name_link="LG-WASHING-MACHINE-F1207NMPW-7-KG-Smart-Clean" data-cate_link="Electronic-Construction" data-sub_cate_link="Washing-Machines-Dryers" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f3644e1d0f45_001.jpg')"></div>
+										<div class="title">
+											LG WASHING MACHINE F1207NMPW 7 KG Smart Clean...		
+										</div>
+										<p class="price">
+											$
+											412.50										</p>
+									</div>
+								</div>		
+															<div data-price=10 data-city="Phnom-Penh" data-id="340" data-name_link="សោរចាក់ចង្កូតឡាន" data-cate_link="Car-Vehicle" data-sub_cate_link="Parts-Accessories" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fbfc0f037c0c_photo_2020-06-26_11-32-29.jpg')"></div>
+										<div class="title">
+											សោរចាក់ចង្កូតឡាន...		
+										</div>
+										<p class="price">
+											$
+											10.00										</p>
+									</div>
+								</div>		
+															<div data-price=7 data-city="Phnom-Penh" data-id="300" data-name_link="កាបូបម៉ូតនារីទើបចូលស្តុក" data-cate_link="Fashion-Beauty" data-sub_cate_link="Bag-and-Luggage" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fa8ec69dde19_124242626_706549080264886_2934463319001968984_n.jpg')"></div>
+										<div class="title">
+											កាបូបម៉ូតនារីទើបចូលស្តុក...		
+										</div>
+										<p class="price">
+											$
+											7.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="434" data-name_link="គ្រឿងសង្ហារឹមLV-Furniture" data-cate_link="Health-Medicine" data-sub_cate_link="Other" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6029f26ae70ba_photo_2021-02-06_09-34-53_[2].jpg')"></div>
+										<div class="title">
+											គ្រឿងសង្ហារឹមLV Furniture...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=143 data-city="Phnom-Penh" data-id="157" data-name_link="Midea-Stand-Fan-FS40-12AR-16-Inche-" data-cate_link="Electronic-Construction" data-sub_cate_link="Air-Conditioning-Heating" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f3642400cbfc_763cecdc5029745ee228c78a97244052.jpg')"></div>
+										<div class="title">
+											Midea Stand Fan FS40-12AR (16 Inche)...		
+										</div>
+										<p class="price">
+											$
+											143.00										</p>
+									</div>
+								</div>		
+															<div data-price=228888 data-city="Phnom-Penh" data-id="338" data-name_link="House-For-Sale" data-cate_link="House-Land" data-sub_cate_link="House-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fbf5f8ce91ae_photo_2020-11-26_11-56-31.jpg')"></div>
+										<div class="title">
+											House For Sale...		
+										</div>
+										<p class="price">
+											$
+											228,888.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="267" data-name_link="កាបូប-Business-បុរស" data-cate_link="Fashion-Beauty" data-sub_cate_link="Bag-and-Luggage" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f8fa648e51c3_photo_2020-10-08_15-07-43.jpg')"></div>
+										<div class="title">
+											កាបូប Business បុរស...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="478" data-name_link="ចាប់បើកលក់បន្ថែម-វីឡាកូនកាត់-និងផ្ទះអាជីវកម្ម" data-cate_link="House-Land" data-sub_cate_link="House-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/60374ce219e8b_photo_2021-02-04_10-38-52.jpg')"></div>
+										<div class="title">
+											ចាប់បើកលក់បន្ថែម! វីឡាកូនកាត់ និងផ្ទះអាជីវកម្ម...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=8700 data-city="Phnom-Penh" data-id="632" data-name_link="Toyota-Vitz-2006-បំពាក់នូវប្រព័ន្ធ-Smart-Key" data-cate_link="Car-Vehicle" data-sub_cate_link="Car-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/60692c7966c2b_photo_2021-03-13_20-33-38.jpg')"></div>
+										<div class="title">
+											Toyota Vitz 2006 បំពាក់នូវប្រព័ន្ធ Smart Key...		
+										</div>
+										<p class="price">
+											$
+											8,700.00										</p>
+									</div>
+								</div>		
+															<div data-price=5500 data-city="Phnom-Penh" data-id="469" data-name_link="មានលក់របាំងមុខតំលៃធូរថ្លៃ-" data-cate_link="Fashion-Beauty" data-sub_cate_link="Others" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/603490232e7b6_photo_2021-02-23_09-39-35.jpg')"></div>
+										<div class="title">
+											មានលក់របាំងមុខតំលៃធូរថ្លៃ:...		
+										</div>
+										<p class="price">
+											$
+											5,500.00										</p>
+									</div>
+								</div>		
+															<div data-price=10 data-city="Phnom-Penh" data-id="476" data-name_link="ស្លៀកគេងយប់-នៅផ្ទះ-រឺចង់ជំនួសលីអូក៏បាន" data-cate_link="Fashion-Beauty" data-sub_cate_link="Men-s-Fashion" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6037471b5539c_photo_2021-02-23_16-38-13.jpg')"></div>
+										<div class="title">
+											ស្លៀកគេងយប់ នៅផ្ទះ រឺចង់ជំនួសលីអូក៏បាន...		
+										</div>
+										<p class="price">
+											$
+											10.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="477" data-name_link="អំពូលរាត្រីជាប់ជញ្ជាំង" data-cate_link="Health-Medicine" data-sub_cate_link="Other" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6037486e72e64_photo_2021-02-23_11-43-06.jpg')"></div>
+										<div class="title">
+											អំពូលរាត្រីជាប់ជញ្ជាំង...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=20 data-city="Phnom-Penh" data-id="286" data-name_link="កាបូបម៉ូតស្អាតៗសុភាពបុរស-" data-cate_link="Fashion-Beauty" data-sub_cate_link="Bag-and-Luggage" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5fa4cd16974a9_photo_2020-11-05_13-28-23_[3].jpg')"></div>
+										<div class="title">
+											កាបូបម៉ូតស្អាតៗសុភាពបុរស!...		
+										</div>
+										<p class="price">
+											$
+											20.00										</p>
+									</div>
+								</div>		
+															<div data-price=1800 data-city="Phnom-Penh" data-id="438" data-name_link="ម៉ូតូ-Honda-Dream-2018" data-cate_link="Car-Vehicle" data-sub_cate_link="Motorcycle-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/602c9d4522da3_photo_2021-02-07_08-27-54.jpg')"></div>
+										<div class="title">
+											ម៉ូតូ Honda Dream 2018...		
+										</div>
+										<p class="price">
+											$
+											1,800.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Phnom-Penh" data-id="545" data-name_link="ទ្វាសុវត្តិភាព-ប្រភេទ1បើក-នឹង2បើក-ទេីបចូលស្តុកថ្មីៗក្តៅហ៊ុយៗ" data-cate_link="Furniture-Decor" data-sub_cate_link="Other-Furniture-" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/60582b8ccf353_photo_2020-05-03_15-35-37_[6].jpg')"></div>
+										<div class="title">
+											ទ្វាសុវត្តិភាព ប្រភេទ1បើក នឹង2បើក !!!!ទេីបចូលស្តុកថ្មីៗក្តៅហ៊ុយៗ...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+															<div data-price=18 data-city="Phnom-Penh" data-id="444" data-name_link="-ស្បែកជើងក្បាលដែកប្រភេទស្បែកសុទ្ធគុណភាពល្អ" data-cate_link="Fashion-Beauty" data-sub_cate_link="Men-s-Fashion" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/602caad998ee2_photo_2020-12-15_09-53-52.jpg')"></div>
+										<div class="title">
+											.ស្បែកជើងក្បាលដែកប្រភេទស្បែកសុទ្ធគុណភាពល្អ...		
+										</div>
+										<p class="price">
+											$
+											18.00										</p>
+									</div>
+								</div>		
+															<div data-price=46 data-city="Phnom-Penh" data-id="167" data-name_link="Cake-Machine-Boyaxi-BXY-1212" data-cate_link="Electronic-Construction" data-sub_cate_link="Consumer-Electronics" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/5f364c10dbb4c_3cbdb4e581e3fefee9fa77c52c26f04f.jpg')"></div>
+										<div class="title">
+											Cake Machine Boyaxi BXY-1212...		
+										</div>
+										<p class="price">
+											$
+											46.00										</p>
+									</div>
+								</div>		
+															<div data-price=148000 data-city="Phnom-Penh" data-id="793" data-name_link="វីឡាកូនកាត់សម្រាប់-លក់ក្នុងបុរីប៉េងហួតបឹងស្នោរ" data-cate_link="House-Land" data-sub_cate_link="House-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6093a2fb660a2_photo_2021-04-12_11-35-30.jpg')"></div>
+										<div class="title">
+											វីឡាកូនកាត់សម្រាប់ លក់ក្នុងបុរីប៉េងហួតបឹងស្នោរ...		
+										</div>
+										<p class="price">
+											$
+											148,000.00										</p>
+									</div>
+								</div>		
+															<div data-price=0 data-city="Kampot" data-id="789" data-name_link="ដីលក់ជាប់សមុទ្រ" data-cate_link="House-Land" data-sub_cate_link="Land-for-Sale-" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+									<div class="box1">
+										<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/6093a0ebaf191_photo_2021-04-29_09-17-02.jpg')"></div>
+										<div class="title">
+											ដីលក់ជាប់សមុទ្រ...		
+										</div>
+										<p class="price">
+											$
+											0.00										</p>
+									</div>
+								</div>		
+									</div>
+	</div>
+	
+
+
+
+	
+<!--last product-->
+<div class="container item-container">
+	<div class="row">
+							<div data-adsid="5" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ads1 btn-view-ad">
+						<a href="https://play.google.com/store/apps/details?id=com.mrts" target="">
+						 	<img src="https://tinglok.com/rean-web-admin/public/img/product/5f5af670b5338_web_banner_ad_2.jpg">	
+						 </a>	
+					</div>			
+															
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 title-box" id="txt-title-box-3">
+			<h1>LATEST ADS</h1>				
+		</div>
+									<div data-price=15500 data-city="Phnom-Penh" data-id="870" data-name_link="-Lexus-GS300-2006-Black-Full-option" data-cate_link="Car-Vehicle" data-sub_cate_link="Car-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+							<div class="box1">
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/641bc1f97826d_xxxddd.jpg')"></div>
+								<div class="title">
+									💢Lexus GS300 2006 Black Full option...
+								</div>
+								<p class="price">
+									$
+									15,500.00								</p>
+							</div>
+						</div>		
+										<div data-price=2000 data-city="Phnom-Penh" data-id="869" data-name_link="Sur-Ron-Light-Bee-X" data-cate_link="Car-Vehicle" data-sub_cate_link="Motorcycle-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+							<div class="box1">
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/63fff3bbeeb0d_a3.jpg')"></div>
+								<div class="title">
+									Sur-Ron Light Bee X...
+								</div>
+								<p class="price">
+									$
+									2,000.00								</p>
+							</div>
+						</div>		
+										<div data-price=600 data-city="Phnom-Penh" data-id="868" data-name_link="iPhone-14-Pro-Max-256GB" data-cate_link="Phone-Tablet" data-sub_cate_link="Phone" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+							<div class="box1">
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/63ffecbb86a8d_a4.jpg')"></div>
+								<div class="title">
+									iPhone 14 Pro Max - 256GB...
+								</div>
+								<p class="price">
+									$
+									600.00								</p>
+							</div>
+						</div>		
+										<div data-price=71000 data-city="Phnom-Penh" data-id="867" data-name_link="LX570-2020-lexus-gulf" data-cate_link="Car-Vehicle" data-sub_cate_link="Car-for-Sale" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+							<div class="box1">
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/63c37d19d4872_l1.jpg')"></div>
+								<div class="title">
+									LX570 2020 lexus gulf...
+								</div>
+								<p class="price">
+									$
+									71,000.00								</p>
+							</div>
+						</div>		
+										<div data-price=0 data-city="Phnom-Penh" data-id="859" data-name_link="Personal-loan-offer-commercial-loan-at-the-lowest-rate" data-cate_link="Professional-Services" data-sub_cate_link="Financial-Services" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box item-box-click">
+							<div class="box1">
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/ads/621f2f408ed3a_financing-uae-5261680.jpg')"></div>
+								<div class="title">
+									Personal loan offer commercial loan at the lowest rate...
+								</div>
+								<p class="price">
+									$
+									0.00								</p>
+							</div>
+						</div>		
+							
+		<input type="hidden" name="txt-con-last" id="txt-con-last" value="status=1 && ads_location=3 && view < 10">		
+		<input type="hidden" name="txt-total-last" id="txt-total-last" value="-19">
+		<input type="hidden" name="txt-s-last" id="txt-s-last" value="24">
+		<input type="hidden" name="txt-e-last" id="txt-e-last" value="24">
+
+	</div>
+</div>
+		
+
+
+
+
+<!--Browser by store-->
+<div class="container item-container">
+	<div class="row">					
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 title-box" id="txt-title-box-3">
+			<h1>BROWSE BY STORE</h1>				
+		</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box">
+						<div class="box1">
+							<a href="https://tinglok.com/store/2">	
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/user/5fa2bab4af6f7_photo_2020-06-08_14-55-03.jpg')"></div>
+							</a>
+							<div class="title">
+								V Love Car							</div>
+						</div>
+					</div>		
+									<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box">
+						<div class="box1">
+							<a href="https://tinglok.com/store/3">	
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/user/5fa2bc1704200_67947590_2353718498051130_7370167685277024256_n.jpg')"></div>
+							</a>
+							<div class="title">
+								Lalin Collection Store							</div>
+						</div>
+					</div>		
+									<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box">
+						<div class="box1">
+							<a href="https://tinglok.com/store/6">	
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/user/2')"></div>
+							</a>
+							<div class="title">
+								Home Store							</div>
+						</div>
+					</div>		
+									<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box">
+						<div class="box1">
+							<a href="https://tinglok.com/store/4">	
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/user/5fbde1db9a545_44424282_1842018295893668_3515646708501446656_n.jpg')"></div>
+							</a>
+							<div class="title">
+								អចលនទ្រព្យ ទីក្រុងបៃតង							</div>
+						</div>
+					</div>		
+									<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box">
+						<div class="box1">
+							<a href="https://tinglok.com/store/5">	
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/user/2')"></div>
+							</a>
+							<div class="title">
+								Biotech							</div>
+						</div>
+					</div>		
+									<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box">
+						<div class="box1">
+							<a href="https://tinglok.com/store/1">	
+								<div class="img-box" style="background-image: url('https://tinglok.com/home/img/user/5fa2b9481a315_lalin_shop_logo.jpg')"></div>
+							</a>
+							<div class="title">
+								Lalin Shop							</div>
+						</div>
+					</div>		
+					</div>
+</div>
+			<div class="container ">
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 location-box">
+				<div class="location-list">
+					<h1>
+						Product by Location
+					</h1>
+					<ul>
+															<li>
+										<a href="https://tinglok.com/ads/Phnom-Penh">
+											Phnom Penh										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Preah-Sihanouk">
+											Preah Sihanouk										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Kampong-Cham">
+											Kampong Cham										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Siem-Reap">
+											Siem Reap										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Battambang">
+											Battambang										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Kandal">
+											Kandal										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Banteay-Meanchey">
+											Banteay Meanchey										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Kampong-Chhnang">
+											Kampong Chhnang										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Kampong-Speu">
+											Kampong Speu										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Kampong-Thom">
+											Kampong Thom										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Kampot">
+											Kampot										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Kep">
+											Kep										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Koh-Kong">
+											Koh Kong										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Kratie">
+											Kratie										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Mondulkiri">
+											Mondulkiri										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Otdar-Meanchey">
+											Otdar Meanchey										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Pailin">
+											Pailin										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Preah-Vihear">
+											Preah Vihear										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Prey-Veng">
+											Prey Veng										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Pursat">
+											Pursat										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Ratanakiri">
+											Ratanakiri										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Stung-Treng">
+											Stung Treng										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Svay-Rieng">
+											Svay Rieng										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Takeo">
+											Takeo										</a>
+									</li>	
+																	<li>
+										<a href="https://tinglok.com/ads/Tboung-Khmum">
+											Tboung Khmum										</a>
+									</li>	
+														
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>	<div class="container-fluid footer">
+		<div class="container">
+			<div class="row">			
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+					<h1>About Us</h1>
+					<p>
+						Tinglok.com is the Online Classified Ads website in Cambodia that connect the Sellers and Buyers together. Enjoy your Tinglok with us!					</p>
+				</div>				
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+					<h1>Follow Me!</h1>
+					<ul>
+															<li title="Youtube">
+										<a href="https://youtu.be/MzRUX91-pLo" target="_blank">
+											<i class="fab fa-youtube-square"></i> Youtube										</a>
+									</li>		
+																	<li title="Facebook">
+										<a href="https://www.facebook.com/TingLokDotCom/" target="_blank">
+											<i class="fab fa-facebook-square"></i> Facebook										</a>
+									</li>		
+													</ul>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+					<h1>Customer Service</h1>
+					<ul>
+						<li>
+							<a href="https://tinglok.com/article/contact-us">
+								Contact Us
+							</a>
+						</li>
+						<li>
+							<a href="https://tinglok.com/article/promote-ads">
+								Promote ADS
+							</a>
+						</li>
+						<li>
+							<a href="https://tinglok.com/article/private-policy">
+								Private Policy
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+					<h1>Useful Information</h1>
+					<ul>
+						<li>
+							<a href="https://tinglok.com/article/safety-tips">
+								Safety Tips
+							</a>
+						</li>
+						<li>
+							<a href="https://tinglok.com/article/ad-posting-rules">
+								Ad Posting Rules
+							</a>
+						</li>
+						<li>
+							<a href="https://tinglok.com/article/disclaimer">
+								Disclaimer
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="border-top: 1px solid #333; margin-top: 10px;">
+				<center><p>Copyright ©2020 TINGLOK (Cambodia). All rights reserved.</p></center>
+			</div>
+		</div>
+	</div>		</div>
+	<input type="hidden" id="txt-status" value="2">
+	<input type="hidden" id="txt-s" value="0">
+	<input type="hidden" id="txt-e" value="27">
+	<input type="hidden" id="txt-con" value="status=1">
+	<input type="hidden" id="txt-total-item" value="830">
+	<input type="hidden" id="txt-curent-url" value="https://tinglok.com/">
+	<input type="hidden" name="txt-page" id="txt-page" value="0">
+	<input type="hidden" id="txt-user-ad-s" value="10">
+	<input type="hidden" id="txt-user-ad-e" value="10">
+	<input type="hidden" id="txt-user-ad-total" value="0">
+	<input type="hidden" name="txt-auto-ads" id="txt-auto-ads" value="  0 ">
+</body>
+<script>var BASE_PATH="/home/tinglok/public_html/"; var BASE_URL="https://tinglok.com/"; var uid="0"; </script>
+<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+		  slidesPerView: 1,
+		  spaceBetween: 30,
+		  loop: true,
+		  pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		  },
+		  navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		});
+	</script>
+	<script src="https://tinglok.com/home/js/home.js"></script>
+	
+	<script>
+		;(function($){
+
+		  /**
+		   * jQuery function to prevent default anchor event and take the href * and the title to make a share popup
+		   *
+		   * @param  {[object]} e           [Mouse event]
+		   * @param  {[integer]} intWidth   [Popup width defalut 500]
+		   * @param  {[integer]} intHeight  [Popup height defalut 400]
+		   * @param  {[boolean]} blnResize  [Is popup resizeabel default true]
+		   */
+		  $.fn.customerPopup = function (e, intWidth, intHeight, blnResize) {
+			// Prevent default anchor event
+			e.preventDefault();
+			// Set values for window
+			intWidth = intWidth || '500';
+			intHeight = intHeight || '400';
+			strResize = (blnResize ? 'yes' : 'no');
+			//alert(this.data("href"));
+			// Set title and open popup with focus on it
+			var strTitle = ((typeof this.attr('title') !== 'undefined') ? this.attr('title') : 'Social Share'),
+				strParam = 'width=' + intWidth + ',height=' + intHeight + ',resizable=' + strResize,
+				objWindow = window.open(this.data('href'), strTitle, strParam).focus();
+		  }
+
+		  /* ================================================== */
+
+		  $(document).ready(function ($) {
+			$('body').on('click','.item-detail-box .btn-share-fb',function(e){		
+				$(this).customerPopup(e);					
+			});
+		  });
+
+		}(jQuery));
+</script>
+
+	
+	
+</html>

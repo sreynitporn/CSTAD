@@ -1,0 +1,24 @@
+
+*{/*body*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.box{
+    width: 60%;
+    height: 300px;
+   background-color:black;
+}
+#btn{
+    width: 60%;
+    height: 300px;
+    background-color:cornsilk;
+    
+}
+h1{
+    font-size: 2rem;
+    color: brown;
+}

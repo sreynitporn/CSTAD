@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul id="menu">
+                <li class="item">HTML</li>
+                
+                <li class="item">CSS</li>
+                
+                <li class="item">JAVASCRIPT</li>
+                
+                <li class="item">TYPESCRIPT</li>
+
+            </ul>
+        </nav>
+    </div>
+    <h1 id="demo">
+
+    </h1>
+    <button id="btn">
+        click me man
+
+        
+
+    </button>
+    
+</body>
+<script>
+    const btn1 = document.getElementById('btn')
+    btn1.addEventListener('click', function(){
+        let menu = document.getElementById('menu')
+        let item = menu.getElementsByClassName('item')
+        let text ="";
+        for(let i=0; i<item.length;i++){
+            text += ''+item[i].textContent;
+        }
+        document.getElementById('demo').innerHTML =text;
+    })
+</script>
+</html>
+Siekleng
+Siekleng Lo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, error?</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, expedita?
+        </p>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ut.</p>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia?</h1>
+
+
+
+
+    
+    </div>
+    <button id="btn_h1">click me man</button>
+    
+</body>
+<script>
+    const btn_h1= document.getElementById('btn_h1')
+    btn_h1.addEventListener('click', function(){
+        let TagH1 = document.getElementsByTagName('h1')
+        let p=document.getElementsByTagName('p')
+        console.log(TagH1)
+        console.log(p)
+    })
+</script>
+</html>

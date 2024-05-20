@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position:relative ;
+    height: 100vh;
+    overflow: auto;
+}
+/* .filter-body{
+    width:100%;
+    background-color:#C9CCD3;
+    position: relative;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+} */
+
+.bg-nav{
+    padding: 0;
+    position: sticky;
+    z-index: 111111;
+    top: 0;
+    background-color:#fff;
+
+}/*
+.box-navbar{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+*/
+.box-logo img{
+    width: 50%;
+    height: 100%;
+} 
+.box-search{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+.box-search input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    border: none;
+    border: 1px solid #333;
+    
+} 
+.box-search button{
+    width: 10%;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #1c1b1b;
+    outline: none;
+    border: none;
+    background-color: green;
+}
+.box-search button i{
+    color: #fff;
+    font-size: 20px;
+}
+.box-button{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.box-button input{
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    
+}
+.box-button input:nth-child(1){
+    background-color: rgb(185, 22, 22);
+    color: #fff;
+}   
+.box-button input:nth-child(2){
+    background-color: rgb(24, 127, 65);
+    color: #fff;
+}
+/* ====================[container-bar]=============== */
+.bar{
+    margin-top: 10px;
+}
+.category-menu{
+    height: 500px;
+}
+.menu{
+    background-color:white;
+    box-shadow: 1px 1px 5px #878585;
+    height: 100%;
+    
+}
+.category-menu .menu h6{
+    padding: 10px;
+    color: green;
+}
+.category-menu .menu ul{
+    padding-left: 8px;
+    list-style: none;
+    width: 100%;
+}
+.category-menu .menu ul li{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.category-menu .menu ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.category-menu .menu ul li a ion-icon{
+    margin-right: 15px;
+    color: green;
+    font-size: 14px;
+}
+.category-menu .menu ul li:hover{
+    box-shadow: 1px 1px 5px #a3a2a2ea;
+} 
+.category-menu .menu ul li:hover a{
+    color: green;
+} 
+.slide-contain{
+    padding: 0;
+    height: 500px;
+}
+.slide-contain img{
+    width:100%;
+    height:500px;
+}
+/* ===========[clip-Path]======= */
+.clip-path{
+    padding: 10px;
+}
+.filter_border{
+    position: relative;
+}
+.filter_border h1::before{
+    content: " ";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: rgb(54, 56, 56);
+}
+/* ==============[card]============ */
+.box-card{
+    height: 300px;
+    padding: 5px;
+    margin-bottom: 10px;  
+}
+.box-card:nth-child(4){
+    padding-right: 0;
+}
+.box-card .card-1{
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #a3a2a2ea;
+}
+.box-card  .card-1:hover{
+    box-shadow: 1px 1px 5px #16af02ea;
+}
+.box-card .card-1 img{
+    width: 100%;
+    height: 200px;
+}
+.box-card .card-1 .body{
+    padding: 3px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .box-logo{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .box-logo img{
+        width: 25%;
+        height: 100%;
+    }
+    .box-button{
+        position: fixed;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+    }
+    .box-button input{
+        border-radius: 0px;
+    }
+    .box-button input:nth-child(1){
+        width: 50%;
+    }
+    .box-button input:nth-child(2){
+        width: 50%;
+    }
+    .box-search input{
+        padding: 8px;
+    }
+    .box-search button{
+        padding: 8px;
+    }
+    .box-search button i{
+        font-size: 15px;
+    }
+    
+/* ====================[container-bar]=============== */
+    .category-menu{
+        display: none;
+    }
+    .slide-contain{
+        height: 300px;
+    }
+    .slide-contain img{
+        width: 100%;
+        height: 300px;
+    }
+    /* =========[clip-path]=============== */
+    /* .clip-path .filter-boder h1::before{
+        width: 65%;
+    }
+    .clip-path .titel h6{
+        font-size: 18px;
+    }
+             */
+/* ==============[card]============ */
+    .box-card{
+        height: 200px;
+        padding: 5px;
+        margin-bottom:90px;  
+    }
+    .box-card .card-1 img{
+        width:100%;
+        height: 190px;
+    }
+    .box-card .card-1 .body{
+        padding: 5px;
+    }
+    .titel{
+        font-size: 14px;
+        color: #333;
+        font-weight: bold;
+    }
+    .des{
+        font-size: 13px;
+    }
+    /* ==========[box-bottom]=========== */
+    .box-button{
+        padding: 0;
+    }
+    .box-button input{
+        margin: 0;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .box-logo{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .box-logo img{
+        width: 25%;
+        height: 100%;
+    }
+    .box-button{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        bottom: 0px;
+    }
+    .box-button input{
+        border-radius: 0px;
+    } 
+    .box-button input:nth-child(1){
+        width: 50%;
+    }     
+    .box-button input:nth-child(2){
+        width: 50%;
+    }
+    .box-search input{
+        padding: 8px;
+    }
+    .box-search button{
+        padding: 8px;
+    }
+    .box-search button i{
+        font-size: 15px;
+    }
+    
+/* ====================[container-bar]=============== */
+    .category-menu{
+        display: none;
+    }
+    .slide-contain{
+        height: 300px;
+    }
+    .slide-contain img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    /* =========[clip-path]=============== */
+    /* .clip-path .filter-boder h1::before{
+        width: 65%;
+    }
+    .clip-path .titel h6{
+        font-size: 18px;
+    } */
+    
+            
+/* ==============[card]============ */
+.box-card{
+    height: 200px;
+    padding: 5px;
+    margin-bottom:10px;  
+}
+.box-card .card-1 img{
+    width:100%;
+    height: 100%;
+}
+.box-card .card-1 .body{
+    padding: 5px;
+}
+.titel{
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+.des{
+    font-size: 13px;
+}
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px){
+    .box-logo{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .box-logo img{
+        width: 20%;
+        height: 100%;
+    }
+    .box-button{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+    }
+    .box-button input{
+        border-radius: 0px;
+    }
+    .box-button input:nth-child(1){
+        width: 50%;
+    }
+    .box-button input:nth-child(2){
+        width: 50%;
+    }
+    .box-search input{
+        padding: 8px;
+    }
+    .box-search button{
+        padding: 8px;
+    }
+    .box-search button i{
+        font-size: 15px;
+    }
+        
+/* ====================[container-bar]=============== */
+    .category-menu{
+        display: none;
+    }
+    .slide-contain{
+        height: 400px;
+    }
+    .slide-contain .active img{
+        width: 100%;
+        height: 400px;
+    }
+    
+    /* =========[clip-path]=============== */
+    /* .clip-path .filter-boder h1::before{
+        width: 65%;
+    }
+    .clip-path .titel h6{
+        font-size: 18px;
+    } */
+    
+            
+/* ==============[card]============ */
+.box-card{
+    height: 200px;
+    padding: 5px;
+    margin-bottom:5px;  
+}
+.box-card .card-1 img{
+    width:100%;
+    height: 100%;
+}
+.box-card .card-1 .body{
+    padding: 5px;
+}
+.titel{
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+.des{
+    font-size: 13px;
+}
+    
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

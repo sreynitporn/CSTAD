@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Battambang:wght@100&family=Koulen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(150, 198, 198);
+}
+.container{
+    width:75%;
+    height: 100%;
+}
+.menu{
+    width: 100%;
+    height: 70px;
+    background-color: brown;
+    font-family: 'Battambang', cursive;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li {
+    padding: 20px 25px ;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    
+}
+.box_contain{
+    margin-top: 10px;
+    width: 30%;
+    height: 300px;
+   display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.card{
+    flex-basis: 300;
+    border-radius: 3px;
+    background-color: rgb(212, 212, 222);
+    
+}
+img{
+    width: 100%;
+    height: 300px;
+    border-radius:4px;
+}
+.body{
+    padding: 10px 15px;
+    
+}
+.title{
+    font-size: 20px;
+    color: black;
+}
+.dis{
+    font-size: 16px;
+}
+.price{
+    color: rgb(247, 31, 31);
+}
+.year{
+    float: right;
+    padding-bottom: 10%;
+}
+

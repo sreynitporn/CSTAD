@@ -1,0 +1,931 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head >
+    <title>Business Cambodia</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" data-hid="description" name="description" content="Business Cambodia is Cambodia&#x27;s most popular business website. This website aims to provide Cambodian young entrepreneur most useful resources for starting and leading their business or enterprise."><meta data-n-head="ssr" name="keywords" content="business-cambodia, business cambodia"><meta data-n-head="ssr" data-hid="og:title" name="og:title" content="Business Cambodia"><meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" content="Business Cambodia"><meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Business Cambodia is Cambodia&#x27;s most popular business website. This website aims to provide Cambodian young entrepreneur most useful resources for starting and leading their business or enterprise."><meta data-n-head="ssr" data-hid="og:image" name="og:image" content="/bc_cover.jpg"><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="nuxt_bc_website_ts"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&amp;family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&amp;display=swap"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.e3e9fb.png"><link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.e3e9fb.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.9a02b58e.json" data-hid="manifest"><script data-n-head="ssr" src="https://kit.fontawesome.com/7c7b227626.js"></script><script data-n-head="ssr" src="https://www.googletagmanager.com/gtag/js?id=G-KE7ED81LSF" async></script><script data-n-head="ssr" src="https://www.googletagmanager.com/gtag/js?id=UA-119870033-3" async></script><link rel="preload" href="/_nuxt/a8c9b95.js" as="script"><link rel="preload" href="/_nuxt/8f0f896.js" as="script"><link rel="preload" href="/_nuxt/17305ee.js" as="script"><link rel="preload" href="/_nuxt/60ce454.js" as="script"><link rel="preload" href="/_nuxt/2b61bd2.js" as="script"><style data-vue-ssr-id="382a115c:0 f262f028:0 7ec9bef8:0 7550043c:0 d7463b58:0 b35c2bc4:0 7c1913be:0 21f1d688:0">/*! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}ul{list-style-position:inside;list-style-type:disc;}iframe:not(.facebook-page){width:100%;}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;}.container{width:100%;}@media (min-width: 640px){.container{max-width:640px;}}@media (min-width: 768px){.container{max-width:768px;}}@media (min-width: 1024px){.container{max-width:1024px;}}@media (min-width: 1280px){.container{max-width:1280px;}}@media (min-width: 1536px){.container{max-width:1536px;}}.visible{visibility:visible;}.fixed{position:fixed;}.absolute{position:absolute;}.relative{position:relative;}.sticky{position:sticky;}.bottom-0{bottom:0px;}.right-4{right:1rem;}.top-0{top:0px;}.left-0{left:0px;}.right-0{right:0px;}.bottom-20{bottom:5rem;}.z-50{z-index:50;}.z-40{z-index:40;}.m-auto{margin:auto;}.my-2{margin-top:0.5rem;margin-bottom:0.5rem;}.mx-4{margin-left:1rem;margin-right:1rem;}.mx-2{margin-left:0.5rem;margin-right:0.5rem;}.my-6{margin-top:1.5rem;margin-bottom:1.5rem;}.mb-20{margin-bottom:5rem;}.mr-4{margin-right:1rem;}.mt-2{margin-top:0.5rem;}.mt-4{margin-top:1rem;}.mt-6{margin-top:1.5rem;}.mr-2{margin-right:0.5rem;}.mr-0{margin-right:0px;}.mt-1{margin-top:0.25rem;}.mt-8{margin-top:2rem;}.block{display:block;}.flex{display:flex;}.inline-flex{display:inline-flex;}.grid{display:grid;}.hidden{display:none;}.h-4{height:1rem;}.h-screen{height:100vh;}.h-48{height:12rem;}.h-32{height:8rem;}.h-6{height:1.5rem;}.h-5{height:1.25rem;}.h-7{height:1.75rem;}.h-102{height:28rem;}.h-64{height:16rem;}.h-12{height:3rem;}.h-auto{height:auto;}.h-20{height:5rem;}.h-44{height:11rem;}.h-full{height:100%;}.h-96{height:24rem;}.h-60{height:15rem;}.h-36{height:9rem;}.w-full{width:100%;}.w-4{width:1rem;}.w-screen{width:100vw;}.w-32{width:8rem;}.w-12{width:3rem;}.w-6{width:1.5rem;}.w-5{width:1.25rem;}.w-7{width:1.75rem;}.w-8{width:2rem;}.w-56{width:14rem;}.w-104{width:36rem;}.w-60{width:15rem;}.w-20{width:5rem;}.w-36{width:9rem;}.max-w-sm{max-width:24rem;}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));}.cursor-pointer{cursor:pointer;}.resize{resize:both;}.list-none{list-style-type:none;}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr));}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr));}.flex-col{flex-direction:column;}.items-start{align-items:flex-start;}.items-end{align-items:flex-end;}.items-center{align-items:center;}.justify-start{justify-content:flex-start;}.justify-end{justify-content:flex-end;}.justify-center{justify-content:center;}.justify-between{justify-content:space-between;}.gap-4{gap:1rem;}.gap-x-10{-moz-column-gap:2.5rem;column-gap:2.5rem;}.gap-x-6{-moz-column-gap:1.5rem;column-gap:1.5rem;}.gap-x-3{-moz-column-gap:0.75rem;column-gap:0.75rem;}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem;}.gap-x-8{-moz-column-gap:2rem;column-gap:2rem;}.gap-y-7{row-gap:1.75rem;}.gap-y-8{row-gap:2rem;}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));}.space-x-10 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2.5rem * var(--tw-space-x-reverse));margin-left:calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));}.justify-self-center{justify-self:center;}.overflow-hidden{overflow:hidden;}.overflow-y-hidden{overflow-y:hidden;}.rounded-md{border-radius:0.375rem;}.rounded-full{border-radius:9999px;}.rounded-lg{border-radius:0.5rem;}.rounded-sm{border-radius:0.125rem;}.rounded-xl{border-radius:0.75rem;}.rounded{border-radius:0.25rem;}.rounded-t-lg{border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;}.rounded-b-lg{border-bottom-right-radius:0.5rem;border-bottom-left-radius:0.5rem;}.border{border-width:1px;}.border-2{border-width:2px;}.border-b{border-bottom-width:1px;}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99 / var(--tw-border-opacity));}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity));}.border-primary{--tw-border-opacity:1;border-color:rgb(237 28 36 / var(--tw-border-opacity));}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0 / var(--tw-border-opacity));}.border-b-gray-300{--tw-border-opacity:1;border-bottom-color:rgb(209 213 219 / var(--tw-border-opacity));}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity));}.bg-primary{--tw-bg-opacity:1;background-color:rgb(237 28 36 / var(--tw-bg-opacity));}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity));}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity));}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity));}.bg-opacity-50{--tw-bg-opacity:0.5;}.bg-opacity-80{--tw-bg-opacity:0.8;}.bg-cover{background-size:cover;}.bg-contain{background-size:contain;}.bg-center{background-position:center;}.bg-no-repeat{background-repeat:no-repeat;}.object-cover{-o-object-fit:cover;object-fit:cover;}.p-4{padding:1rem;}.p-1{padding:0.25rem;}.px-2{padding-left:0.5rem;padding-right:0.5rem;}.px-6{padding-left:1.5rem;padding-right:1.5rem;}.py-2{padding-top:0.5rem;padding-bottom:0.5rem;}.px-4{padding-left:1rem;padding-right:1rem;}.py-1{padding-top:0.25rem;padding-bottom:0.25rem;}.py-4{padding-top:1rem;padding-bottom:1rem;}.py-12{padding-top:3rem;padding-bottom:3rem;}.px-10{padding-left:2.5rem;padding-right:2.5rem;}.py-20{padding-top:5rem;padding-bottom:5rem;}.py-10{padding-top:2.5rem;padding-bottom:2.5rem;}.py-3{padding-top:0.75rem;padding-bottom:0.75rem;}.py-5{padding-top:1.25rem;padding-bottom:1.25rem;}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem;}.py-0{padding-top:0px;padding-bottom:0px;}.px-12{padding-left:3rem;padding-right:3rem;}.pb-2{padding-bottom:0.5rem;}.pb-6{padding-bottom:1.5rem;}.pt-2{padding-top:0.5rem;}.pb-10{padding-bottom:2.5rem;}.pl-10{padding-left:2.5rem;}.pl-4{padding-left:1rem;}.pl-2{padding-left:0.5rem;}.pt-4{padding-top:1rem;}.pb-4{padding-bottom:1rem;}.pt-5{padding-top:1.25rem;}.pt-6{padding-top:1.5rem;}.pt-28{padding-top:7rem;}.pt-10{padding-top:2.5rem;}.text-center{text-align:center;}.text-start{text-align:start;}.text-xs{font-size:0.75rem;line-height:1rem;}.text-sm{font-size:0.875rem;line-height:1.25rem;}.text-lg{font-size:1.125rem;line-height:1.75rem;}.text-3xl{font-size:1.875rem;line-height:2.25rem;}.text-2xl{font-size:1.5rem;line-height:2rem;}.text-base{font-size:1rem;line-height:1.5rem;}.text-xl{font-size:1.25rem;line-height:1.75rem;}.font-bold{font-weight:700;}.font-light{font-weight:300;}.font-medium{font-weight:500;}.font-semibold{font-weight:600;}.font-normal{font-weight:400;}.uppercase{text-transform:uppercase;}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity));}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity));}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity));}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity));}.text-primary{--tw-text-opacity:1;color:rgb(237 28 36 / var(--tw-text-opacity));}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity));}.text-gray-100{--tw-text-opacity:1;color:rgb(243 244 246 / var(--tw-text-opacity));}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity));}.underline{text-decoration-line:underline;}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:0 0 #0000, 0 0 #0000, var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);}.drop-shadow-lg{--tw-drop-shadow:drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);}.drop-shadow-xl{--tw-drop-shadow:drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);}.transition{transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms;}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms;}.duration-700{transition-duration:700ms;}.duration-500{transition-duration:500ms;}.duration-300{transition-duration:300ms;}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);}.line-clamp-5{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5;}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;}.hover\:cursor-pointer:hover{cursor:pointer;}.hover\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(237 28 36 / var(--tw-bg-opacity));}.hover\:bg-opacity-0:hover{--tw-bg-opacity:0;}.hover\:bg-opacity-100:hover{--tw-bg-opacity:1;}.hover\:font-semibold:hover{font-weight:600;}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity));}.hover\:underline:hover{text-decoration-line:underline;}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));}@media (prefers-color-scheme: dark){.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity));}}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr));}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem;}}@media (min-width: 768px){.md\:h-6{height:1.5rem;}.md\:h-full{height:100%;}.md\:w-6{width:1.5rem;}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr));}.md\:grid-cols-left_expand{grid-template-columns:5fr 3fr;}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr));}.md\:flex-row{flex-direction:row;}.md\:justify-between{justify-content:space-between;}.md\:p-10{padding:2.5rem;}.md\:py-4{padding-top:1rem;padding-bottom:1rem;}.md\:px-20{padding-left:5rem;padding-right:5rem;}.md\:text-xl{font-size:1.25rem;line-height:1.75rem;}.md\:text-base{font-size:1rem;line-height:1.5rem;}.md\:text-sm{font-size:0.875rem;line-height:1.25rem;}.md\:text-lg{font-size:1.125rem;line-height:1.75rem;}}@media (min-width: 1024px){.lg\:mx-8{margin-left:2rem;margin-right:2rem;}.lg\:mt-0{margin-top:0px;}.lg\:mt-4{margin-top:1rem;}.lg\:mt-6{margin-top:1.5rem;}.lg\:mb-0{margin-bottom:0px;}.lg\:mr-20{margin-right:5rem;}.lg\:block{display:block;}.lg\:flex{display:flex;}.lg\:grid{display:grid;}.lg\:hidden{display:none;}.lg\:h-6{height:1.5rem;}.lg\:h-popup{height:34rem;}.lg\:h-32{height:8rem;}.lg\:h-104{height:38rem;}.lg\:h-full{height:100%;}.lg\:h-28{height:7rem;}.lg\:h-80{height:20rem;}.lg\:h-100{height:26rem;}.lg\:h-48{height:12rem;}.lg\:w-6{width:1.5rem;}.lg\:w-popup{width:50rem;}.lg\:w-full{width:100%;}.lg\:w-36{width:9rem;}.lg\:w-96{width:24rem;}.lg\:w-104{width:36rem;}.lg\:w-80{width:20rem;}.lg\:w-28{width:7rem;}.lg\:w-48{width:12rem;}.lg\:grid-cols-left_shrink{grid-template-columns:1fr 4fr;}.lg\:grid-cols-left_expand{grid-template-columns:5fr 3fr;}.lg\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr));}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr));}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr));}.lg\:items-center{align-items:center;}.lg\:justify-start{justify-content:flex-start;}.lg\:gap-y-0{row-gap:0px;}.lg\:justify-self-start{justify-self:start;}.lg\:justify-self-end{justify-self:end;}.lg\:px-32{padding-left:8rem;padding-right:8rem;}.lg\:px-48{padding-left:12rem;padding-right:12rem;}.lg\:px-36{padding-left:9rem;padding-right:9rem;}.lg\:px-10{padding-left:2.5rem;padding-right:2.5rem;}.lg\:px-28{padding-left:7rem;padding-right:7rem;}.lg\:px-24{padding-left:6rem;padding-right:6rem;}.lg\:px-20{padding-left:5rem;padding-right:5rem;}.lg\:px-16{padding-left:4rem;padding-right:4rem;}.lg\:pl-10{padding-left:2.5rem;}.lg\:pt-7{padding-top:1.75rem;}.lg\:pt-24{padding-top:6rem;}.lg\:text-left{text-align:left;}.lg\:text-right{text-align:right;}.lg\:text-start{text-align:start;}.lg\:text-base{font-size:1rem;line-height:1.5rem;}.lg\:text-6xl{font-size:3.75rem;line-height:1;}.lg\:text-sm{font-size:0.875rem;line-height:1.25rem;}.lg\:text-2xl{font-size:1.5rem;line-height:2rem;}.lg\:text-5xl{font-size:3rem;line-height:1;}.lg\:text-4xl{font-size:2.25rem;line-height:2.5rem;}.lg\:text-xl{font-size:1.25rem;line-height:1.75rem;}}@media (min-width: 1280px){.xl\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr));}}@media (min-width: 1536px){.\32xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr));}.\32xl\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr));}}
+*{font-family:"Hanuman","Titillium Web"}::-moz-selection{background:#ed1c24;color:#fff}::selection{background:#ed1c24;color:#fff}
+.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}
+.navbar{transition:top .7s ease-in-out}.dropdown{position:relative;display:inline-block}.dropdown-content{display:none;position:absolute;background-color:#f1f1f1;box-shadow:0 8px 16px 0 rgba(0,0,0,.2);z-index:1}.dropdown-content a{color:#000;padding:12px 16px;text-decoration:none;display:block}.dropdown-content a:hover{background-color:#ddd}.dropdown:hover .dropdown-content{display:block}.dropdown:hover .dropbtn{background-color:#3e8e41}.nav-menu{background:rgba(0,0,0,.8);opacity:0;visibility:hidden;transition:.5s}.open .nav-menu{opacity:1;visibility:visible}.nav-menu>li{color:#f9f9f9;text-decoration:none}.open .nav-menu>li{animation:appear .3s both}.nav-item{position:relative}.nav-item:before{background:red;left:0}.nav-item:after,.nav-item:before{content:"";width:0;height:3px;position:absolute;top:120%;transition:.5s;mix-blend-mode:multiply}.nav-item:after{background:grey;right:0}.nav-item:hover:after{width:50%;transform:translateX(100)}.nav-item:hover:before{width:50%;transform:translateX(-100)}@keyframes appear{0%{opacity:0;translate:0 50px}to{opacity:1}}
+.navbar{transition:top .7s ease-in-out}
+.hero-text-fadein{animation:fadeIn 2s}.hero-text-fadeout{animation:fadeOut 2s}.hero-title{line-height:1.4}.bar{background:grey;height:2px;width:100%}.in{animation:fill 5s linear 1;height:100%;background-color:#fff}.nav-items:after{content:"";position:absolute;background:#089cf4;height:3px;width:0;left:0;bottom:-10px;transition:.5s}.nav-items:hover:after{width:100%}@keyframes fill{0%{width:0}to{width:100%}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}
+.popular-article-title{line-height:1.3}.parent{overflow:hidden;position:relative;display:inline-block;cursor:pointer}.child{height:100%;width:100%;background-size:cover;background-repeat:no-repeat;transition:all .5s}.bg-one{background-image:url(https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?auto=format&fit=crop&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-4.0.3&q=80&w=1744)}.parent:focus .child,.parent:hover .child{transform:scale(1.2)}.parent:focus .child:before,.parent:focus a,.parent:hover .child:before,.parent:hover a{display:block}.child:before{content:"";display:none;height:100%;width:100%;position:absolute;top:0;left:0;background-color:rgba(52,73,94,.75)}
+.footer{padding-bottom:10px}</style>
+  </head>
+  <body >
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="relative"><!----> <div class="relative"><div id="navbar" class="fixed flex justify-between w-full items-center top-0 px-6 py-4 z-50 navbar text-white "><a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><div class="mr-2 flex"><img src="/BC.png" alt="" class="w-20 h-12 object-cover bg-center bg-no-repeat bg-cover lg:w-28"></div></a> <ul class="hidden lg:flex list-none text-xs sticky top-0 font-light items-center"><a href="/news"><li class="mx-4 nav-item">
+          ព័ត៌មានថ្មីៗ
+        </li></a><a href="/business"><li class="mx-4 nav-item">
+          ចាប់ផ្តើមអាជីវកម្ម
+        </li></a><a href="/real-estate"><li class="mx-4 nav-item">
+          អចលនទ្រព្យ
+        </li></a><a href="/leadership"><li class="mx-4 nav-item">
+          ភាពជាអ្នកដឹកនាំ
+        </li></a><a href="/finance"><li class="mx-4 nav-item">
+          ហិរញ្ញវត្ថុ
+        </li></a><a href="/sales"><li class="mx-4 nav-item">
+          កំពូលអ្នកលក់
+        </li></a> <li class="mx-4"><div class="dropdown"><button class="px-4 py-2 border border-white rounded-sm text-xs">
+            ផ្នែកផ្សេងទៀត
+          </button> <ul class="list-none dropdown-content w-full"><a href="/agriculture"><li class="text-center flex items-center">
+                មុខរបរកសិកម្ម
+              </li></a><a href="/pr"><li class="text-center flex items-center">
+                PR
+              </li></a></ul></div></li> <a href="/search"><li><div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="md:h-6 md:w-6 h-5 w-5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div></li></a></ul> <div class="lg:hidden flex items-center space-x-3"><div class="cursor-pointer block lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:h-6 md:w-6 h-5 w-5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"></path></svg></div> <!----> <a href="/search"><div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="md:h-6 md:w-6 h-5 w-5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div></a></div></div> <!----></div> <div><div class="w-full relative h-screen object-cover bg-center bg-no-repeat bg-cover flex items-center text-white" style="background-image:linear-gradient( to bottom,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(https://business-cambodia.com/cms/assets/58f3a83b-9cad-48bb-af97-2b58ffce54fe);"><div class="w-104 pl-10"><a href="/articles/monash-university"><div id="hero-text-0" class="hero-text"><div class="text-3xl lg:text-5xl font-bold hero-title line-clamp-5">
+          ប្រាក់ឧបត្ថមមួយឆ្នាំ៣ម៉ឺន$! អូស្ត្រាលីប្រកាសផ្តល់អាហារូបករណ៍ថ្នាក់បរិញ្ញាបត្រជំនាញ១០ជំនាញនៅសាកលវិទ្យាល័យ Monash
+        </div> <div class="mt-2 font-light"><span>ធី ស្រីល័ក្ខ</span>
+          •
+          <span>
+            ព័ត៌មានថ្មីៗ
+          </span>
+          •
+          <span>
+            June 3 2023
+          </span></div></div></a> <div class="mt-6"><a href="/articles/monash-university"><button class="bg-white hover:bg-opacity-0 border border-white hover:text-white text-lg font-light px-10 py-2 text-black mr-2 transition ease-in-out duration-700">
+          បន្តការអាន
+        </button></a> <a href="/authors/1e359c4f-674f-4f62-921e-d90fca6413ba"><button class="bg-white bg-opacity-50 hover:bg-opacity-100 hover:bg-primary text-lg font-medium px-10 py-2 transition ease-in-out duration-700">
+          អំពីអ្នកនិពន្ធ
+        </button></a></div> <div class="absolute left-0 right-0 m-auto bottom-20 grid grid-cols-3 gap-x-6 w-60 lg:w-96 justify-center"><div class="bar w-full"><div id="bar-0"></div></div><div class="bar w-full"><div id="bar-1"></div></div><div class="bar w-full"><div id="bar-2"></div></div></div></div></div> <div class="py-12 px-10"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 mt-6 gap-x-3 items-center"><div class="font-bold text-2xl"><div>ការផ្សាយពាណិជ្ជកម្ម</div> <div>របស់យើង</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <div class="mt-4 lg:mt-0"><a href="https://www.facebook.com/WilmarCLVCambodia/posts/pfbid031AL9CLnbonur5oWKS63JdAH6ZQBJHTtrNB21VpDbhkKGY6cUjiQWwbas9bT3BiF3l" target="_blank"><div id="simply-june" class="rounded-lg w-full"><img format="webp" loading="lazy" src="https://business-cambodia.com/cms/assets/77b7d590-3a56-4c67-a9e2-0be3eac6194b" alt id="simply-june" class="w-full w-full rounded-lg"></div></a></div></div></div> <div id="popular-articles" class="px-10 py-20"><div class="flex justify-between items-center"><div class="font-bold text-3xl">អត្ថបទពេញនិយមសរុប</div> <a href="/popular"><div class="font-light text-primary">មើល​បន្ថែម​</div></a></div> <div class="py-12"><div class="grid grid-cols-1 md:grid-cols-left_expand gap-4"><div class="relative overflow-hidden group"><div class="w-full h-64 md:h-full lg:h-104 bg-cover bg-center bg-no-repeat bg-cover pl-4 lg:pl-10 transition-all duration-500 group-hover:scale-110" style="background-image:linear-gradient( to bottom,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(https://business-cambodia.com/cms/assets/5de32954-bdf1-4dac-b97c-2c72978af0d1);"></div> <div class="absolute top-0 bottom-0 m-auto mr-0 md:p-10 p-4 flex flex-col justify-center items-start text-white"><div><div class="text-sm lg:text-base">
+              ព័ត៌មានថ្មីៗ
+            </div> <div class="flex justify-start mt-1 lg:mt-4"><hr class="w-8 border-b border-primary"></div></div> <a href="/articles/closing-street-"><div class="text-xs lg:text-4xl popular-article-title hover:underline hover:cursor-pointer font-medium lg:w-104 mt-2 lg:mt-6">
+              ចេញចូលភ្នំពេញត្រូវដឹង! នៅថ្ងៃទី២៩ ធ្នូ រដ្ឋបាលរាជធានីភ្នំពេញនឹងផ្អាកចរាចរយានជំនិះគ្រប់ប្រភេទលើកំណាត់មហាវិថីឈ្នះឈ្នះ
+            </div></a></div></div> <div class="grid grid-cols-1 gap-4"><div class="relative overflow-hidden group"><div class="h-64 lg:h-full pl-2 lg:pl-10 object-cover bg-center bg-no-repeat bg-cover transition-all duration-500 group-hover:scale-110" style="background-image:linear-gradient( to bottom,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(https://business-cambodia.com/cms/assets/f4e963dd-fc7d-4641-a3bf-265ef1288ec4);"></div> <div class="absolute top-0 bottom-0 m-auto mr-0 md:p-10 p-4 flex flex-col justify-center items-start text-white"><div><div class="text-sm lg:text-base">
+                ព័ត៌មានថ្មីៗ
+              </div> <div class="flex justify-start mt-1 lg:mt-4 text-sm"><hr class="w-8 border-b border-primary"></div></div> <a href="/articles/department-of-civil-registration-"><div class="text-xs lg:text-xl popular-article-title hover:underline hover:cursor-pointer font-medium lg:w-80 lg:mt-6 mt-2">
+                កាន់តែងាយស្រួល! អ្នកដែលមានសំបុត្រកំណើតសរសេរខុស អាចទៅកែថ្មីនៅកន្លែងនេះបាន
+              </div></a></div></div> <div class="relative overflow-hidden group"><div class="h-64 lg:h-full pl-10 object-cover bg-center bg-no-repeat bg-cover transition-all duration-500 group-hover:scale-110" style="background-image:linear-gradient( to bottom,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(https://business-cambodia.com/cms/assets/4739cfcd-3d64-4280-818d-793da2df59d7);"></div> <div class="absolute top-0 bottom-0 m-auto mr-0 md:p-10 p-4 flex flex-col justify-center items-start text-white"><div><div class="text-sm lg:text-base">
+                ព័ត៌មានថ្មីៗ
+              </div> <div class="flex justify-start mt-1 lg:mt-4"><hr class="w-8 border-b border-primary"></div></div> <a href="/articles/closing-street-in-phnom-penh-on-10-13-november"><div class="text-xs lg:text-xl popular-article-title hover:underline hover:cursor-pointer font-medium lg:w-80 lg:mt-6 mt-2">
+                អ្នកចេញ-ចូលភ្នំពេញត្រូវដឹង! ថ្ងៃទី១០-១៣ វិច្ឆិកា គ្រប់យានយន្ដធ្វើចរាចរលើវិថីធំៗទាំងនេះត្រូវបង្វែរទៅផ្លូវផ្សេង
+              </div></a></div></div></div></div></div></div> <div><div class="grid grid-cols-1 lg:grid-cols-left_shrink px-4 lg:px-10 py-12 gap-x-4 items-center"><div class="flex items-center justify-between lg:block"><div class="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-600"><div class="w-56">អត្ថបទពេញនិយមប្រចាំខែ</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <a href="/popular/monthly"><button class="border-2 border-gray-600 px-4 lg:px-10 py-2 mt-6 text-xs lg:text-base">
+          មើល​បន្ថែម​
+        </button></a></div> <div class="hidden lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-x-8"><a href="/articles/expressway-siem-reap" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/b96ccc82-0b22-4a6e-ad00-4ddeb1ffec22" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #អចលនទ្រព្យ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ច្បាស់ការ! ឯកឧត្ដម ស៊ុន ចាន់ថុល បញ្ជាក់ថាគម្រោងផ្លូវល្បឿនលឿនភ្នំពេញ-សៀមរាបបញ្ចប់ការសិក្សានៅថ្ងៃ៣១ ឧសភា
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/ece42c55-6cb8-4d51-9551-9d3470c2748a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Bunthoeun Koem
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">7.5 K views</div></div></div></div></div></a><a href="/articles/cellcard-to-close-it-ipo-sale-very-soon" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/86f0684e-af33-4f7c-ad3e-a890e50e0030" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ហិរញ្ញវត្ថុ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ប្រញាប់ទិញ! Cellcard  លក់ហ៊ុនជាសាធារណៈតម្លៃខ្ទង់២ពាន់រៀលក្នុង១ហ៊ុននឹងបិទបញ្ចប់ឆាប់ៗនេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/dd16de73-246a-4012-a14e-c52adfb30b3a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Toeuy Hong
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">6.7 K views</div></div></div></div></div></a><a href="/articles/over-700-durian-trucks-stuck-at-vietnam-china-border" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/62fe0a24-a905-4dad-a6ed-586685e0e6da" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ចាប់ផ្តើមអាជីវកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ឡានដឹកទំនិញជាង ៧០០ គ្រឿង កំពុងជាប់គាំងនៅព្រំដែនវៀតណាម-ចិន ក្រោយចិនអនុញ្ញាតឱ្យទុរេនវៀតណាមនាំចូលជាផ្លូវការ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">5.5 K views</div></div></div></div></div></a></div> <div class="lg:hidden mt-6"><div class="slick-slider slick-initialized" data-v-3d1a4f76><div class="slick-list" data-v-3d1a4f76><div class="slick-track" style="width:100%;left:0%;" data-v-e4caeaf8 data-v-3d1a4f76><div tabIndex="-1" data-index="0" aria-hidden="false" class="slick-slide slick-active slick-current" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/expressway-siem-reap" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/b96ccc82-0b22-4a6e-ad00-4ddeb1ffec22" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #អចលនទ្រព្យ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ច្បាស់ការ! ឯកឧត្ដម ស៊ុន ចាន់ថុល បញ្ជាក់ថាគម្រោងផ្លូវល្បឿនលឿនភ្នំពេញ-សៀមរាបបញ្ចប់ការសិក្សានៅថ្ងៃ៣១ ឧសភា
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/ece42c55-6cb8-4d51-9551-9d3470c2748a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Bunthoeun Koem
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">7.5 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/cellcard-to-close-it-ipo-sale-very-soon" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/86f0684e-af33-4f7c-ad3e-a890e50e0030" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ហិរញ្ញវត្ថុ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ប្រញាប់ទិញ! Cellcard  លក់ហ៊ុនជាសាធារណៈតម្លៃខ្ទង់២ពាន់រៀលក្នុង១ហ៊ុននឹងបិទបញ្ចប់ឆាប់ៗនេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/dd16de73-246a-4012-a14e-c52adfb30b3a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Toeuy Hong
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">6.7 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/over-700-durian-trucks-stuck-at-vietnam-china-border" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/62fe0a24-a905-4dad-a6ed-586685e0e6da" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ចាប់ផ្តើមអាជីវកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ឡានដឹកទំនិញជាង ៧០០ គ្រឿង កំពុងជាប់គាំងនៅព្រំដែនវៀតណាម-ចិន ក្រោយចិនអនុញ្ញាតឱ្យទុរេនវៀតណាមនាំចូលជាផ្លូវការ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">5.5 K views</div></div></div></div></div></a></div></div></div></div></div></div></div></div> <div class="mb-20"><div class="grid grid-cols-1 lg:grid-cols-left_shrink px-4 lg:px-10 py-12 gap-x-4 items-center"><div class="flex items-center justify-between lg:block"><div class="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-600"><div class="w-56">អត្ថបទថ្មីៗ</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <a href="/latest"><button class="border-2 border-gray-600 px-4 lg:px-10 py-2 mt-6 text-xs lg:text-base">
+          មើល​បន្ថែម​
+        </button></a></div> <div class="hidden lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-x-8"><a href="/articles/monash-university" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/58f3a83b-9cad-48bb-af97-2b58ffce54fe" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ព័ត៌មានថ្មីៗ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ប្រាក់ឧបត្ថមមួយឆ្នាំ៣ម៉ឺន$! អូស្ត្រាលីប្រកាសផ្តល់អាហារូបករណ៍ថ្នាក់បរិញ្ញាបត្រជំនាញ១០ជំនាញនៅសាកលវិទ្យាល័យ Monash
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">1.2 K views</div></div></div></div></div></a><a href="/articles/open-ceremony-of-para-games-" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/621aa0b9-a853-4918-b868-26c80561baa4" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ព័ត៌មានថ្មីៗ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ថ្ងៃនេះបើកព្រឹត្តិការណ៍ប៉ារ៉ាហ្គេម មកដឹងពីកម្មវិធីសំខាន់ៗ ដែលនឹងធ្វើឡើងនៅយប់នេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/23d3a23b-2baf-4802-a2ed-5e9465500843" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Kan Dara
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">480 views</div></div></div></div></div></a><a href="/articles/electric-tricycle" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/4d18915b-ae06-4318-bbd3-9b5f27d4244a" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #PR
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          កង់បីអគ្គិសនីអនៀនក្លាយជាអ្នកផលិតដំបូងគេ បាននាំមុខឧស្សាហកម្មបច្ចេកវិជ្ជាដែលសម្ពោធនៅកង់បីស៊េរីថ្មី T1S និង T1L
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">21 views</div></div></div></div></div></a></div> <div class="lg:hidden mt-6"><div class="slick-slider slick-initialized" data-v-3d1a4f76><div class="slick-list" data-v-3d1a4f76><div class="slick-track" style="width:100%;left:0%;" data-v-e4caeaf8 data-v-3d1a4f76><div tabIndex="-1" data-index="0" aria-hidden="false" class="slick-slide slick-active slick-current" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/monash-university" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/58f3a83b-9cad-48bb-af97-2b58ffce54fe" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ព័ត៌មានថ្មីៗ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ប្រាក់ឧបត្ថមមួយឆ្នាំ៣ម៉ឺន$! អូស្ត្រាលីប្រកាសផ្តល់អាហារូបករណ៍ថ្នាក់បរិញ្ញាបត្រជំនាញ១០ជំនាញនៅសាកលវិទ្យាល័យ Monash
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">1.2 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/open-ceremony-of-para-games-" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/621aa0b9-a853-4918-b868-26c80561baa4" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ព័ត៌មានថ្មីៗ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ថ្ងៃនេះបើកព្រឹត្តិការណ៍ប៉ារ៉ាហ្គេម មកដឹងពីកម្មវិធីសំខាន់ៗ ដែលនឹងធ្វើឡើងនៅយប់នេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/23d3a23b-2baf-4802-a2ed-5e9465500843" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Kan Dara
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">480 views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/electric-tricycle" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/4d18915b-ae06-4318-bbd3-9b5f27d4244a" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #PR
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          កង់បីអគ្គិសនីអនៀនក្លាយជាអ្នកផលិតដំបូងគេ បាននាំមុខឧស្សាហកម្មបច្ចេកវិជ្ជាដែលសម្ពោធនៅកង់បីស៊េរីថ្មី T1S និង T1L
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">21 views</div></div></div></div></div></a></div></div></div></div></div></div></div></div> <div class="mb-20"><div class="grid grid-cols-1 lg:grid-cols-left_shrink px-4 lg:px-10 py-12 gap-x-4 items-center"><div class="flex items-center justify-between lg:block"><div class="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-600"><div class="w-56">ព័ត៌មានថ្មីៗ</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <a href="/latest"><button class="border-2 border-gray-600 px-4 lg:px-10 py-2 mt-6 text-xs lg:text-base">
+          មើល​បន្ថែម​
+        </button></a></div> <div class="hidden lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-x-8"><a href="/articles/monash-university" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/58f3a83b-9cad-48bb-af97-2b58ffce54fe" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ព័ត៌មានថ្មីៗ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ប្រាក់ឧបត្ថមមួយឆ្នាំ៣ម៉ឺន$! អូស្ត្រាលីប្រកាសផ្តល់អាហារូបករណ៍ថ្នាក់បរិញ្ញាបត្រជំនាញ១០ជំនាញនៅសាកលវិទ្យាល័យ Monash
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">1.2 K views</div></div></div></div></div></a><a href="/articles/open-ceremony-of-para-games-" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/621aa0b9-a853-4918-b868-26c80561baa4" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ព័ត៌មានថ្មីៗ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ថ្ងៃនេះបើកព្រឹត្តិការណ៍ប៉ារ៉ាហ្គេម មកដឹងពីកម្មវិធីសំខាន់ៗ ដែលនឹងធ្វើឡើងនៅយប់នេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/23d3a23b-2baf-4802-a2ed-5e9465500843" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Kan Dara
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">480 views</div></div></div></div></div></a><a href="/articles/nea-work-at-siem-reap" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/a05b0344-a9f9-4bd0-9c0b-5d0165b43f26" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ព័ត៌មានថ្មីៗ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ឱកាសការងារ១៥០០០កន្លែង! អ្នកសៀមរាបកំពុងរកការងារធ្វើ កុំភ្លេចយកពាក្យទៅដាក់ ថ្ងៃស្អែកនៅទីតាំង១នេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/23d3a23b-2baf-4802-a2ed-5e9465500843" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Kan Dara
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">1.1 K views</div></div></div></div></div></a></div> <div class="lg:hidden mt-6"><div class="slick-slider slick-initialized" data-v-3d1a4f76><div class="slick-list" data-v-3d1a4f76><div class="slick-track" style="width:100%;left:0%;" data-v-e4caeaf8 data-v-3d1a4f76><div tabIndex="-1" data-index="0" aria-hidden="false" class="slick-slide slick-active slick-current" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/monash-university" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/58f3a83b-9cad-48bb-af97-2b58ffce54fe" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ព័ត៌មានថ្មីៗ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ប្រាក់ឧបត្ថមមួយឆ្នាំ៣ម៉ឺន$! អូស្ត្រាលីប្រកាសផ្តល់អាហារូបករណ៍ថ្នាក់បរិញ្ញាបត្រជំនាញ១០ជំនាញនៅសាកលវិទ្យាល័យ Monash
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">1.2 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/open-ceremony-of-para-games-" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/621aa0b9-a853-4918-b868-26c80561baa4" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ព័ត៌មានថ្មីៗ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ថ្ងៃនេះបើកព្រឹត្តិការណ៍ប៉ារ៉ាហ្គេម មកដឹងពីកម្មវិធីសំខាន់ៗ ដែលនឹងធ្វើឡើងនៅយប់នេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/23d3a23b-2baf-4802-a2ed-5e9465500843" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Kan Dara
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">480 views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/nea-work-at-siem-reap" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/a05b0344-a9f9-4bd0-9c0b-5d0165b43f26" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ព័ត៌មានថ្មីៗ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ឱកាសការងារ១៥០០០កន្លែង! អ្នកសៀមរាបកំពុងរកការងារធ្វើ កុំភ្លេចយកពាក្យទៅដាក់ ថ្ងៃស្អែកនៅទីតាំង១នេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/23d3a23b-2baf-4802-a2ed-5e9465500843" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Kan Dara
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">1.1 K views</div></div></div></div></div></a></div></div></div></div></div></div></div></div><div class="mb-20"><div class="grid grid-cols-1 lg:grid-cols-left_shrink px-4 lg:px-10 py-12 gap-x-4 items-center"><div class="flex items-center justify-between lg:block"><div class="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-600"><div class="w-56">ចាប់ផ្តើមអាជីវកម្ម</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <a href="/latest"><button class="border-2 border-gray-600 px-4 lg:px-10 py-2 mt-6 text-xs lg:text-base">
+          មើល​បន្ថែម​
+        </button></a></div> <div class="hidden lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-x-8"><a href="/articles/sihanoukville-will-soon-have-a-5-hectare-parking" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/b1d59e35-0584-4427-a8a2-5c1de93c71de" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ចាប់ផ្តើមអាជីវកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          កាន់តែទំនើប! ឆាប់ៗនេះ ខេត្តព្រះសីហនុនឹងមានកន្លែងចតរថយន្តទំហំ ៥ហិកតាក្រោមការវិនិយោគរបស់ក្រុមហ៊ុនកូរ៉េ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">1.1 K views</div></div></div></div></div></a><a href="/articles/over-700-durian-trucks-stuck-at-vietnam-china-border" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/62fe0a24-a905-4dad-a6ed-586685e0e6da" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ចាប់ផ្តើមអាជីវកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ឡានដឹកទំនិញជាង ៧០០ គ្រឿង កំពុងជាប់គាំងនៅព្រំដែនវៀតណាម-ចិន ក្រោយចិនអនុញ្ញាតឱ្យទុរេនវៀតណាមនាំចូលជាផ្លូវការ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">5.5 K views</div></div></div></div></div></a><a href="/articles/beijing-urban-construction-group-co-ltd" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/46a7edfc-3d1d-4bdc-bd30-814b1f3531ef" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ចាប់ផ្តើមអាជីវកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ដំណឹងល្អ! ក្រុមហ៊ុនធំ១ របស់ចិន នឹងមកសង់ស្ថានីយ៍ទឹកស្អាត ដើម្បីសម្រួលដល់ខេត្ត៣ នេះនៅកម្ពុជា
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">1.4 K views</div></div></div></div></div></a></div> <div class="lg:hidden mt-6"><div class="slick-slider slick-initialized" data-v-3d1a4f76><div class="slick-list" data-v-3d1a4f76><div class="slick-track" style="width:100%;left:0%;" data-v-e4caeaf8 data-v-3d1a4f76><div tabIndex="-1" data-index="0" aria-hidden="false" class="slick-slide slick-active slick-current" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/sihanoukville-will-soon-have-a-5-hectare-parking" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/b1d59e35-0584-4427-a8a2-5c1de93c71de" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ចាប់ផ្តើមអាជីវកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          កាន់តែទំនើប! ឆាប់ៗនេះ ខេត្តព្រះសីហនុនឹងមានកន្លែងចតរថយន្តទំហំ ៥ហិកតាក្រោមការវិនិយោគរបស់ក្រុមហ៊ុនកូរ៉េ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">1.1 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/over-700-durian-trucks-stuck-at-vietnam-china-border" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/62fe0a24-a905-4dad-a6ed-586685e0e6da" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ចាប់ផ្តើមអាជីវកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ឡានដឹកទំនិញជាង ៧០០ គ្រឿង កំពុងជាប់គាំងនៅព្រំដែនវៀតណាម-ចិន ក្រោយចិនអនុញ្ញាតឱ្យទុរេនវៀតណាមនាំចូលជាផ្លូវការ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">5.5 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/beijing-urban-construction-group-co-ltd" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/46a7edfc-3d1d-4bdc-bd30-814b1f3531ef" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ចាប់ផ្តើមអាជីវកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ដំណឹងល្អ! ក្រុមហ៊ុនធំ១ របស់ចិន នឹងមកសង់ស្ថានីយ៍ទឹកស្អាត ដើម្បីសម្រួលដល់ខេត្ត៣ នេះនៅកម្ពុជា
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">1.4 K views</div></div></div></div></div></a></div></div></div></div></div></div></div></div><div class="mb-20"><div class="grid grid-cols-1 lg:grid-cols-left_shrink px-4 lg:px-10 py-12 gap-x-4 items-center"><div class="flex items-center justify-between lg:block"><div class="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-600"><div class="w-56">អចលនទ្រព្យ</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <a href="/latest"><button class="border-2 border-gray-600 px-4 lg:px-10 py-2 mt-6 text-xs lg:text-base">
+          មើល​បន្ថែម​
+        </button></a></div> <div class="hidden lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-x-8"><a href="/articles/investing-in-real-estate" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/7f6ca95f-9beb-43ed-a9cd-a6152e40ac11" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #អចលនទ្រព្យ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          លោក សន សៀប បង្ហាញប្រភេទអចលនទ្រព្យ និងទីតាំង ដែលវិនិយោគទៅមានហានិភ័យទាប
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/ece42c55-6cb8-4d51-9551-9d3470c2748a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Bunthoeun Koem
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">17 views</div></div></div></div></div></a><a href="/articles/new-road-opened-for-construction" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/4404a521-6788-45e3-8a24-799634069429" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #អចលនទ្រព្យ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ច្បាស់ការ! ខែនេះ រដ្ឋនឹងបើកការដ្ឋានធ្វើផ្លូវថ្មី២ខ្សែ ប្រវែងសរុបជាង៤០គីឡូម៉ែត្រ ក្នុងខេត្តព្រៃវែង និងកណ្តាល
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/ece42c55-6cb8-4d51-9551-9d3470c2748a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Bunthoeun Koem
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">2.2 K views</div></div></div></div></div></a><a href="/articles/national-road-5-and-ring-road-3" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/3db0fd06-1e0c-472e-b6b5-1b6861f398a8" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #អចលនទ្រព្យ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          សម្ដេចតេជោ ហ៊ុន សែន សម្រេចលើកពេលសម្ពោធកំណាត់ផ្លូវជាតិលេខ៥ និងគម្រោងក្រវាត់ក្រុងទី៣
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/ece42c55-6cb8-4d51-9551-9d3470c2748a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Bunthoeun Koem
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">414 views</div></div></div></div></div></a></div> <div class="lg:hidden mt-6"><div class="slick-slider slick-initialized" data-v-3d1a4f76><div class="slick-list" data-v-3d1a4f76><div class="slick-track" style="width:100%;left:0%;" data-v-e4caeaf8 data-v-3d1a4f76><div tabIndex="-1" data-index="0" aria-hidden="false" class="slick-slide slick-active slick-current" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/investing-in-real-estate" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/7f6ca95f-9beb-43ed-a9cd-a6152e40ac11" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #អចលនទ្រព្យ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          លោក សន សៀប បង្ហាញប្រភេទអចលនទ្រព្យ និងទីតាំង ដែលវិនិយោគទៅមានហានិភ័យទាប
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/ece42c55-6cb8-4d51-9551-9d3470c2748a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Bunthoeun Koem
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">17 views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/new-road-opened-for-construction" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/4404a521-6788-45e3-8a24-799634069429" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #អចលនទ្រព្យ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ច្បាស់ការ! ខែនេះ រដ្ឋនឹងបើកការដ្ឋានធ្វើផ្លូវថ្មី២ខ្សែ ប្រវែងសរុបជាង៤០គីឡូម៉ែត្រ ក្នុងខេត្តព្រៃវែង និងកណ្តាល
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/ece42c55-6cb8-4d51-9551-9d3470c2748a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Bunthoeun Koem
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">2.2 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/national-road-5-and-ring-road-3" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/3db0fd06-1e0c-472e-b6b5-1b6861f398a8" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #អចលនទ្រព្យ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          សម្ដេចតេជោ ហ៊ុន សែន សម្រេចលើកពេលសម្ពោធកំណាត់ផ្លូវជាតិលេខ៥ និងគម្រោងក្រវាត់ក្រុងទី៣
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/ece42c55-6cb8-4d51-9551-9d3470c2748a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Bunthoeun Koem
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">414 views</div></div></div></div></div></a></div></div></div></div></div></div></div></div><div class="mb-20"><div class="grid grid-cols-1 lg:grid-cols-left_shrink px-4 lg:px-10 py-12 gap-x-4 items-center"><div class="flex items-center justify-between lg:block"><div class="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-600"><div class="w-56">ភាពជាអ្នកដឹកនាំ</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <a href="/latest"><button class="border-2 border-gray-600 px-4 lg:px-10 py-2 mt-6 text-xs lg:text-base">
+          មើល​បន្ថែម​
+        </button></a></div> <div class="hidden lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-x-8"><a href="/articles/use-100-dollar-to-make-millions" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/5b04a052-1f6f-40b4-82c8-741acb7ea819" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ភាពជាអ្នកដឹកនាំ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          សល់លុយតិចមិនដឹងធ្វើអ្វី? ក្រុមសេដ្ឋី ប្រើស្នៀត៣នេះ ច្នៃលុយ១០០$ ឲ្យក្លាយជាលុយខ្ទង់លានដុល្លារ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/23d3a23b-2baf-4802-a2ed-5e9465500843" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Kan Dara
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">1.2 K views</div></div></div></div></div></a><a href="/articles/bad-habit-to-change-" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/0f157200-4129-45cb-8fee-e323f6dfc64e" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ភាពជាអ្នកដឹកនាំ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ទម្លាប់តូចៗ៣នេះអាច ប្រល័យពេលវេលានិងអនាគតអ្នក  ធ្វើឱ្យជីវិតដុនដាបដោយមិនដឹងខ្លួន
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/23d3a23b-2baf-4802-a2ed-5e9465500843" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Kan Dara
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">349 views</div></div></div></div></div></a><a href="/articles/justin-bieber-music-career" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/755117c8-213d-4a64-8920-90b3a09b767a" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ភាពជាអ្នកដឹកនាំ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          បញ្ហាធំ៣យ៉ាងនេះ អាចធ្វើឱ្យកំពូលតារាចម្រៀងវ័យក្មេង Justin Bieber បញ្ចប់អាជីពច្រៀងគ្រប់យ៉ាង
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/09d6fc85-5f12-42e7-aa2b-1e0c09be2f84" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ឡុង វឌ្ឍនៈ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">5.2 K views</div></div></div></div></div></a></div> <div class="lg:hidden mt-6"><div class="slick-slider slick-initialized" data-v-3d1a4f76><div class="slick-list" data-v-3d1a4f76><div class="slick-track" style="width:100%;left:0%;" data-v-e4caeaf8 data-v-3d1a4f76><div tabIndex="-1" data-index="0" aria-hidden="false" class="slick-slide slick-active slick-current" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/use-100-dollar-to-make-millions" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/5b04a052-1f6f-40b4-82c8-741acb7ea819" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ភាពជាអ្នកដឹកនាំ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          សល់លុយតិចមិនដឹងធ្វើអ្វី? ក្រុមសេដ្ឋី ប្រើស្នៀត៣នេះ ច្នៃលុយ១០០$ ឲ្យក្លាយជាលុយខ្ទង់លានដុល្លារ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/23d3a23b-2baf-4802-a2ed-5e9465500843" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Kan Dara
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">1.2 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/bad-habit-to-change-" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/0f157200-4129-45cb-8fee-e323f6dfc64e" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ភាពជាអ្នកដឹកនាំ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ទម្លាប់តូចៗ៣នេះអាច ប្រល័យពេលវេលានិងអនាគតអ្នក  ធ្វើឱ្យជីវិតដុនដាបដោយមិនដឹងខ្លួន
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/23d3a23b-2baf-4802-a2ed-5e9465500843" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Kan Dara
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">349 views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/justin-bieber-music-career" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/755117c8-213d-4a64-8920-90b3a09b767a" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ភាពជាអ្នកដឹកនាំ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          បញ្ហាធំ៣យ៉ាងនេះ អាចធ្វើឱ្យកំពូលតារាចម្រៀងវ័យក្មេង Justin Bieber បញ្ចប់អាជីពច្រៀងគ្រប់យ៉ាង
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/09d6fc85-5f12-42e7-aa2b-1e0c09be2f84" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ឡុង វឌ្ឍនៈ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">5.2 K views</div></div></div></div></div></a></div></div></div></div></div></div></div></div><div class="mb-20"><div class="grid grid-cols-1 lg:grid-cols-left_shrink px-4 lg:px-10 py-12 gap-x-4 items-center"><div class="flex items-center justify-between lg:block"><div class="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-600"><div class="w-56">ហិរញ្ញវត្ថុ</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <a href="/latest"><button class="border-2 border-gray-600 px-4 lg:px-10 py-2 mt-6 text-xs lg:text-base">
+          មើល​បន្ថែម​
+        </button></a></div> <div class="hidden lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-x-8"><a href="/articles/how-to-protect-your-money-from-bank-account" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/17a53502-a6f4-4ee4-9fca-664b07104d59" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ហិរញ្ញវត្ថុ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          លុយឥឡូវពិបាករក ការពារលុយក្នុងកុងផង! ABA បង្ហើប៥ស្នៀតការពារលុយអ្នកពីជនឆបោក
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/dd16de73-246a-4012-a14e-c52adfb30b3a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Toeuy Hong
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">2.4 K views</div></div></div></div></div></a><a href="/articles/why-does-not-government-print-money-to-pay-debt" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/7e0dde00-e50d-4264-8a8b-a8cb4d6be6ea" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ហិរញ្ញវត្ថុ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          មានឆ្ងល់អត់? ប្រទេសនីមួយៗជំពាក់បំណុល ហេតុអ្វីរដ្ឋាភិបាលមិនព្រមបោះពុម្ពលុយសងបំណុលគេ?
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/dd16de73-246a-4012-a14e-c52adfb30b3a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Toeuy Hong
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">5.4 K views</div></div></div></div></div></a><a href="/articles/cellcard-to-close-it-ipo-sale-very-soon" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/86f0684e-af33-4f7c-ad3e-a890e50e0030" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ហិរញ្ញវត្ថុ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ប្រញាប់ទិញ! Cellcard  លក់ហ៊ុនជាសាធារណៈតម្លៃខ្ទង់២ពាន់រៀលក្នុង១ហ៊ុននឹងបិទបញ្ចប់ឆាប់ៗនេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/dd16de73-246a-4012-a14e-c52adfb30b3a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Toeuy Hong
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">6.7 K views</div></div></div></div></div></a></div> <div class="lg:hidden mt-6"><div class="slick-slider slick-initialized" data-v-3d1a4f76><div class="slick-list" data-v-3d1a4f76><div class="slick-track" style="width:100%;left:0%;" data-v-e4caeaf8 data-v-3d1a4f76><div tabIndex="-1" data-index="0" aria-hidden="false" class="slick-slide slick-active slick-current" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/how-to-protect-your-money-from-bank-account" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/17a53502-a6f4-4ee4-9fca-664b07104d59" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ហិរញ្ញវត្ថុ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          លុយឥឡូវពិបាករក ការពារលុយក្នុងកុងផង! ABA បង្ហើប៥ស្នៀតការពារលុយអ្នកពីជនឆបោក
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/dd16de73-246a-4012-a14e-c52adfb30b3a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Toeuy Hong
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">2.4 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/why-does-not-government-print-money-to-pay-debt" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/7e0dde00-e50d-4264-8a8b-a8cb4d6be6ea" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ហិរញ្ញវត្ថុ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          មានឆ្ងល់អត់? ប្រទេសនីមួយៗជំពាក់បំណុល ហេតុអ្វីរដ្ឋាភិបាលមិនព្រមបោះពុម្ពលុយសងបំណុលគេ?
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/dd16de73-246a-4012-a14e-c52adfb30b3a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Toeuy Hong
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">5.4 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/cellcard-to-close-it-ipo-sale-very-soon" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/86f0684e-af33-4f7c-ad3e-a890e50e0030" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #ហិរញ្ញវត្ថុ
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ប្រញាប់ទិញ! Cellcard  លក់ហ៊ុនជាសាធារណៈតម្លៃខ្ទង់២ពាន់រៀលក្នុង១ហ៊ុននឹងបិទបញ្ចប់ឆាប់ៗនេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/dd16de73-246a-4012-a14e-c52adfb30b3a" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Toeuy Hong
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">6.7 K views</div></div></div></div></div></a></div></div></div></div></div></div></div></div><div class="mb-20"><div class="grid grid-cols-1 lg:grid-cols-left_shrink px-4 lg:px-10 py-12 gap-x-4 items-center"><div class="flex items-center justify-between lg:block"><div class="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-600"><div class="w-56">កំពូលអ្នកលក់</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <a href="/latest"><button class="border-2 border-gray-600 px-4 lg:px-10 py-2 mt-6 text-xs lg:text-base">
+          មើល​បន្ថែម​
+        </button></a></div> <div class="hidden lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-x-8"><a href="/articles/revlon-sale-tips-owner" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/b27a9c3d-5d15-4a89-b362-c3ad37b2f073" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #កំពូលអ្នកលក់
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ម្ចាស់ Revlon នៅខ្មែរ៖ ការលក់មិនមែនចង់តែបានលុយទេ ប្រសិនជាខ្ញុំចង់បានលុយ ប្រហែលជាខ្ញុំមិនបានលុយទេ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/39937b44-0f78-4440-85ab-682010c87181" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            THATSORNA NOV
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">1.2 K views</div></div></div></div></div></a><a href="/articles/hong-da-footble-out-cambodia" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/2e0d24aa-95ea-41d8-a4da-ea837885601e" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #កំពូលអ្នកលក់
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          សោកស្តាយ! លោក ហុងដា ប្រកាសបញ្ចាប់ប្រតិបត្តិការក្លឹបបាល់ទាត់របស់ខ្លួននៅខ្មែរ ដែលបានបង្កើតឡើងតាំងពីឆ្នាំ ២០១៧
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/39937b44-0f78-4440-85ab-682010c87181" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            THATSORNA NOV
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">1.7 K views</div></div></div></div></div></a><a href="/articles/top-china-cars-in-cambodia" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/55deb1c6-92be-47d5-9637-e302677445cb" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #កំពូលអ្នកលក់
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          សម្រុកចូលខ្មែរហើយ! មកស្គាល់ក្រុមហ៊ុនផលិតរថយន្តចិនចំនួន៥ កំពុងវៃលុកពេញទីផ្សារកម្ពុជា
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/39937b44-0f78-4440-85ab-682010c87181" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            THATSORNA NOV
+          </div> <div class="font-light text-xs">
+            MAY 31 2023
+          </div> <div class="text-xs">1.3 K views</div></div></div></div></div></a></div> <div class="lg:hidden mt-6"><div class="slick-slider slick-initialized" data-v-3d1a4f76><div class="slick-list" data-v-3d1a4f76><div class="slick-track" style="width:100%;left:0%;" data-v-e4caeaf8 data-v-3d1a4f76><div tabIndex="-1" data-index="0" aria-hidden="false" class="slick-slide slick-active slick-current" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/revlon-sale-tips-owner" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/b27a9c3d-5d15-4a89-b362-c3ad37b2f073" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #កំពូលអ្នកលក់
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ម្ចាស់ Revlon នៅខ្មែរ៖ ការលក់មិនមែនចង់តែបានលុយទេ ប្រសិនជាខ្ញុំចង់បានលុយ ប្រហែលជាខ្ញុំមិនបានលុយទេ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/39937b44-0f78-4440-85ab-682010c87181" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            THATSORNA NOV
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">1.2 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/hong-da-footble-out-cambodia" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/2e0d24aa-95ea-41d8-a4da-ea837885601e" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #កំពូលអ្នកលក់
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          សោកស្តាយ! លោក ហុងដា ប្រកាសបញ្ចាប់ប្រតិបត្តិការក្លឹបបាល់ទាត់របស់ខ្លួននៅខ្មែរ ដែលបានបង្កើតឡើងតាំងពីឆ្នាំ ២០១៧
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/39937b44-0f78-4440-85ab-682010c87181" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            THATSORNA NOV
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">1.7 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/top-china-cars-in-cambodia" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/55deb1c6-92be-47d5-9637-e302677445cb" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #កំពូលអ្នកលក់
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          សម្រុកចូលខ្មែរហើយ! មកស្គាល់ក្រុមហ៊ុនផលិតរថយន្តចិនចំនួន៥ កំពុងវៃលុកពេញទីផ្សារកម្ពុជា
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/39937b44-0f78-4440-85ab-682010c87181" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            THATSORNA NOV
+          </div> <div class="font-light text-xs">
+            MAY 31 2023
+          </div> <div class="text-xs">1.3 K views</div></div></div></div></div></a></div></div></div></div></div></div></div></div><div class="mb-20"><div class="grid grid-cols-1 lg:grid-cols-left_shrink px-4 lg:px-10 py-12 gap-x-4 items-center"><div class="flex items-center justify-between lg:block"><div class="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-600"><div class="w-56">មុខរបរកសិកម្ម</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <a href="/latest"><button class="border-2 border-gray-600 px-4 lg:px-10 py-2 mt-6 text-xs lg:text-base">
+          មើល​បន្ថែម​
+        </button></a></div> <div class="hidden lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-x-8"><a href="/articles/pineapple-scraps" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/ed645d76-4a72-4730-9005-d8dca682f286" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #មុខរបរកសិកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          គំនិតច្នៃប្រឌិតថ្មី! ប្រទេសធំៗ ២ ច្នៃតែស្លឹកម្នាស់និងផ្លែម្នាស់ អាចផលិតបានទំនិញជិត១០មុខ ដាក់លក់ពេញប្រទេស
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">244 views</div></div></div></div></div></a><a href="/articles/vietnam-boosts-revenue-from-dried-fish-exports" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/643b9b21-9595-4c0d-9781-9ee1e7aadbce" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #មុខរបរកសិកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+               លក់តែត្រីងៀត វៀតណាមអាចកើបចំណូលរាប់លាន$ ក្នុង១ឆ្នាំ ខណៈប្រទេសទាំងនេះជាទីផ្សារធំ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">1.5 K views</div></div></div></div></div></a><a href="/articles/two-japanese-companies-will-come" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/4c8152b5-86a4-4eb4-9db4-ee0caf9f61f9" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #មុខរបរកសិកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ក្រុមហ៊ុន២ របស់ជប៉ុន នឹងចូលមកកែច្នៃគ្រាប់ស្វាយចន្ទីនៅកម្ពុជាដើម្បីនាំចេញទៅអឺរ៉ុបនិងប្រទេស៣នេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">290 views</div></div></div></div></div></a></div> <div class="lg:hidden mt-6"><div class="slick-slider slick-initialized" data-v-3d1a4f76><div class="slick-list" data-v-3d1a4f76><div class="slick-track" style="width:100%;left:0%;" data-v-e4caeaf8 data-v-3d1a4f76><div tabIndex="-1" data-index="0" aria-hidden="false" class="slick-slide slick-active slick-current" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/pineapple-scraps" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/ed645d76-4a72-4730-9005-d8dca682f286" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #មុខរបរកសិកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          គំនិតច្នៃប្រឌិតថ្មី! ប្រទេសធំៗ ២ ច្នៃតែស្លឹកម្នាស់និងផ្លែម្នាស់ អាចផលិតបានទំនិញជិត១០មុខ ដាក់លក់ពេញប្រទេស
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">244 views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/vietnam-boosts-revenue-from-dried-fish-exports" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/643b9b21-9595-4c0d-9781-9ee1e7aadbce" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #មុខរបរកសិកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+               លក់តែត្រីងៀត វៀតណាមអាចកើបចំណូលរាប់លាន$ ក្នុង១ឆ្នាំ ខណៈប្រទេសទាំងនេះជាទីផ្សារធំ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">1.5 K views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/two-japanese-companies-will-come" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/4c8152b5-86a4-4eb4-9db4-ee0caf9f61f9" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #មុខរបរកសិកម្ម
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ក្រុមហ៊ុន២ របស់ជប៉ុន នឹងចូលមកកែច្នៃគ្រាប់ស្វាយចន្ទីនៅកម្ពុជាដើម្បីនាំចេញទៅអឺរ៉ុបនិងប្រទេស៣នេះ
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 1 2023
+          </div> <div class="text-xs">290 views</div></div></div></div></div></a></div></div></div></div></div></div></div></div><div class="mb-20"><div class="grid grid-cols-1 lg:grid-cols-left_shrink px-4 lg:px-10 py-12 gap-x-4 items-center"><div class="flex items-center justify-between lg:block"><div class="font-bold text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-600"><div class="w-56">PR</div> <div class="flex justify-start mt-6"><hr class="w-8 border-b border-gray-600"></div></div> <a href="/latest"><button class="border-2 border-gray-600 px-4 lg:px-10 py-2 mt-6 text-xs lg:text-base">
+          មើល​បន្ថែម​
+        </button></a></div> <div class="hidden lg:grid lg:grid-cols-3 2xl:grid-cols-4 gap-x-8"><a href="/articles/electric-tricycle" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/4d18915b-ae06-4318-bbd3-9b5f27d4244a" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #PR
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          កង់បីអគ្គិសនីអនៀនក្លាយជាអ្នកផលិតដំបូងគេ បាននាំមុខឧស្សាហកម្មបច្ចេកវិជ្ជាដែលសម្ពោធនៅកង់បីស៊េរីថ្មី T1S និង T1L
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">21 views</div></div></div></div></div></a><a href="/articles/daiichi-life-cambodia-what-s-your-1" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/55478aa2-d163-405e-a07f-f5d8d5cb9f7a" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #PR
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ក្រុមហ៊ុន ដាយ អ៊ិឈិ ឡាយហ្វ៍ ប្រកាសចាប់ផ្ដើមយុទ្ធនាការផ្សព្វផ្សាយ ““អ្វីជាអាទិភាពទី១របស់លោកអ្នក ឬ What’s your #1”
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/c5e3ef48-0cea-4484-a2a5-9475e1e01242" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Daneth Mech
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">32 views</div></div></div></div></div></a><a href="/articles/menlo-security" class="group py-5"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/27d51fa7-b355-4929-bae1-e980b7081358" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #PR
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ការពង្រឹងប្រព័ន្ធសន្តិសុខសាយប័រ (Cybersecurity) សម្រាប់ធនាគារ និងគ្រឹះស្ថានហិរញ្ញវត្ថុ      ក្នុងស្រុក៖ មធ្យោបាយការពារពីការគំរាមកំហែងដែលកើនឡើងក្នុងសម័យឌីជីថល
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/c5e3ef48-0cea-4484-a2a5-9475e1e01242" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Daneth Mech
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">54 views</div></div></div></div></div></a></div> <div class="lg:hidden mt-6"><div class="slick-slider slick-initialized" data-v-3d1a4f76><div class="slick-list" data-v-3d1a4f76><div class="slick-track" style="width:100%;left:0%;" data-v-e4caeaf8 data-v-3d1a4f76><div tabIndex="-1" data-index="0" aria-hidden="false" class="slick-slide slick-active slick-current" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/electric-tricycle" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/4d18915b-ae06-4318-bbd3-9b5f27d4244a" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #PR
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          កង់បីអគ្គិសនីអនៀនក្លាយជាអ្នកផលិតដំបូងគេ បាននាំមុខឧស្សាហកម្មបច្ចេកវិជ្ជាដែលសម្ពោធនៅកង់បីស៊េរីថ្មី T1S និង T1L
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/a0a4c4f4-d307-48e0-8262-0634a9319588" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            ធី ស្រីល័ក្ខ
+          </div> <div class="font-light text-xs">
+            JUNE 3 2023
+          </div> <div class="text-xs">21 views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/daiichi-life-cambodia-what-s-your-1" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/55478aa2-d163-405e-a07f-f5d8d5cb9f7a" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #PR
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ក្រុមហ៊ុន ដាយ អ៊ិឈិ ឡាយហ្វ៍ ប្រកាសចាប់ផ្ដើមយុទ្ធនាការផ្សព្វផ្សាយ ““អ្វីជាអាទិភាពទី១របស់លោកអ្នក ឬ What’s your #1”
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/c5e3ef48-0cea-4484-a2a5-9475e1e01242" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Daneth Mech
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">32 views</div></div></div></div></div></a></div></div><div tabIndex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active" style="outline:none;width:33.333333333333336%;" data-v-e4caeaf8><div data-v-e4caeaf8><a href="/articles/menlo-security" tabIndex="-1" class="group py-5 px-2" style="width:100%;display:inline-block;"><div class="filter shadow-lg rounded-xl flex flex-col justify-between h-auto max-w-sm"><div><div class="relative h-44 overflow-hidden bg-no-repeat bg-contain"><img src="https://business-cambodia.com/cms/assets/27d51fa7-b355-4929-bae1-e980b7081358" alt="" class="object-cover h-full rounded w-full group-hover:scale-110 transition duration-300 ease-in-out"></div> <div class="p-4"><div class="text-xs inline-flex items-center font-normal leading-sm uppercase px-2 py-0.5 text-gray-700 bg-gray-200 p-1 rounded">
+          #PR
+        </div> <div class="font-bold text-base mt-2 text-gray-600 line-clamp-2 hover:underline cursor-pointer">
+          ការពង្រឹងប្រព័ន្ធសន្តិសុខសាយប័រ (Cybersecurity) សម្រាប់ធនាគារ និងគ្រឹះស្ថានហិរញ្ញវត្ថុ      ក្នុងស្រុក៖ មធ្យោបាយការពារពីការគំរាមកំហែងដែលកើនឡើងក្នុងសម័យឌីជីថល
+        </div></div></div> <div class="flex w-full items-end justify-between pt-2 p-4"><div class="flex items-center"><div><div class="w-12 h-12 mr-4 rounded-full"><img src="https://business-cambodia.com/cms/assets/c5e3ef48-0cea-4484-a2a5-9475e1e01242" alt="" class="object-cover h-full w-full rounded-full"></div></div> <div class="w-full text-sm"><div class="font-semibold text-gray-700">
+            Daneth Mech
+          </div> <div class="font-light text-xs">
+            JUNE 2 2023
+          </div> <div class="text-xs">54 views</div></div></div></div></div></a></div></div></div></div></div></div></div></div> <div><div class="w-full"><img src="/footer.png" alt="Footer Background" class="w-full h-12 object-cover"></div> <div class="h-auto relative bg-primary text-white lg:px-28 px-6 py-10"><div class="grid lg:grid-cols-3 grid-col-1 gap-y-7 lg:gap-y-0"><div class="lg:justify-self-start justify-self-center lg:text-left text-center"><div class="text-lg font-semibold">ស្វែងយល់អំពីពួកយើង</div> <div class="lg:pt-7 pt-4 hover:underline pb-4 font-medium"><a href="/about">អំពីពួកយើង</a></div> <div class="flex items-center justify-center lg:justify-start space-x-3 pb-2"><a href="https://www.youtube.com/c/BusinessCambodiabc" target="_blank"><svg viewBox="0 0 24 24" class="h-7 w-7"><path fill="currentColor" d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"></path></svg></a> <a href="https://www.facebook.com/bizcambo" target="_blank"><svg viewBox="0 0 24 24" class="h-6 w-6"><path fill="currentColor" d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"></path></svg></a> <a href="https://www.tiktok.com/@businesscambodia" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2859 3333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" class="h-5 w-5"><path fill="currentColor" d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"></path></svg></a> <a href="https://t.me/Businesscambodiawebsite?fbclid=IwAR0uujJSNkTm1xOZuxGkHFkS4QYZewyunG5Q0w1R55A-NKL-JEGiXV5Ft0k" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="h-6 w-6"><path fill="currentColor" d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"></path></svg></a></div> <div class="text-sm font-light">sam.businesscambodia@gmail.com</div></div> <div class="justify-self-center"><div class="text-lg font-semibold text-center">អត្ថបទផ្សេងៗ</div> <div class="lg:pt-7 pt-4 flex space-x-10 lg:text-left text-center"><ul class="list-none font-light text-sm"><a href="/news" class="hover:underline cursor-pointer"><li to="/finance" class="footer">ព័ត៌មានថ្មីៗ</li></a><a href="/business" class="hover:underline cursor-pointer"><li to="/finance" class="footer">ចាប់ផ្តើមអាជីវកម្ម</li></a><a href="/real-estate" class="hover:underline cursor-pointer"><li to="/finance" class="footer">អចលនទ្រព្យ</li></a><a href="/leadership" class="hover:underline cursor-pointer"><li to="/finance" class="footer">ភាពជាអ្នកដឹកនាំ</li></a></ul> <ul class="list-none font-light text-sm"><a href="/finance" class="hover:underline cursor-pointer"><li to="/finance" class="footer">ហិរញ្ញវត្ថុ</li></a><a href="/sales" class="hover:underline cursor-pointer"><li to="/finance" class="footer">កំពូលអ្នកលក់</li></a><a href="/agriculture" class="hover:underline cursor-pointer"><li to="/finance" class="footer">មុខរបរកសិកម្ម</li></a><a href="/pr" class="hover:underline cursor-pointer"><li to="/finance" class="footer">PR</li></a></ul></div></div> <div class="lg:justify-self-end justify-self-center text-center lg:text-right"><div class="text-lg font-semibold">ទំនាក់ទំនងមកពួកយើង</div> <div class="lg:pt-7 pt-4 text-sm font-light"><div class="pb-4">017 300 755/093 300 755</div> <a href="https://goo.gl/maps/cnSAnWnVU6UYoxct6" target="_blank" class="cursor-pointer hover:underline">
+            Building 422 St. 271, Phum 1, Stung Mean <br>
+            Chey Khan MeanChey, Phnom Penh
+          </a></div></div></div> <div class="flex flex-col justify-center items-center pt-5 text-center"><img src="/bc_logo.png" alt class="lg:h-28 lg:w-28 h-20 w-20"> <div class="text-base font-semibold">Business Cambodia</div> <div class="md:text-sm text-xs font-light pt-2">
+        បំផុសគំនិតរកស៊ី នាំមនុស្សឱ្យហ៊ានចេញរកស៊ីតាមក្ដីស្រមៃ
+      </div></div></div> <div class="bg-white flex md:flex-row flex-col md:justify-between justify-center items-center lg:px-28 px-6 md:py-4 py-3 md:text-sm text-xs"><div>© 2022 Baksey Media. All Rights Reserved.</div> <a href="https://www.facebook.com/p.both" target="_blank">Developed by: <span class="hover:underline">Neak Panhboth</span></a></div></div></div></div></div></div><script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,_,$,aa,ab,ac,ad,ae,af,ag,ah,ai,aj,ak){return {layout:"default",data:[{heroArticles:[{date_created:H,title:I,views:J,slug:K,thumbnail:L,user_created:{first_name:a,last_name:b,avatar:c,id:M},category:{name:d,slug:e}},{date_created:N,title:O,views:P,slug:Q,thumbnail:R,user_created:{first_name:p,last_name:q,avatar:r,id:"e7b5d70a-d7e0-4b1c-9abb-05b366d9dc7f"},category:{name:d,slug:e}},{date_created:S,title:T,views:U,slug:V,thumbnail:W,user_created:{first_name:a,last_name:b,avatar:c,id:M},category:{name:f,slug:g}}],popularArticles:[{date_created:"2023-01-02T04:01:39.638Z",title:"ចេញចូលភ្នំពេញត្រូវដឹង! នៅថ្ងៃទី២៩ ធ្នូ រដ្ឋបាលរាជធានីភ្នំពេញនឹងផ្អាកចរាចរយានជំនិះគ្រប់ប្រភេទលើកំណាត់មហាវិថីឈ្នះឈ្នះ",views:144263,slug:"closing-street-",thumbnail:"5de32954-bdf1-4dac-b97c-2c72978af0d1",user_created:{first_name:h,last_name:i},category:{name:d,slug:e}},{date_created:"2022-11-29T02:55:24.129Z",title:"កាន់តែងាយស្រួល! អ្នកដែលមានសំបុត្រកំណើតសរសេរខុស អាចទៅកែថ្មីនៅកន្លែងនេះបាន",views:107578,slug:"department-of-civil-registration-",thumbnail:"f4e963dd-fc7d-4641-a3bf-265ef1288ec4",user_created:{first_name:a,last_name:b},category:{name:d,slug:e}},{date_created:"2022-11-05T09:37:44.040Z",title:"អ្នកចេញ-ចូលភ្នំពេញត្រូវដឹង! ថ្ងៃទី១០-១៣ វិច្ឆិកា គ្រប់យានយន្ដធ្វើចរាចរលើវិថីធំៗទាំងនេះត្រូវបង្វែរទៅផ្លូវផ្សេង",views:102657,slug:"closing-street-in-phnom-penh-on-10-13-november",thumbnail:"4739cfcd-3d64-4280-818d-793da2df59d7",user_created:{first_name:h,last_name:i},category:{name:d,slug:e}}],advertisements:[{name:"Simply June",id:X,slug:"simply-june",file:"77b7d590-3a56-4c67-a9e2-0be3eac6194b",link:"https:\u002F\u002Fwww.facebook.com\u002FWilmarCLVCambodia\u002Fposts\u002Fpfbid031AL9CLnbonur5oWKS63JdAH6ZQBJHTtrNB21VpDbhkKGY6cUjiQWwbas9bT3BiF3l",mobile_only:C,detail_page:C,advertisement_type:{type:"side-bar"},advertiser:D}],popularArticlesMonthly:[{title:"ច្បាស់ការ! ឯកឧត្ដម ស៊ុន ចាន់ថុល បញ្ជាក់ថាគម្រោងផ្លូវល្បឿនលឿនភ្នំពេញ-សៀមរាបបញ្ចប់ការសិក្សានៅថ្ងៃ៣១ ឧសភា",date_created:"2023-06-01T04:28:17.551Z",slug:"expressway-siem-reap",thumbnail:"b96ccc82-0b22-4a6e-ad00-4ddeb1ffec22",views:7536,category:{name:j,slug:k},user_created:{first_name:h,last_name:i,avatar:y}},{title:Y,date_created:Z,slug:_,thumbnail:$,views:aa,category:{name:l,slug:m},user_created:{first_name:z,last_name:A,avatar:B}},{title:ab,date_created:ac,slug:ad,thumbnail:ae,views:af,category:{name:n,slug:o},user_created:{first_name:a,last_name:b,avatar:c}}],categoriesArticles:[{name:d,description:"បំផុសសកម្មភាពអាជីវកម្មថ្មីៗទាំងនៅក្នុងស្រុក និងក្រៅស្រុក",thumbnail:"8812fd3e-50da-4b00-bd05-66a20b3f8241",slug:e,articles:[{views:J,title:I,thumbnail:L,date_created:H,slug:K,category:{name:d,slug:e},user_created:{first_name:a,avatar:c,last_name:b}},{views:P,title:O,thumbnail:R,date_created:N,slug:Q,category:{name:d,slug:e},user_created:{first_name:p,avatar:r,last_name:q}},{views:1126,title:"ឱកាសការងារ១៥០០០កន្លែង! អ្នកសៀមរាបកំពុងរកការងារធ្វើ កុំភ្លេចយកពាក្យទៅដាក់ ថ្ងៃស្អែកនៅទីតាំង១នេះ",thumbnail:"a05b0344-a9f9-4bd0-9c0b-5d0165b43f26",date_created:"2023-06-01T15:12:20.403Z",slug:"nea-work-at-siem-reap",category:{name:d,slug:e},user_created:{first_name:p,avatar:r,last_name:q}}]},{name:n,description:"នាំមនុស្សស្រមៃឱ្យធំ ចាប់ផ្តើមឱ្យតូច ពង្រីកឱ្យធំ",thumbnail:"2a73c151-2cd8-45a3-b2ae-da99988606dd",slug:o,articles:[{views:1115,title:"កាន់តែទំនើប! ឆាប់ៗនេះ ខេត្តព្រះសីហនុនឹងមានកន្លែងចតរថយន្តទំហំ ៥ហិកតាក្រោមការវិនិយោគរបស់ក្រុមហ៊ុនកូរ៉េ",thumbnail:"b1d59e35-0584-4427-a8a2-5c1de93c71de",date_created:"2023-06-03T08:01:57.552Z",slug:"sihanoukville-will-soon-have-a-5-hectare-parking",category:{name:n,slug:o},user_created:{first_name:a,avatar:c,last_name:b}},{views:af,title:ab,thumbnail:ae,date_created:ac,slug:ad,category:{name:n,slug:o},user_created:{first_name:a,avatar:c,last_name:b}},{views:1377,title:"ដំណឹងល្អ! ក្រុមហ៊ុនធំ១ របស់ចិន នឹងមកសង់ស្ថានីយ៍ទឹកស្អាត ដើម្បីសម្រួលដល់ខេត្ត៣ នេះនៅកម្ពុជា",thumbnail:"46a7edfc-3d1d-4bdc-bd30-814b1f3531ef",date_created:"2023-06-02T09:32:29.381Z",slug:"beijing-urban-construction-group-co-ltd",category:{name:n,slug:o},user_created:{first_name:a,avatar:c,last_name:b}}]},{name:j,description:"បំផុសគំនិតរកស៊ីក្នុងវិស័យអចលនទ្រព្យ និងការវិនិយោគ",thumbnail:"dbc6c3fb-3963-4f7a-b76c-7f1fc9c32c78",slug:k,articles:[{views:17,title:"លោក សន សៀប បង្ហាញប្រភេទអចលនទ្រព្យ និងទីតាំង ដែលវិនិយោគទៅមានហានិភ័យទាប",thumbnail:"7f6ca95f-9beb-43ed-a9cd-a6152e40ac11",date_created:"2023-06-02T08:35:47.455Z",slug:"investing-in-real-estate",category:{name:j,slug:k},user_created:{first_name:h,avatar:y,last_name:i}},{views:2232,title:"ច្បាស់ការ! ខែនេះ រដ្ឋនឹងបើកការដ្ឋានធ្វើផ្លូវថ្មី២ខ្សែ ប្រវែងសរុបជាង៤០គីឡូម៉ែត្រ ក្នុងខេត្តព្រៃវែង និងកណ្តាល",thumbnail:"4404a521-6788-45e3-8a24-799634069429",date_created:"2023-06-02T04:03:13.230Z",slug:"new-road-opened-for-construction",category:{name:j,slug:k},user_created:{first_name:h,avatar:y,last_name:i}},{views:414,title:"សម្ដេចតេជោ ហ៊ុន សែន សម្រេចលើកពេលសម្ពោធកំណាត់ផ្លូវជាតិលេខ៥ និងគម្រោងក្រវាត់ក្រុងទី៣",thumbnail:"3db0fd06-1e0c-472e-b6b5-1b6861f398a8",date_created:"2023-06-02T03:51:39.668Z",slug:"national-road-5-and-ring-road-3",category:{name:j,slug:k},user_created:{first_name:h,avatar:y,last_name:i}}]},{name:s,description:"បំផុសគំនិតក្នុងការដឹកនាំ នាំមនុស្សធម្មតា ក្លាយជា CEO ឆ្នើម",thumbnail:"84756cab-d307-474f-bd21-8060b0fb1220",slug:t,articles:[{views:1176,title:"សល់លុយតិចមិនដឹងធ្វើអ្វី? ក្រុមសេដ្ឋី ប្រើស្នៀត៣នេះ ច្នៃលុយ១០០$ ឲ្យក្លាយជាលុយខ្ទង់លានដុល្លារ",thumbnail:"5b04a052-1f6f-40b4-82c8-741acb7ea819",date_created:"2023-06-03T07:28:18.170Z",slug:"use-100-dollar-to-make-millions",category:{name:s,slug:t},user_created:{first_name:p,avatar:r,last_name:q}},{views:349,title:"ទម្លាប់តូចៗ៣នេះអាច ប្រល័យពេលវេលានិងអនាគតអ្នក  ធ្វើឱ្យជីវិតដុនដាបដោយមិនដឹងខ្លួន",thumbnail:"0f157200-4129-45cb-8fee-e323f6dfc64e",date_created:"2023-06-02T16:36:11.922Z",slug:"bad-habit-to-change-",category:{name:s,slug:t},user_created:{first_name:p,avatar:r,last_name:q}},{views:5208,title:"បញ្ហាធំ៣យ៉ាងនេះ អាចធ្វើឱ្យកំពូលតារាចម្រៀងវ័យក្មេង Justin Bieber បញ្ចប់អាជីពច្រៀងគ្រប់យ៉ាង",thumbnail:"755117c8-213d-4a64-8920-90b3a09b767a",date_created:"2023-06-02T09:50:15.596Z",slug:"justin-bieber-music-career",category:{name:s,slug:t},user_created:{first_name:"ឡុង",avatar:"09d6fc85-5f12-42e7-aa2b-1e0c09be2f84",last_name:"វឌ្ឍនៈ"}}]},{name:l,description:"នាំប្រជាជនខ្មែរ យល់ពីចំណេះដឹងហិរញ្ញវត្ថុ តាមឱ្យទាន់របត់បច្ចេកវិទ្យា",thumbnail:"87b496ef-ebb7-4085-80b5-84d09176fbf7",slug:m,articles:[{views:2429,title:"លុយឥឡូវពិបាករក ការពារលុយក្នុងកុងផង! ABA បង្ហើប៥ស្នៀតការពារលុយអ្នកពីជនឆបោក",thumbnail:"17a53502-a6f4-4ee4-9fca-664b07104d59",date_created:"2023-06-02T09:41:18.681Z",slug:"how-to-protect-your-money-from-bank-account",category:{name:l,slug:m},user_created:{first_name:z,avatar:B,last_name:A}},{views:5361,title:"មានឆ្ងល់អត់? ប្រទេសនីមួយៗជំពាក់បំណុល ហេតុអ្វីរដ្ឋាភិបាលមិនព្រមបោះពុម្ពលុយសងបំណុលគេ?",thumbnail:"7e0dde00-e50d-4264-8a8b-a8cb4d6be6ea",date_created:"2023-06-02T07:22:44.511Z",slug:"why-does-not-government-print-money-to-pay-debt",category:{name:l,slug:m},user_created:{first_name:z,avatar:B,last_name:A}},{views:aa,title:Y,thumbnail:$,date_created:Z,slug:_,category:{name:l,slug:m},user_created:{first_name:z,avatar:B,last_name:A}}]},{name:u,description:"នាំមនុស្សគិតពីយុទ្ធសាស្រ្តលក់ ក្លាយជាកំពូលអ្នកលក់ឆ្នើម",thumbnail:"eea71961-2858-41bb-b741-d4e4085aaf18",slug:v,articles:[{views:1178,title:"ម្ចាស់ Revlon នៅខ្មែរ៖ ការលក់មិនមែនចង់តែបានលុយទេ ប្រសិនជាខ្ញុំចង់បានលុយ ប្រហែលជាខ្ញុំមិនបានលុយទេ",thumbnail:"b27a9c3d-5d15-4a89-b362-c3ad37b2f073",date_created:"2023-06-01T09:52:40.004Z",slug:"revlon-sale-tips-owner",category:{name:u,slug:v},user_created:{first_name:E,avatar:F,last_name:G}},{views:1666,title:"សោកស្តាយ! លោក ហុងដា ប្រកាសបញ្ចាប់ប្រតិបត្តិការក្លឹបបាល់ទាត់របស់ខ្លួននៅខ្មែរ ដែលបានបង្កើតឡើងតាំងពីឆ្នាំ ២០១៧",thumbnail:"2e0d24aa-95ea-41d8-a4da-ea837885601e",date_created:"2023-06-01T01:51:46.682Z",slug:"hong-da-footble-out-cambodia",category:{name:u,slug:v},user_created:{first_name:E,avatar:F,last_name:G}},{views:1271,title:"សម្រុកចូលខ្មែរហើយ! មកស្គាល់ក្រុមហ៊ុនផលិតរថយន្តចិនចំនួន៥ កំពុងវៃលុកពេញទីផ្សារកម្ពុជា",thumbnail:"55deb1c6-92be-47d5-9637-e302677445cb",date_created:"2023-05-31T09:53:29.458Z",slug:"top-china-cars-in-cambodia",category:{name:u,slug:v},user_created:{first_name:E,avatar:F,last_name:G}}]},{name:w,description:"បំផុសគំនិតរកស៊ីក្នុងវិស័យកសិកម្ម ឱ្យត្រូវទីផ្សារ និងអាចនាំចេញបាន",thumbnail:"1ec46f45-409b-4189-8a54-0e7454e62249",slug:x,articles:[{views:244,title:"គំនិតច្នៃប្រឌិតថ្មី! ប្រទេសធំៗ ២ ច្នៃតែស្លឹកម្នាស់និងផ្លែម្នាស់ អាចផលិតបានទំនិញជិត១០មុខ ដាក់លក់ពេញប្រទេស",thumbnail:"ed645d76-4a72-4730-9005-d8dca682f286",date_created:"2023-06-02T05:23:07.911Z",slug:"pineapple-scraps",category:{name:w,slug:x},user_created:{first_name:a,avatar:c,last_name:b}},{views:1526,title:"     លក់តែត្រីងៀត វៀតណាមអាចកើបចំណូលរាប់លាន$ ក្នុង១ឆ្នាំ ខណៈប្រទេសទាំងនេះជាទីផ្សារធំ",thumbnail:"643b9b21-9595-4c0d-9781-9ee1e7aadbce",date_created:"2023-06-02T03:28:56.608Z",slug:"vietnam-boosts-revenue-from-dried-fish-exports",category:{name:w,slug:x},user_created:{first_name:a,avatar:c,last_name:b}},{views:290,title:"ក្រុមហ៊ុន២ របស់ជប៉ុន នឹងចូលមកកែច្នៃគ្រាប់ស្វាយចន្ទីនៅកម្ពុជាដើម្បីនាំចេញទៅអឺរ៉ុបនិងប្រទេស៣នេះ",thumbnail:"4c8152b5-86a4-4eb4-9db4-ee0caf9f61f9",date_created:"2023-06-01T09:56:16.833Z",slug:"two-japanese-companies-will-come",category:{name:w,slug:x},user_created:{first_name:a,avatar:c,last_name:b}}]},{name:f,description:"ជួយឱ្យសេវាកម្ម ផលិតផល និងយីហោរបស់លោកអ្នក ទៅដល់ដៃអតិថិជនលឿនបំផុត",thumbnail:"01d48038-e3d0-4cea-9c57-562439f6ae1b",slug:g,articles:[{views:U,title:T,thumbnail:W,date_created:S,slug:V,category:{name:f,slug:g},user_created:{first_name:a,avatar:c,last_name:b}},{views:ag,title:"ក្រុមហ៊ុន ដាយ អ៊ិឈិ ឡាយហ្វ៍ ប្រកាសចាប់ផ្ដើមយុទ្ធនាការផ្សព្វផ្សាយ ““អ្វីជាអាទិភាពទី១របស់លោកអ្នក ឬ What’s your #1”",thumbnail:"55478aa2-d163-405e-a07f-f5d8d5cb9f7a",date_created:"2023-06-02T14:35:16.372Z",slug:"daiichi-life-cambodia-what-s-your-1",category:{name:f,slug:g},user_created:{first_name:ah,avatar:ai,last_name:aj}},{views:54,title:"ការពង្រឹងប្រព័ន្ធសន្តិសុខសាយប័រ (Cybersecurity) សម្រាប់ធនាគារ និងគ្រឹះស្ថានហិរញ្ញវត្ថុ      ក្នុងស្រុក៖ មធ្យោបាយការពារពីការគំរាមកំហែងដែលកើនឡើងក្នុងសម័យឌីជីថល",thumbnail:"27d51fa7-b355-4929-bae1-e980b7081358",date_created:"2023-06-02T14:26:05.412Z",slug:"menlo-security",category:{name:f,slug:g},user_created:{first_name:ah,avatar:ai,last_name:aj}}]}],adsIds:[{id:39},{id:51},{id:47},{id:44},{id:49},{id:X},{id:28},{id:34},{id:ag},{id:37},{id:31}]}],fetch:{},error:D,state:{categories:[{slug:e,id:8,name:d},{slug:o,id:2,name:n},{slug:k,id:3,name:j},{slug:t,id:4,name:s},{slug:m,id:1,name:l},{slug:v,id:6,name:u},{slug:x,id:5,name:w},{slug:g,id:9,name:f}],adsSeen:{},adsShown:{},popupAd:{},showPopUpAd:C,popUpPages:[]},serverRendered:true,routePath:ak,config:{apiUrl:"https:\u002F\u002Fbusiness-cambodia.com\u002Fcms",_app:{basePath:ak,assetsPath:"\u002F_nuxt\u002F",cdnURL:D}}}}("ធី","ស្រីល័ក្ខ","a0a4c4f4-d307-48e0-8262-0634a9319588","ព័ត៌មានថ្មីៗ","news","PR","pr","Bunthoeun","Koem","អចលនទ្រព្យ","real-estate","ហិរញ្ញវត្ថុ","finance","ចាប់ផ្តើមអាជីវកម្ម","business","Kan","Dara","23d3a23b-2baf-4802-a2ed-5e9465500843","ភាពជាអ្នកដឹកនាំ","leadership","កំពូលអ្នកលក់","sales","មុខរបរកសិកម្ម","agriculture","ece42c55-6cb8-4d51-9551-9d3470c2748a","Toeuy","Hong","dd16de73-246a-4012-a14e-c52adfb30b3a",false,null,"THATSORNA","39937b44-0f78-4440-85ab-682010c87181","NOV","2023-06-03T09:59:50.057Z","ប្រាក់ឧបត្ថមមួយឆ្នាំ៣ម៉ឺន$! អូស្ត្រាលីប្រកាសផ្តល់អាហារូបករណ៍ថ្នាក់បរិញ្ញាបត្រជំនាញ១០ជំនាញនៅសាកលវិទ្យាល័យ Monash",1197,"monash-university","58f3a83b-9cad-48bb-af97-2b58ffce54fe","1e359c4f-674f-4f62-921e-d90fca6413ba","2023-06-03T08:47:49.982Z","ថ្ងៃនេះបើកព្រឹត្តិការណ៍ប៉ារ៉ាហ្គេម មកដឹងពីកម្មវិធីសំខាន់ៗ ដែលនឹងធ្វើឡើងនៅយប់នេះ",480,"open-ceremony-of-para-games-","621aa0b9-a853-4918-b868-26c80561baa4","2023-06-03T08:20:13.434Z","កង់បីអគ្គិសនីអនៀនក្លាយជាអ្នកផលិតដំបូងគេ បាននាំមុខឧស្សាហកម្មបច្ចេកវិជ្ជាដែលសម្ពោធនៅកង់បីស៊េរីថ្មី T1S និង T1L",21,"electric-tricycle","4d18915b-ae06-4318-bbd3-9b5f27d4244a",53,"ប្រញាប់ទិញ! Cellcard  លក់ហ៊ុនជាសាធារណៈតម្លៃខ្ទង់២ពាន់រៀលក្នុង១ហ៊ុននឹងបិទបញ្ចប់ឆាប់ៗនេះ","2023-06-01T09:55:13.329Z","cellcard-to-close-it-ipo-sale-very-soon","86f0684e-af33-4f7c-ad3e-a890e50e0030",6664,"ឡានដឹកទំនិញជាង ៧០០ គ្រឿង កំពុងជាប់គាំងនៅព្រំដែនវៀតណាម-ចិន ក្រោយចិនអនុញ្ញាតឱ្យទុរេនវៀតណាមនាំចូលជាផ្លូវការ","2023-06-02T12:11:51.550Z","over-700-durian-trucks-stuck-at-vietnam-china-border","62fe0a24-a905-4dad-a6ed-586685e0e6da",5527,32,"Daneth","c5e3ef48-0cea-4484-a2a5-9475e1e01242","Mech","\u002F"));</script><script src="/_nuxt/a8c9b95.js" defer></script><script src="/_nuxt/60ce454.js" defer></script><script src="/_nuxt/2b61bd2.js" defer></script><script src="/_nuxt/8f0f896.js" defer></script><script src="/_nuxt/17305ee.js" defer></script>
+  </body>
+</html>

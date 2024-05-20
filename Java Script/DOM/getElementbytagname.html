@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni.h1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam.p</p>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni.h1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam.p</p>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni.h1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam.p</p>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam.h2</h2>
+    </div>
+    <button id="btn_h1">click me</button>
+</body>
+<script>
+    const btn_h1 = document.getElementById('btn_h1')
+
+    btn_h1.addEventListener('click' ,function(){
+      let tageh1 = document.getElementsByTagName('h1')
+      let p= document.getElementsByTagName('p')
+      console.log(tageh1)
+      console.log(p)
+    })
+</script>
+</html>

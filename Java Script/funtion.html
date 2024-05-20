@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="button" onclick="sum(20,30)" value="Click me">
+    </form>
+    <h1 id="demo"></h1>
+</body>
+<script>
+    let x,y;
+    let text = '';
+    //const sum=()={}
+    function sum(num1,num2){
+        x=num1;
+        y=num2;
+        text+= x+y;
+        document.getElementById("demo").innerHTML=text;
+    }
+    //funtion no parameter no return
+    // let x,y;
+    // x=50;
+    // y=50;
+    // let text = '';
+    // //const sum=()={}
+    // function sum(){
+    //     text=x+y;
+    //     document.getElementById("demo").innerHTML=text;
+    // }
+    //onclick"sum();
+</script>
+</html>

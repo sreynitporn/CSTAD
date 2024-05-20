@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<style>
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 10px;
+}
+input{
+    width: 70px;
+    height:60px;
+}
+.box1{
+    width: 50%;
+    height:500px;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.box2{
+    width: 50%;
+    height:500px;
+    background-color: rgb(241, 20, 20);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.box{
+    width: 110px;
+    height: 130px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.box2{
+    width: 7rem;
+    height: 8rem;
+    background-color: rgb(192, 205, 138);
+    margin: 7px;
+}
+</style>
+<body>
+    <input type="button" value="append" id="btn_1">
+    <input type="button" value="Empty" id="btn_2">
+    <div class="box1">
+        <!-- <div class="box"></div> -->
+        <div class="box2"></div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        let i=0;
+        $('#btn_1').click(function(){
+            i++;
+            let box_1 = '<div class="box">'+i+'</div>';
+            //$('.box1').append(box_1);
+            //$('.box1').prepend(box_1);
+            //$('.box2').after(box_1);
+            $('.box2').before(box_1);
+        })
+        $('body').on('click','.box',function(){
+            $(this).remove();
+        })
+        $('body').on('click','.box',function(){
+            $(this).empty();
+         
+        })
+    })
+</script>
+</html>

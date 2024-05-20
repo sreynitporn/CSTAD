@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 800px;
+        
+        background-color: aquamarine;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 7px;
+        box-shadow: 1px 1px 5px 0 #333;
+        padding: 10px;
+        
+    }
+    header{
+        width: 100%;
+        height: 150px;
+        border-radius: 7px;
+        background-color:blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    h1{
+        font-size: 60px;
+        color: black;
+        font-weight: bold;
+        font-family: 'Lobster', cursive;
+        text-shadow: 5px  1px 1px;
+    }
+    .contain{
+        width: 80%;
+        height: 200px;
+        margin: auto;
+        margin-top: 10px;
+        display: flex;
+    }
+    .box-left {
+        width: 30%;
+        height: 100%;
+        background-color: blue;
+        margin-left: 10px;
+
+    }
+    .box-right{
+        width: 70%;
+        height: 100%;
+        background-color:blue;
+        margin-left: 10px;
+    }
+    .box-left ul{
+        list-style: none;
+        text-align: center;
+    }
+    .box-left ul li a{
+        text-decoration: none;
+        font-size: 25px;
+        color:black;
+        padding-top: 15px;
+    }
+    .box-left ul li{
+        padding-top: 20px;
+    }
+    .box-left ul li a:hover{
+        background-color: #333;
+        color: aliceblue;
+        padding: 10px 50px;
+        border-radius: 7px;
+        font-family: 'Lobster', cursive;
+    }
+    .footer{
+        width: 100%;
+        height: 100px;
+        background-color: blueviolet;
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+       <header>
+        <h1>Welcome To Etec</h1>
+       </header>
+       <div class="contain">
+        <div class="box-left">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rupp</a></li>
+                <li><a href="#">ETEC</a></li>
+            </ul>
+        </div>
+        <div class="box-right">
+            <h1>Hello ETEC</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sequi quas blanditiis 
+            aspernatur obcaecati neque consequatur adipisci consequuntur, quam, earum ut! Atque 
+            ut placeat a voluptas natus et rem nam.</p>
+        </div>
+       </div>
+       <div class="footer"><h1>FOOTER</h1></div>
+    </div>
+</body>
+</html>

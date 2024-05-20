@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow:  1px 1px 1px 0;
+    border-radius: 7px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,25,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+input[type=text],[type=tel],select{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+input[type=submit],[type=reset]{
+    width: 100px;
+    background-color: aqua;
+    color: #ccc;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}

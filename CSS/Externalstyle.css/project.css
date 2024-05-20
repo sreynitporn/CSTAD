@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box-header{
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(20, 21, 21);
+}
+.header{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.box-logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.box-logo img{
+    width: 40%;
+}
+.box-ads{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.box-ads img{
+    width:85%;
+}
+.box-nav{
+    width: 100%;
+    position: sticky;
+    top:0;
+    z-index: 1111;
+    
+}
+.box-nav nav{
+    width: 100%;
+    height: 18px;
+    background-color: rgb(235, 71, 128);
+    margin-bottom:5px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li a{
+    padding: 10px 10px;
+}
+ nav ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: #9e9191;
+    font-family: 'Angkor', cursive;
+}
+nav ul li:hover:not(#active) a{
+    color: rgb(252, 246, 246);
+}
+/* ==========header seagame============= */
+.box-seagame{
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    background-image: url(/CSS/image/logo3.png);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+.box-seagame .box-logoseagame{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-seagame .box-logoseagame img{
+    width:2rem ;
+}
+.single-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+.single-text h3{
+    font-size: 14px;
+    color:#1a0ebb;
+    font-family: 'Koulen', cursive;
+}
+.box-container{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-slide{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(17, 20, 20);
+}
+.box-web{
+    width: 30%;
+    height: 100%;
+    margin-left: 5px;
+    background-color: aquamarine;
+}
+.box-row-1{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(223, 240, 235);
+    display: flex;
+    justify-content: space-between;
+}
+.box-row-2{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(181, 119, 153);
+}
+.box-left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    transform:translate(0.5s);
+    background-color: #1a0ebb;  
+    background-image: url(/CSS/image/logo6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.box-left .box-a{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: black; 
+}
+.box-left .box-a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+}
+.box-left .box-b{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #a50c0c;
+    font-size: 10px;
+    top:20px;
+    padding: 10px;
+    transition: 0.5s;
+    transform: translate(0.5rem);
+}
+.box-container p{
+    width: 100%;
+    position: absolute;
+    font-size: 8px;
+    font-weight: 200;
+    padding: 10px;
+    top:50px;
+    opacity: 1;
+    color: rgb(217, 216, 228);
+    transition: 0.7s;
+    transform: translate(0.5rem);
+}
+.box-left.box-c{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #1a0ebb;
+}
+
+.box-right{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(216, 27, 27);
+}
+
+.box-top-left{
+    width: 50%;
+    height: 100%;
+    background-color: #65619b;
+    
+}
+.box-bttom-right{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(129, 83, 83);
+}
+.box-top{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(90, 31, 31);
+    margin-bottom: 5px;
+}
+.box-bottom{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(55, 43, 123);
+}

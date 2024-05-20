@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(106, 106, 109);
+}
+.filter_body{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    
+}
+.card{
+    width: 200px;
+    background-color: rgb(146, 153, 159);
+    border-radius: 2px 2px 5px 0;
+    padding: 3px;
+}
+img{
+    width: 100%;
+    height: 300px;
+    border-radius: 2px 2px 5px 0;
+}
+.body{
+    padding: 15px 10px;
+}
+.title{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.price{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: red;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Welcome to javaScrip</h1>
+           <p>
+            <input type="text" name="name" id="" value="sok">
+            <input type="text" name="name" id="" value="nana">
+            <input type="text" name="name" id="" value="lyna">
+            <input type="text" name="name" id="" value="dara">
+           </p>
+        <div id="demo"></div>
+        <button id="btn1">click me</button>
+</body>
+<script>
+    const btn1 = document.getElementById('btn1')
+    const demo = document.getElementById('demo')
+    btn1.addEventListener('click',()=>{
+        let Name = document.getElementsByName('name')
+        Name.forEach((name) => {
+            demo.innerHTML += `<h1> my name is: ${name.value}</h1>`
+            console.log(name)
+        });
+    })
+</script>
+</html>

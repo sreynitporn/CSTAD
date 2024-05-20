@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    
+}
+.container header h1{
+    text-align: center;
+} 
+.container table{
+    margin-top: 5px;
+    border-collapse: collapse;
+    background-color: blue;
+}
+.container tr{
+    margin-top: 5px;
+    border-collapse: collapse;
+    background-color: aqua;
+}
+.container th{
+    margin-top: 5px;
+    width: 50%;
+}
+.container th{
+    margin-top: 5px;
+    width: 50%;
+}
+.container th{
+    margin-top: 5px;
+    width: 50%;
+}
+.container th{
+    margin-top: 5px;
+    width: 50%;
+
+}

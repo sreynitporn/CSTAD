@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #style1 #box{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div id="style1">
+        <div id="box" onmouseover="btn_ch_style()"></div>
+    </div>
+    <input type="button" value="cheng style" onclick="btn_ch_style()">
+</body>
+<script>
+    let style1 = document.getElementById('style1')
+    function btn_ch_style(){
+        style1.querySelector('#box').style.background = "red"
+    }
+
+</script>
+</html>

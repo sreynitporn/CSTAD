@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Koulen&display=swap');
+.container{
+    width: 6rem;
+    height: 100vh;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 5px 0 gray;
+}
+.box-logo{
+    width: 100%;
+    height: 38px;
+    display: flex;
+    border-bottom: 0.3px solid gray;
+}
+.logo{
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width:1.8rem;
+}
+.box-name{
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.box-name h1{
+    font-size: 10px;
+    color: black;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+.box-frm{
+    width: 100%;
+    height: 15px;
+    border-radius: 70px;
+}
+.box-frm input{
+    width: 90%;
+    height: 13px;
+    border-radius:100px;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 8px;
+    margin-left: 5px;
+}
+.box-frm i{
+    position: absolute;
+    top:47px;
+    left:7px;
+    font-size: 8px;
+}
+.box-menu{
+    width: 90%;
+    margin: auto;
+    margin-top:4px;
+    font-family: 'Konkhmer Sleokchher', cursive;
+}
+.box-menu ul{
+    list-style: none;
+}
+.box-menu ul li i{
+    font-size: 10px;
+}
+.box-menu ul li {
+    text-align: center;
+    padding:2px 0;
+    text-align: center;
+}
+.box-menu ul li a{
+    color: brown;
+    font-size: 8px;
+    text-decoration:none;
+    
+}
+.box-menu ul li:hover:not(#active){
+    background-color:grey;
+    border-radius:10px;
+
+}
+.box-menu ul li:hover:not(#active)a{
+    color: rgb(209, 204, 204);
+}
+#active{
+    background-color:rgb(110, 96, 96);
+    border-radius:10px;
+}

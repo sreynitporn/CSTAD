@@ -1,0 +1,16 @@
+*{
+     padding: 0;
+     margin: o;
+     box-sizing:border-box;
+}
+.box1{
+    margin-top: 50px;
+    margin-left: 60px;
+    width: 60%;
+    height: 400px;
+    background-color:black ;
+    border-right: solid 3px chocolate;
+    border-left: solid 3px teal;
+    border-top:  solid 3px yellowgreen;
+    border-bottom: solid 3px orchid;
+}

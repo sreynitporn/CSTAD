@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+</body>
+<script>
+    let Text = '';
+    let cars =["BMW","VOLVO","SAAB","FORD"];
+    let x;
+    console.log(cars)
+    for( x of cars){
+        Text+= " "+x;
+    }
+    document.getElementById("result").innerHTML='<h1>'+Text+'</h1>';
+</script>
+</html>

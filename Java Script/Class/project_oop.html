@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    class cars{
+        constructor(name,year){
+            this.name = name;
+            this.year = year;
+        }
+    }
+    class subject extends cars{
+        constructor(name,year){
+            super(name)
+            this.year = year;
+        }
+        renderToString(){
+            document.write(this.name)
+            document.write(this.year)
+        }
+    }
+    let result = new subject("Hello word",300)
+    result.renderToString();
+</script>
+</html>

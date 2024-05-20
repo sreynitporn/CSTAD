@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #menu{
+        width: 100%;
+        height: 100px;
+        background-color: brown;
+    }
+    li a{
+        padding: 10px 15px 0;
+        margin: auto;
+        display: block;
+        font-size: 20px;
+        list-style-type: none;
+        color: aliceblue;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div id="menu">
+        
+    </div>
+</body>
+<script>
+    let color = new Array('Red','blue',123,4.65)
+    let result = ' ';
+    color.forEach((e)=>{
+       result += `<li><a>${e}</a></li>`
+    });
+    document.getElementById('menu').innerHTML = `<ul>${result}</ul>`;
+</script>
+</html>

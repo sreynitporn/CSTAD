@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    height: 30vh;
+    margin: auto;
+    margin-top: 20px;
+    background-color:white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 0;
+
+}

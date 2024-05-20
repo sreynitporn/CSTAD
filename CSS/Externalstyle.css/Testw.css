@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.border{
+    border: 2px solid blue;
+    width: 50%;
+    margin:auto;
+    margin-top: 20px;
+    padding: 10px;
+
+   
+
+}
+.border .Header h1{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+   
+.border .box {
+    width: 100%;
+    height: 200px;
+    margin-top:10px ;
+    display: flex;
+    
+}

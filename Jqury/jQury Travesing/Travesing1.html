@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 50%;
+        display:flex;
+        margin-left: 40%;
+        margin-top: 50px;
+    }
+    .content{
+        width: 50%;
+        height: 70vh;
+        background-color: blue;
+    }
+    input{
+        padding: 5px 5px;
+    }
+    .Classadd{
+        width: 50%;
+        height: 30rem;
+        background-color: rgb(255, 0, 157);
+    }
+</style>
+<body>
+    <div class="content">
+        <input type="button"  value="AddClass" id="btn_add">
+        <input type="button" value="Remove" id="btn_remove">
+        <input type="button" value="parent" id="parent">
+        <input type="button" value="parents" id="parents">
+        <h1>Hello jqury</h1>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $('#btn_add').click(function(){
+            $('.content').addClass('Classadd');
+        })
+        $('#btn_remove').click(function(){
+            $('.content').removeClass('Classadd');
+        })
+        $('#parent').click(function(){
+            $('#parent').parent().css({'background-color':'black','color':'white'});
+        })
+        $('#parents').click(function(){
+            $('#parents').parents('.content').find('h1').html('hello babey');
+            $('#parents').parents('content').find('#parents').css({'backgroundlor':'red'});
+            $('#parent').parent().css({'color':'white'});
+        })
+    })
+</script>
+</html>

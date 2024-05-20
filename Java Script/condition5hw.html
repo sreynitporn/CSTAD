@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let score1,score2,score3,score4,score5;
+    let total;
+    let average;
+    let grade;
+
+    score1=30;
+    score2=4;
+    score3=12;
+    score4=23; 
+    score5=20;
+
+     if(average>=100 && average<=90){
+        grade='A';
+    } 
+    else if(average>=90 && average<=80){
+        grade='B';
+    }
+    
+    else if(average>=80 && average<=70){
+        grade='C';
+    }
+    else if(average>=70 && average<=60){
+        grade='D';
+    }
+    else if(average>=60 && average<=50){
+        grade='E';
+    }
+    else{
+        grade='F';
+    }
+
+    total=score1+score2+score3+score4+score5;
+    average=total/5;
+
+document.write("<table border=1><tr><th>Score1</th> <th>Score2</th> <th>Score3</th> <th>Score4</th> <th>Score5</th> <th>total</th> <th>average</th> <th>grade</th></tr>")
+document.write("<tr><td>"+score1+"</td>")
+document.write("<td>"+score2+"</td>")
+document.write("<td>"+score3+"</td>")
+document.write("<td>"+score4+"</td>")
+document.write("<td>"+score5+"</td>")
+document.write("<td>"+total+"</td>")
+document.write("<td>"+average+"</td>")
+document.write("<td>"+grade+"</td>")
+document.write("</tr></table>")
+
+</script>
+</html>

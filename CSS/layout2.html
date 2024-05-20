@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 70%;
+        height: 100px;
+        margin: auto;
+        background-color: blue;  
+    }
+    .container .box{
+        width: 100%;
+        height: 100px;
+        background-color: aquamarine;
+    }
+    .container .box:nth-child(1){
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        
+    }
+    .container .box:nth-child(2){
+        width: 100%;
+        background-color: blueviolet;
+        height: 300px;
+        text-align: center;
+        
+    }
+    .left{
+        width: 25%;
+        height: 100%;
+        background-color: aqua;
+    }
+    .container{
+        width: 50%;
+        height: 100%;
+        background-color: black;
+    }
+    .center{
+        width: 50%;
+        height: 100%;
+        background-color: brown;
+    }
+    .container{
+        width: 50%;
+        height: 100%;
+        background-color: burlywood;
+    }
+    .right{
+        width: 25%;
+        height: 100%;
+        background-color: navy;
+
+    }
+    .container{
+        width: 50%;
+        height: 100%;
+        background-color: burlywood;
+    }
+    .header{
+        text-align: center;
+        color:green;
+        padding: 50px;
+        background-color: antiquewhite;
+    }
+    
+    .container .box:nth-child(1){
+       
+        color: beige;
+        padding-top: 16%;
+    }
+    .container .box:nth-child(2){
+       display: flex;
+    }
+    .footer {
+        color: black;
+        padding-top:25px;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+   
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Header</h1>
+        </div>
+        <div class="box">
+            <div class="left">
+                <h1>left</h1>
+            </div>
+            <div class="center">
+                <h1>center</h1>
+            </div>
+            <div class="right">
+                <h1>right</h1>
+            </div>
+        </div>
+        <div class="box">
+            <footer><h1>footer</h1></footer>
+        </div>
+
+    </div>
+    
+</body>
+</html>

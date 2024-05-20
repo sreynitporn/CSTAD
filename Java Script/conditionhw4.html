@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let code;
+    let name_product;
+    let qty;
+    let price;
+    let dis;
+    let total;
+    let payment;
+    code = 1002;
+    name_product = "coca";
+    qty = 25;
+    price = 1.5;
+
+    total = qty*price;
+    if(total>=1 && total<=10){
+        dis=10;
+    } 
+    else if(total>10 && total<=20){
+        dis=20;
+    }
+    
+    else if(total>20 && total<=30){
+        dis=30;
+    }
+    
+    else if(total>30 && total<=40){
+        dis=40;
+    }
+    else{
+        dis=50;
+    }
+    payment= total-(total*dis/100);
+    document.write("<h3>total=$"+total+"</h3>")
+    document.write("<h3>dis=%"+dis+"</h3>")
+    document.write("<h3>payment=&"+payment+"</h3>")
+</script>
+</html>
